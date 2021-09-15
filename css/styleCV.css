@@ -1,0 +1,115 @@
+@charset "utf-8"; /* & J'apporte mon encodage. */
+
+/*/ J'espace un peu mes paragraphes. */
+
+p { 
+    margin: 3px;
+}
+
+/*/ J'apllique mes polices et mes tailles. */
+
+h1, h2, h3 {
+    font-family: 'Karma', serif;
+}
+
+h1 {
+    font-size: 7vh;
+}
+
+h2 {
+    font-size: 5.5vh;
+}
+
+p, a, span, li, ul {
+    font-size: 3.5vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*/ Je change le style des pointeurs de mes listes. */
+
+ul {
+    list-style-type: '➢';
+}
+
+/*/ Je modifie les interlignes. */
+p, a, span, li {
+    line-height: 4.5vh;
+}
+
+/*/ Je modifie les espaces entre les lettres et les mots. */
+p, a, span, li, h1, h2, h3 {
+    word-spacing: 0.3vh;
+    letter-spacing: 0.1vh;
+}
+
+
+
+/** L'acceuil. */
+
+/*$ Je change la couleur de l'acceuil. */
+#acceuil {
+    background-color: #79BAF2;
+    color: white;
+}
+
+/*$ Je change la couleur des icones des réseaux sociaux. */
+.fa-linkedin, .fa-github{
+    color: white;
+}
+
+
+/*, Je change les couleurs des sections. */
+
+/** Profil. */
+#profil {
+    background-color: #80C7F2;
+    border-radius: 12px;
+}
+
+/** Détails personels. */
+#details {
+    background-color: #66B1F2;
+    border-radius: 12px;
+}
+
+/** Mes competences. */
+#competences {
+    background-color: #80C7F2;
+    border-radius: 12px;
+}
+
+/** Les langues. */
+#langue {
+    background-color: #66B1F2;
+    border-radius: 12px;
+}
+
+/** Formation. */
+#formation {
+    background-color: #80C7F2;
+    border-radius: 12px;
+}
+.bg-custom1 {
+    background-color: #80C7F2;
+}
+
+/** Expérience profesionnel. */
+#exp {
+    background-color: #66B1F2;
+    border-radius: 20px;
+}
+.bg-custom2 {
+    background-color: #66B1F2;
+}
+
+/*, Je cible uniquement les mobiles. */
+
+@media screen and (max-width: 600px) {
+    /*? Je réduis la taille des titres sur mobile. */
+    h2 {
+        font-size: 5.25vh;
+    }
+    p, a, span, li, ul {
+        font-size: 3.3vh;
+    }
+}

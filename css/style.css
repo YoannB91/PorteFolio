@@ -1,0 +1,668 @@
+@charset "utf-8"; /* & J'apporte mon encodage. */
+
+/*? Les règles et styles généraux. */
+
+/*µ J'applique ses règles à tout le site. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*µ Je rend le scrool plus léger. */
+html {
+    scroll-behavior: smooth;
+}
+
+/*µ Je change les tailles et la polices des lettres. */
+h1, h2, h3 {
+    font-family: 'Karma', serif;
+}
+h1 {
+    font-size: 12vh;
+}
+h2 {
+    font-size: 5vh;
+}
+h3 {
+    font-size: 3.5vh;
+}
+p, a, q {
+    font-family: 'Roboto', sans-serif;
+    padding: 2px;
+    margin: 4px;
+}
+p, a {
+    font-size: 2.5vh;
+}
+q {
+    font-size: 3vh;
+}
+li, label {
+    font-size: 1.8vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*µ J'enlève le soulignement de mes liens. */ 
+a { 
+    text-decoration: none;
+}
+
+/*µ J'espace mes paragraphhes. */
+p {
+    padding: 10px;
+    margin: 10px;
+}
+
+/*µ Je modifie les interlignes. */
+p, a, q {
+    line-height: 4vh;
+}
+
+/*µ J'enlève les marges sur les côtés qui créaient des espaces blancs autours des a. */
+a {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*µ Je modifie les espaces entre les lettres et les mots. */
+p, a, q, h1, h2, h3, h4 {
+    word-spacing: 0.25vh;
+    letter-spacing: 0.05vh;
+}
+
+/*µ Je crée un effet parallax. */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*µ Les transitions. */
+.transition{
+    width: 99.35vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*µ Le style pour les sections du site. */
+/*ù Je travaille sur les sections qui comporteront les titres. */
+.titreDeSection { 
+    background-color: #91E9F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px;
+}
+
+/*ù Je crée un background bleu pour les sections. */
+.sectionbleu { 
+    background-color: #79D0F2;
+}
+
+/*µ Je centre mes citations. */
+q {
+    text-align: center;
+}
+
+/*? Fin des règles et styles généraux. */
+
+
+/*, Ma barre de naviguation. */
+
+/*: Je place ma barre de naviguation par-dessus tout les éléments du site. */
+#topNav {
+    z-index: 99;
+}
+.sideNav {
+    z-index: 100;
+}
+
+/*? Le mode ordinateur. */
+
+/*: La liste non-ordonnée qui sert de naviguation. */
+.ham, #topNav h2, sideNav {
+    visibility: hidden;
+}
+
+/*: Les caractéristiques générales. */
+#topNav {
+    width: 100vw;
+    height: 4.5vh;
+    background-color: #022873;
+    position: fixed;
+    display: flex;
+    color: white;
+}
+
+/*: La liste du menu de naviguation. */
+#topNav ul {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    white-space: nowrap; 
+}
+
+/*: Les liens de la liste non-ordonnée. */
+#topNav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+/*: Les liens de naviguation. */
+#topNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vh;
+    padding: 8px 8px;
+}
+
+/*: Les liens de naviguation lorsque l'on reste dessus au survol. */
+#topNav ul li a:hover, #topNav ul li a:focus {
+    border-bottom: 2px solid white;
+}
+
+/*? Le mode mobile. */
+
+/*: L'icone du menu burger. */
+#topNav .fas {
+    margin: 12px;
+    cursor: pointer;
+}
+
+/*: Le titre de la navbar. */
+#topNav h2 {
+    margin: auto;
+    font-size: 3.5vh;
+}
+
+/*: La naviguation verticale. */
+.sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: black;
+    width: 50vw;
+    height: 100vh;
+    color: white;
+}
+
+/*: La fonction hide qui me permet de cacher le menu vertical. */
+.hide2 {
+    visibility: hidden;
+    height:0;
+    opacity: 0;
+    transition: opacity 600ms, visibility 600ms, height 600ms;
+}
+
+/*: La fonction show qui me permet de faire apparaître le menu vertical. */
+.show2 {
+    display: block;
+    transition: opacity 600ms, visibility 600ms, height 600ms;
+}
+
+/*: L'icone X qui sert à fermer le menu vertical. */
+.menuX {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/*: La liste non-ordonnée qui sert de naviguation. */
+.sideNav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+/*: Les liens de la liste non-ordonnée. */
+.sideNav ul li {
+    display: list-item;
+}
+
+/*: Les liens de naviguation. */
+.sideNav ul li a {
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-size: 3.5vh;
+}
+
+/*: Les liens de naviguation lorsque l'on reste dessus au survol. */
+.sideNav ul li a:hover, .sideNav ul li a:focus {
+    border-bottom: 2px solid white;
+}
+
+
+/*, La section "acceuil" du site. */
+
+/*% Le fond et le texte de l'acceuil. */
+#acceuil { 
+    width: 99.35vw;
+    height: 100vh;
+    background-image: url(../img/acceuil/wormhole.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*% Mon nom. */
+h1 { 
+    display: flex;
+    flex-direction: row;
+    color: snow;
+}
+
+/*% Le petit trait qui sépare les deux titres. */
+.ligneAcceuil {
+    width: 60vh;
+    border: 1px solid ghostwhite;
+}
+
+
+/*, La section À propos. */
+
+/*+ Je centre le texte et l'image. */
+.propos { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*+ Je règle la taille de l'image. */
+.image { 
+    padding: 25px;
+    max-width: 100vw;
+}
+
+
+/*, La première transition : Les loisirs. */
+
+/*) L'image de fond. */
+#transitionLoisirs { 
+    background-image: url(../img/transitions/loisirs.jpg);
+    background-position: left;
+    color: white;
+}
+
+
+/*, La section Mes passions. */
+
+/*$ Le hide and show de la section mes passions. */
+.hide {
+    display: none;
+    height:0;
+    opacity: 0;
+    transition: opacity 600ms, visibility 600ms, height 600ms;
+}
+.show {
+    display: block;
+    transition: opacity 600ms, visibility 600ms, height 600ms;
+}
+
+/*: J'ajoute une bordure rondes aux images dans les cartes. */
+:root {
+    --card-img-top: border-radius: 8px;
+}
+.card-img-top {
+    border-radius: 8px;
+}
+
+
+/*, La seconde transition : Actuellement. */
+#transitionActuellement {
+    background-image: url(../img/transitions/actuellement.jpg);
+    color: white;
+    text-align: center;
+}
+
+
+/*, La section mes compétences. */
+
+/*? Je centre mon texte. */
+.cvComp {
+text-align: center;
+}
+
+.cvComp p {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/*? Je met une taille fixe à mes logos. */
+.logo-competences {
+    height: 100px;
+}
+
+/*? La bordure qui sépare les différentes catégorie de compétence. */
+.border-separate-skills {
+    border-bottom: 1px dashed #2e1f6b!important;
+    width: 100%;
+}
+
+/*? Je centre les logos. */
+.centré {
+    text-align: center;
+}
+
+
+/*, La troisième transition : Les études. */
+
+/*. J'applique une image en fond pour le parallax. */
+#transitionEtude {
+    background-image: url(../img/transitions/etude.jpg);
+    color: black;
+}
+
+
+/*, La section portefolio. */
+
+/*/ Je modifie la taille du titre qui apparaîtra lors du survol de l'image. */
+.présentationPortefolio h4 {
+    font-size: 6vh;
+}
+
+/*/ J'applique la même couleur au lien qu'au reste du paragraphe. */
+.cadrePhoto a {
+    color: black;
+}
+
+/*/ Mon symbole devient bleu pour attirer l'attention. */
+.cadrePhoto .fas {
+    color: blue;
+}
+
+/*/ J'aligne mon image au centre. */
+.cadrePhoto {
+    display: flex;
+}
+
+/*/ J'ajouter une bordure à mon image. */
+.cadrePhoto img {
+border: black 4px solid;
+}
+
+/*/ Je positionne l'image. */
+.cadrePhoto {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+/*/ Je passe mon texte sur l'image. */
+.présentationPortefolio {
+    display: none; 
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    transform: translate(-50%, -50%);    
+}
+
+/*/ L'image est parfaitement visible avant que la souris ne la survole. */
+.opacitéNone {
+    opacity: 100%;
+}
+
+/*/ L'image devient transparante afin de pouvoir lire plus facilement le texte. */
+.opacité {
+    opacity: 20%;
+}
+
+/*/ J'ajoute des marges externes pour créer des espaces. */
+.cadrePhoto {
+    margin: 0 auto;
+}
+.cadrePhoto img {
+    margin: 20px auto;
+}
+.textePortefolio a {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*, La quatrième transition : L'informatique. */
+
+/*. J'applique une image en fond pour le parallax. */
+#transitionInformatique {
+    background-image: url(../img/transitions/informatique.jpg);
+    color: white;
+}
+
+
+/*, La section contact. */
+
+/*? Je réduis la taille du texte pour accepter les conditions d'utilisation. */
+.accepte label, .accepte a {
+    font-size: 1.5vh;
+    line-height: 2.2vh;
+}
+
+/*? J'applique une couleur aux textes qui signale les cases obligatoire. */
+.obligatoire {
+    color: white;
+}
+
+/*, Le footer. */
+
+/*= J'enlève les marges des paragraphes dans le footer. */
+.fin p {
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*= Je centre les éléments du footer. */
+footer {
+    text-align: center;
+    background: #022873;
+}
+
+/*= Je change les couleurs des textes du footer. */
+footer p, footer li, footer a, footer .fab {
+    color: white;
+}
+
+/*= j'enlève le style de la liste, et aligne les éléments. */
+.fin  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/*= J'ajoute une marge aux icones. */
+.fin .fab {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+/*= J'ajoute une marge à mes liens. */
+.politique {
+    padding-right: 30px;
+}
+
+/*= J'enlève un espace entre la section contact et le footer. */
+footer p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+
+/*, Les règles pour les mobiles et les tablettes. */
+
+/*+ Le mode responsive de la barre de naviguation. */
+@media screen and (max-width: 1024px) {
+    /*$ Je remet les éléments de la barre de naviguation mobile à l'écran. */
+    .ham, #topNav h2, sideNav {
+        visibility: visible;
+    }
+    /*$ Je cache les éléments de la barre de naviguation pour ordinateur. */
+    #topNav ul {
+        display: none;
+    }
+}
+
+/*+ Je cible uniquement les mobiles. */
+@media screen and (max-width: 600px) {
+    html {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /*$ Les tailles pour les mobiles. */
+    h1 {
+        font-size: 8vh;
+    }
+    #acceuil h2 {
+        font-size: 6.3vh;
+    }
+    .ligneAcceuil {
+        width: 75vw;
+    }
+    p, a {
+        font-size: 3vh;
+    }
+    q, li {
+        font-size: 2.5vh;
+    }
+    ul {
+        font-size: 2.8vh;
+    }
+    transitionActuellement p {
+        font-size: 2.8vh;
+    }
+
+    /*µ Je modifie les interlignes. */
+    p, a, q {
+        line-height: 4.5vh;
+    }
+
+    /*$ J'agrandis la barre de naviguation pour les mobiles. */
+    #topNav {
+        height: 9vh;
+    }
+
+    /*$ J'ajoute un peu d'espace entre le bouton et le titre de la barre de naviguation. */
+    .ham {
+        margin-right: 10px;
+    }
+
+    /*$ Le menu de naviguation doit prendre tout l'écran pour que les liens soient visibles. */
+    .sideNav {
+        width: 100vw;
+    }
+
+    /*$ Je réajuste mes transitions pour qu'elles prennent tout l'écran. */
+    .transition { 
+        width: 100vw;
+    }
+
+    /*$ Les logos de la section compétences sont un peu gros pour de petits écrans. */
+    .logo-competences {
+        height: 50px;
+    }
+    
+    /*$ Je centre le titre sur l'image. */
+    .présentationPortefolio {
+        top: 20%;
+        left: 45%;
+    }
+
+    /*$ J'éloigne la case à cocher et le bouton d'envoie du centre de l'écran. */
+    .accepte, .envoyer {
+        padding-left: 30px;
+    }
+
+    /*$ J'augmente la taille du texte pour accepter les conditions d'utilisation. */
+    .accepte label, .accepte a {
+        font-size: 2.5vh;
+        line-height: 3.2vh;
+    }
+
+    /*$ J'éloigne le footer du bord de l'écran. */
+    .fin {
+        padding-left: 10vw;
+    }
+}
+
+
+/*+ Je cible uniquement les tablettes. */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /*$ J'agrandis la barre de naviguation pour les tablettes. */
+    #topNav {
+        height: 5.5vh;
+    }
+
+    /*$ Je centre le titre sur l'image. */
+    .présentationPortefolio {
+        top: 30%;
+        left: 50%;
+    }
+}
+
+/*ù Je cible les tablettes et les mobiles. */
+@media only screen and (max-device-width: 1366px) {
+    /*$ Je réajuste mon acceuil pour qu'il prenne tout l'écran et je le centre. */
+    #acceuil { 
+        width: 100vw;
+        text-align: center;
+    }
+
+    /*$ Je retire l'effet parallax sur le scroll des téléphones et tablette. */
+    .parallax {
+    background-attachment: scroll;
+    width: 100vw;
+    }
+
+    /*$ Le texte doit passer sous la photo pour la section À propos. */
+    .propos { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*$ J'augmente la place sous les compétences. */
+    .competence {
+        padding-bottom: 12px;
+    }
+
+    /*$ L'image du portefolio dépasse de l'écran. */
+    .cadrePhoto img {
+        width: 88vw;
+    }
+
+    /*$ Le texte doit passer sous l'image. */
+    .cadrePhoto {
+        flex-direction: column;
+    }
+
+    /*$ J'augmente l'espace séparant mes sections. */
+    .textePortefolio {
+        padding-bottom: 10px;
+    }
+}
