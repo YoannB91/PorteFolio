@@ -173,9 +173,10 @@ for (var i=0; i<texte5.length; i++) {
 };
 
 
-//§ La section portefolio.
-var présentation = document.getElementsByClassName('présentationPortefolio');
-var image = document.getElementsByClassName('imagePortefolio');
+/* 
+//§ La section portfolio.
+var présentation = document.getElementsByClassName('présentationPortfolio');
+var image = document.getElementsByClassName('imagePortfolio');
 var opacité = document.getElementsByClassName('opacité');
 
 //* J'affiche le texte lors du survol de l'image par la souris.
@@ -202,7 +203,8 @@ image[0].addEventListener('mouseout', function nonOpaque() {
         image[0].classList.remove('opacité');
         image[0].classList.add('opacitéNone');
     }
-});
+}); 
+*/
 
 
 

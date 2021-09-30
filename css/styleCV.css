@@ -42,23 +42,21 @@ p, a, span, li, h1, h2, h3 {
     letter-spacing: 0.1vh;
 }
 
-
-
-/** L'acceuil. */
-
-/*$ Je change la couleur de l'acceuil. */
-#acceuil {
-    background-color: #79BAF2;
-    color: white;
-}
-
-/*$ Je change la couleur des icones des réseaux sociaux. */
-.fa-linkedin, .fa-github{
-    color: white;
+/*/ J'enlève les décorations de mes liens. */
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
 /*, Je change les couleurs des sections. */
+
+/** L'acceuil. */
+
+#acceuil, #acceuil .fab {
+    background-color: #79BAF2;
+    color: white;
+}
 
 /** Profil. */
 #profil {
@@ -70,6 +68,10 @@ p, a, span, li, h1, h2, h3 {
 #details {
     background-color: #66B1F2;
     border-radius: 12px;
+}
+
+.fas, .fab {
+    color: black;
 }
 
 /** Mes competences. */
