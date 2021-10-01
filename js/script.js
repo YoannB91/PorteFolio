@@ -44,15 +44,15 @@ var livre = document.getElementById('book');
 //, Je vais créer une fonction pour changer d'image lorsque la souris de l'utilisateur passe dessus.
 livre.addEventListener('mouseover', function survolLecture() {
     livre.src = 'img/passions/livres/library.jpg'
-    livre.setAttribute('title', 'Une bibliothèque paradisique.')
-    livre.setAttribute('alt', 'Une bibliothèque dans les nuages.')
+    livre.setAttribute("title", "Une bibliothèque dans les nuages.")
+    livre.setAttribute("alt", "Une bibliothèque à ciel ouvert qui laisse les nuages la pénétrer afin de créer une légère couche de fumée. L’on peut voir le soleil percer le ciel au-dessus de la bibliothèque, et des oiseaux voltiger au-dessus de ces livres qui font voyager notre imaginaire à l’aide chacune de leurs pages.")
 });
 
 //, Puis remettre mon image quand la souris repart.
 livre.addEventListener('mouseout', function retourLecture() {
     livre.src = 'img/passions/livres/livre.jpg'
-    livre.setAttribute('title', 'Un livre sur le pays des merveilles.')
-    livre.setAttribute('alt', 'Un livre fantastique.')
+    livre.setAttribute("title", "Un livre qui vous emmènera dans un monde féérique.")
+    livre.setAttribute("alt", "Un escalier qui mène à la page gauche d’un livre, et sur laquelle nous pouvons voir une femme en blanc se protégeant du soleil à l’aide d’un parapluie. Il y a sur la page de droite une jeune fille qui fait de la balançoire sur un arbre rose. L’on peut aussi apercevoir un pic à tête rouge qui s'apprête à se poser sur l’arbre.")
 });
 
 //& La section jeux vidéo.
@@ -64,23 +64,23 @@ jv.addEventListener('click', function cliqueSwitchImage(){
     switch (sourceJV){
         case 'img/passions/jv/switch.jpg':
             jv.src = 'img/passions/jv/joycon.jpg';
-            jv.setAttribute('title', 'Des joycons, espéront qu\'ils ne vont pas drifter...');
-            jv.setAttribute('alt', 'Des joycons.');
+            jv.setAttribute("title", "Des joy-cons, espéront qu'ils ne vont pas drifter...");
+            jv.setAttribute("alt", "Une paire de joy-cons rouges (de la série mario odyssey) sont placés dans une poignée de confort bleu. Le tout est une référence au célèbre plombier italien de Nintendo, Mario Bros.");
             break;
         case 'img/passions/jv/joycon.jpg':
             jv.src = 'img/passions/jv/dualshock-4.jpg';
-            jv.setAttribute('title', 'Une paire de dualshock-4, elles fonctionnent un peu mieux.');
-            jv.setAttribute('alt', 'Une dualshock-4.');
+            jv.setAttribute("title", "Deux dualshock 4, elles fonctionnent un peu mieux et ont moins de problèmes.");
+            jv.setAttribute("alt", "Une dualshock 4 noire est posé en biais sur la gauche d’une image ayant un fond blanc. Elle est accolé à une seconde dualshock 4, elle de couleur blanche, et leurs associations forment une forme de P (en référence à Playstation).");
             break;
         case 'img/passions/jv/dualshock-4.jpg':
             jv.src = 'img/passions/jv/playstation-4.jpg';
-            jv.setAttribute('title', 'Une playstation 4, plus performante mais aucune innovation.');
-            jv.setAttribute('alt', 'Une playstation 4');
+            jv.setAttribute("title", "Une playstation 4, elle est plus performante mais n'apporte aucune innovation.");
+            jv.setAttribute("alt", "Une dualshock 4 noire est posé contre une playstation 4 noire sur un fond blanc.");
             break;
         case 'img/passions/jv/playstation-4.jpg':
             jv.src = 'img/passions/jv/switch.jpg';
-            jv.setAttribute('title', 'Une switch, une console portable et une console de salon allié, du pur génie nippon.');
-            jv.setAttribute('alt', 'Une console Nintendo Switch.');
+            jv.setAttribute("title", "Une switch, une console de salon utilisable en console portable, du pur génie nippon.");
+            jv.setAttribute("alt", "Une console Nintendo Switch. Elle est représentée en mode portable sur un fond de couleur purple; avec son joy-con bleu à gauche et son joy-con rouge à droite. Son écran est éteint.");
             break;
     }
 });
