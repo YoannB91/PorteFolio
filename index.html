@@ -418,17 +418,83 @@
             <hr>
         </article>
 
-        <article class="cadrePhoto sectionbleu">
-            <img src="img/portfolio/cv.png" alt="Une capture d'écran de la page CV. L'on peut y voir son header qui comporte mon nom, mon métier et des icônes pour accéder à mes réseaux sociaux. Il y a aussi la section 'à propos' qui est visible juste sous l'en-tête de la page." title="Mon cv, fait en utilisant les compétences en HTML5, CSS3 et Bootstrap5." class="imagePortfolio opacitéNone" loading="lazy">
-            <article class="présentationPortfolio">
-                <h4>Mon cv.</h4>
+        <!--§ Les boutons pour sélectionner les catégories. -->
+        <div class="sectionbleu" id="myBtnContainer">
+            <button class="bouton actif" id="btnAll">Voir tout mes projets.</button>
+            <button class="bouton" id="btnHtml">HTML5/CSS3</button>
+            <button class="bouton" id="btnBt">Bootstrap5</button>
+            <button class="bouton" id="btnPhp">PHP</button>
+            <button class="bouton" id="btnWp">Wordpress</button>
+        </div>
+
+        <section class="sectionbleu sectionPortfolio">
+
+            <!--§ Mon premier projet : Mon CV. -->
+            <article class="cartePortfolio cvPortolio html bootstrap">
+
+                <h3 class="titreCarte">Mon CV</h3>
+
+                <a href="cv.html" target="_blank">
+                    <img class="imageCarte" src="img/portfolio/cv.png" alt="Une capture d'écran de la page CV. L'on peut y voir son header qui comporte mon nom, mon métier et des icônes pour accéder à mes réseaux sociaux. Il y a aussi la section 'à propos' qui est visible juste sous l'en-tête de la page." title="Mon cv, fait en utilisant les compétences en HTML5, CSS3 et Bootstrap5." loading="lazy">
+                </a>
+
+                <p>
+                    Voici le CV que j'ai fait en HTML5/CSS3, exclusivement pour mon portfolio. Il à été fait durant ma remise à niveau de développeur web chez Doranco, dans le but de me permettre de pratiquer mes nouvelles compétences et d'avoir un projet à exposer dans cette partie de mon site.
+                </p>
+
+                <ul>
+                    <li class="listeTech">HTML5</li>
+                    <li class="listeTech">CSS3</li>
+                    <li class="listeTech">Bootstrap5</li>
+                </ul>
+
             </article>
-            <article class="textePortfolio">
-                <p>Voici mon CV, je l'ai fait en HTML5/CSS3 dans le but de le rendre plus accessible sur mon site internet.</p>
-                <p>J'ai utilisé le HTML5, le CSS3 et Bootstrap 5 pour faire cette page.</p>
-                <a href="cv.html" target="_blank"><i class="fas fa-globe"></i> Vous pouvez le visiter pour voir le rendu.</a>
+
+            <div class="videPortfolio"></div>
+
+
+            <!--§ Mon second projet : Projet Véville. -->
+            <article class="cartePortfolio html bootstrap php">
+
+                <h3 class="titreCarte">Projet Véville</h3>
+
+                <a href="Location/view/index.php" target="_blank">
+                    <img class="imageCarte" src="img/portfolio/projet_veville.png" alt="Il y a une barre de navigation tout en haut de l’image qui indique que la personne connecté est Yoann Bezard. En dessous se trouve le logo de Véville et la page pour sélectionner une date et une adresse de départ afin de pouvoir sélectionner son véhicule selon leurs disponibilités." title="La page d'acceuil du site que j'ai fait pour le projet véville, elle permet de sélectionner et réserver un véhicule." loading="lazy">
+                </a>
+
+                <p>
+                    Le projet Véville est un TP PHP d'une semaine que j'ai réalisé durant ma remise à niveau chez Doranco. Il consistait à refaire le site de location de véhicule pour une société nommé Véville en utilisant nos compétences fraîchement acquises en PHP. Il dispose d'un système d'inctiption, de connection et de réservation pour les véhicules.
+                </p>
+
+                <ul>
+                    <li class="listeTech">HTML5</li>
+                    <li class="listeTech">CSS3</li>
+                    <li class="listeTech">PHP</li>
+                    <li class="listeTech">Bootstrap5</li>
+                </ul>
+
             </article>
-        </article>
+
+            <!--§ Mon second projet : Bugstastique. -->
+            <article class="cartePortfolio wordpress">
+
+                <h3 class="titreCarte">Bugstastique</h3>
+
+                <a href="https://github.com/YoannB91/Bugstastique" target="_blank">
+                    <img class="imageCarte" src="img/portfolio/Bugstastique.png" alt="Il y a une barre de navigation rouge sur laquelle se trouve une manette de playstation 1 avec un cœur. Dessous se trouve la bannière avec écrit le nom du site. En dessous de ça l’on peut voir les articles qui sont mis en avant lors de l’arrivée d’un visiteur sur le site." title="La page d'acceuil du site Bugstastique, un blog Wordpress qui se moque des bugs dans les jeux vidéo tout en parodiant des reportages." loading="lazy">
+                </a>
+
+                <p>
+                    Je l'ai fait en une journée et demie lors de la semaine d'initiation Wordpress de ma remise à niveau de développeur web en utilisant le thème color-newsmagazine. J'ai choisi de faire un site sur un sujet qui m'amusait: les bugs dans les jeux vidéo, et j'ai utilisé des captures d'écrans accumulées lors de mes nombreuses années de joueur pour illustrer le tout. 
+                </p>
+
+                <ul>
+                    <li class="listeTech">Wordpress</li>
+                </ul>
+
+            </article>
+
+        </section>
 
 
         <!--§ La quatrième transition : L'informatique. -->

@@ -35,7 +35,7 @@ p, a {
     font-size: 2.5vh;
 }
 q {
-    font-size: 3vh;
+    font-size: 2vh;
 }
 li, label {
     font-size: 1.8vh;
@@ -190,7 +190,7 @@ q {
 /*: Le titre de la navbar. */
 #topNav h2 {
     margin: auto;
-    font-size: 3.5vh;
+    font-size: 3vh;
 }
 
 /*: La naviguation verticale. */
@@ -392,69 +392,101 @@ text-align: center;
 
 /*, La section portfolio. */
 
-/*/ Je modifie la taille du titre qui apparaîtra lors du survol de l'image. */
-.présentationPortfolio h4 {
-    font-size: 6vh;
-}
-
-/*/ J'applique la même couleur au lien qu'au reste du paragraphe. */
-.cadrePhoto a {
-    color: black;
-}
-
-/*/ Mon symbole devient bleu pour attirer l'attention. */
-.cadrePhoto .fas {
-    color: blue;
-}
-
-/*/ J'aligne mon image au centre. */
-.cadrePhoto {
-    display: flex;
-}
-
-/*/ J'ajouter une bordure à mon image. */
-.cadrePhoto img {
-border: black 4px solid;
-}
-
-/*/ Je positionne l'image. */
-.cadrePhoto {
-    position: relative;
+/*+ Les boutons pour sélectionner les catégories. */
+#myBtnContainer {
     text-align: center;
+    padding-top: 15px;
+}
+.bouton {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    margin: 2px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 1.6vh;
+}
+.bouton:hover {
+    background-color: #ddd;
+}
+
+/*+ Le bouton actif. */
+.actif {
+    background-color: #666;
+    color: white;
+}
+.actif:hover {
     color: black;
 }
 
-/*/ Je passe mon texte sur l'image. */
-.présentationPortfolio {
-    display: none; 
-    position: absolute;
-    top: 40%;
-    left: 12%;
-    transform: translate(-50%, -50%);    
-}
-
-/*/ L'image est parfaitement visible avant que la souris ne la survole. */
-.opacitéNone {
-    opacity: 100%;
-}
-
-/*/ L'image devient transparante afin de pouvoir lire plus facilement le texte. */
-.opacité {
-    opacity: 20%;
-}
-
-/*/ J'ajoute des marges externes pour créer des espaces. */
-.cadrePhoto {
-    margin: 0 auto;
-}
-.cadrePhoto img {
-    margin: 20px auto;
-}
-.textePortfolio a {
+/*+ J'espace mes cartes. */
+.sectionPortfolio {
+    display: flex;
     padding: 10px;
-    margin: 10px;
+    flex-wrap: wrap;
 }
 
+/*+ Je crée un espace artificiel. */
+.videPortfolio {
+    width: 1vw;
+}
+
+/*+ Je modifie la structure des cartes. */
+.cartePortfolio {
+    padding: 10px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    width: 48vw;
+}
+
+/*+ Je cache les catégories qui ne sont pas sélectionner. */
+.filtre {
+    display: none;
+}
+
+/*+ Je crée les titres pour les cartes. */
+.titreCarte {
+    text-align: center;
+    border: 3px solid black;
+    display: block;
+}
+
+/*+ Je crée les règles pour les images des cartes. */
+.imageCarte {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*+ Je modifie l'alignement des descriptions des cartes. */
+.cartePortfolio p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/*+ Je centre les listes des cartes. */
+.sectionPortfolio ul {
+    text-align: center;
+}
+
+/*+ Je crée les règles pour la liste des technologie utilisés des carte. */
+.listeTech {
+    background-color: white;
+    display: inline;
+    border-radius: 999px;
+    margin-bottom: 1000px;
+    word-spacing: 0.4vh;
+    letter-spacing: 0.1vh;
+    line-height: 2vh;
+    padding: 10px;
+    margin-right: 12px;
+    font-size: 2vh;
+}
 
 /*, La quatrième transition : L'informatique. */
 
@@ -565,7 +597,7 @@ footer p {
         font-size: 3vh;
     }
     q, li {
-        font-size: 2.5vh;
+        font-size: 2vh;
     }
     ul {
         font-size: 2.8vh;
@@ -667,19 +699,34 @@ footer p {
         padding-bottom: 12px;
     }
 
-    /*$ L'image du portfolio dépasse de l'écran. */
-    .cadrePhoto img {
-        width: 88vw;
+    .sectionPortfolio {
+        flex-direction: column;
     }
 
-    /*$ Le texte doit passer sous l'image. */
-    .cadrePhoto {
-        flex-direction: column;
+    /*$ Les cartes du portfolio doivent prendre tout l'écran. */
+    .cartePortfolio {
+        width: auto;
+        margin-top: 15px;
+    }
+
+    /*$ L'espace ajoouté était trop grand pour cette section particulière, je le réduit donc. */
+    .cvPortolio {
+        margin-top: 5px;
     }
 
     /*$ J'augmente l'espace séparant mes sections. */
     .textePortfolio {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
+    }
+
+    /*$ J'espace mes boutons. */
+    .bouton {
+        margin: 5px;
+    }
+
+    /*$ J'ajoute de l'espace sous la dernière carte de la section portfolio. */
+    #transitionInformatique {
+        margin-bottom: 10px;
     }
 
     /*$ Je modifie le footer.  */

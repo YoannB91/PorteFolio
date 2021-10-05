@@ -173,65 +173,119 @@ for (var i=0; i<texte5.length; i++) {
 };
 
 
-/* 
 //§ La section portfolio.
-var présentation = document.getElementsByClassName('présentationPortfolio');
-var image = document.getElementsByClassName('imagePortfolio');
-var opacité = document.getElementsByClassName('opacité');
 
-//* J'affiche le texte lors du survol de l'image par la souris.
-image[0].addEventListener('mouseover', function showPrésentation() {
-    présentation[0].style.display = 'flex';
-});
+var carte = document.getElementsByClassName('cartePortfolio'); //; Toutes les cartes. 
+var filtre = document.getElementsByClassName('filtre'); //; Cacher des cartes.
+var bouton = document.getElementsByClassName('bouton'); //; Les boutons de sélection.
 
-//* Je rend l'image de font transparante pour permettre de bien lire le texte lors du survol.
-image[0].addEventListener('mouseover', function opaque() {
-    if (image[0].classList.contains('opacitéNone')) {
-        image[0].classList.remove('opacitéNone');
-        image[0].classList.add('opacité');
+
+//? Si l'utilisateur veut voir tout les projets.
+
+var all = document.getElementById('btnAll'); //; Le bouton pour tout voir.
+
+all.addEventListener('click', function cacheEtMontre() {
+    for (var i=0; i < carte.length; i++) {
+        if (carte[i].classList.contains('filtre')) {
+            carte[i].classList.remove('filtre');
+        }
     }
-});
-
-//* Je désaffiche le texte quand la souris quitte l'image. 
-image[0].addEventListener('mouseout', function hidePrésentaion() {
-    présentation[0].style.display = 'none';
-});
-
-//* J'enlève la transparence pour rendre l'image de nouveau visible quand elle n'est plus survoler.
-image[0].addEventListener('mouseout', function nonOpaque() {
-    if (image[0].classList.contains('opacité')) {
-        image[0].classList.remove('opacité');
-        image[0].classList.add('opacitéNone');
+    for (var i=0; i < bouton.length; i++) {
+        if (bouton[i].classList.contains('actif')) {
+            bouton[i].classList.remove('actif');
+        }
     }
-}); 
-*/
+    all.classList.add('actif');
+})
 
 
+//? Si l'utilsateur veut uniquement voir les projets contenant du HTML5 et du CSS3.
+
+var btnHtml = document.getElementById('btnHtml'); //; Le bouton pour voir les projet utilisant le HTML5 et le CSS3.
+var html = document.getElementsByClassName('html'); //; Les projets utilisant le HTML5 et le CSS3.
+
+btnHtml.addEventListener('click', function cacheEtMontreHtml() {
+    for (var i=0; i < carte.length; i++) {
+        carte[i].classList.add('filtre');
+    }
+    for (var i=0; i < html.length; i++) {
+        if (html[i].classList.contains('filtre')) {
+            html[i].classList.remove('filtre');
+        }
+    }
+    for (var i=0; i < bouton.length; i++) {
+        if (bouton[i].classList.contains('actif')) {
+            bouton[i].classList.remove('actif');
+        }
+    }
+    btnHtml.classList.add('actif');
+})
 
 
+//? Si l'utilisateur veut uniquement voir les projets contenant du Bootstrap5.
+
+var btnBt = document.getElementById('btnBt'); //; Le bouton pour voir les projets utilisant Boostrap5.
+var bootstrap = document.getElementsByClassName('bootstrap'); //; Les projets utilisant Bootstrap5.
+
+btnBt.addEventListener('click', function cacheEtMontreBt() {
+    for (var i=0; i < carte.length; i++) {
+        carte[i].classList.add('filtre');
+    }
+    for (var i = 0; i < bootstrap.length; i++) {
+        if (bootstrap[i].classList.contains('filtre')) {
+            bootstrap[i].classList.remove('filtre');
+        }
+    }
+    for (var i=0; i < bouton.length; i++) {
+        if (bouton[i].classList.contains('actif')) {
+            bouton[i].classList.remove('actif');
+        }
+    }
+    btnBt.classList.add('actif');
+})
 
 
+//? Si l'utilisateur veut uniquement les projets contenant du PHP.
+
+var btnPhp = document.getElementById('btnPhp'); //; Le bouton pour voir les projets utilisant du PHP.
+var php = document.getElementsByClassName('php'); //; Les projets utilisant du PHP.
+
+btnPhp.addEventListener('click', function cacheEtMontrePhp() {
+    for (var i=0; i < carte.length; i++) {
+        carte[i].classList.add('filtre');
+    }
+    for (var i=0; i < php.length; i++) {
+        if (php[i].classList.contains('filtre')) {
+            php[i].classList.remove('filtre');
+        }
+    }
+    for (var i=0; i < bouton.length; i++) {
+        if (bouton[i].classList.contains('actif')) {
+            bouton[i].classList.remove('actif');
+        }
+    }
+    btnPhp.classList.add('actif');
+})
 
 
+//? Si l'utilisateur veut voir les projets fait avec Wordpress.
 
+var btnWp = document.getElementById('btnWp'); //; Le bouton pour voir les projets fait en Wordpress.
+var wordpress = document.getElementsByClassName('wordpress'); //; Les projets que j'ai fait avec wordpress.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// cadrePhoto[0].addEventListener('click', function TexteSurPhoto(){
-//     textePhoto[0].getAttribute('display');
-// })
-
+btnWp.addEventListener('click', function cacheEtMontreWp() {
+    for (var i=0; i < carte.length; i++) {
+        carte[i].classList.add('filtre');
+    }
+    for (var i=0; i < wordpress.length; i++) {
+        if (wordpress[i].classList.contains('filtre')) {
+            wordpress[i].classList.remove('filtre');
+        }
+    }
+    for (var i=0; i < bouton.length; i++) {
+        if (bouton[i].classList.contains('actif')) {
+            bouton[i].classList.remove('actif');
+        }
+    }
+    btnWp.classList.add('actif');
+})
