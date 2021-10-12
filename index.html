@@ -103,25 +103,34 @@
 
         <!--§ L'acceuil du site.-->
         <section id="acceuil" class="parallax">
+
             <h1>Yoann Bezard</h1>
             <hr class="ligneAcceuil">
             <h1>Développeur Web</h1>
+
         </section>
+
     </header>
 
     <main>
 
-
         <!--§ La section À propos.-->
+
         <article class="titreDeSection">
-            <h2 id="propos" class="text-center">À propos</h2>
+            <h2 id="propos" class="text-center">À propos de moi</h2>
         </article>
+
         <div class="pb-2 propos sectionbleu">
             <!--/ L'image de profil. -->
             <img class="image" src="img/profil/wankul.jpg" alt="Mon Wankul. Il porte une chemise verte, une veste grise et des lunettes. Il pose sur un fond bleu avec têtes des wankuls de Laink et Terracid qui se répète en boucle." title="Mon wankul, je l'utilise pour me représenter." loading="lazy">
+
             <!--/ Le texte de description. -->
             <p>Bonjour, je m'appel Yoann Bezard et je suis Développeur web. <br /> Je possède un bac STI2D et après plusieurs années passées à chercher ce qui me plaisait réellement j'ai fini par me découvrir  une passion pour la programmation, et plus particulièrement pour le domaine du web. <br /> J'ai donc commencé par suivre des cours en autodidacte sur le HTML5/CSS3 et la programmation orienté objet en Python sur le site <a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a>, avant de suivre une formation de remise à niveau chez l'organisme de formation <a href="https://www.doranco.fr/" target="_blank">Doranco</a>.
             </p>
+
+            <!--/ L'ancre qui va permettre de remonter tout en haut du site depuis le coin inférieur droit. -->
+            <a href="#acceuil"> <i class="fas fa-anchor"></i> </a>
+
         </div>
 
 
@@ -320,7 +329,7 @@
 
         <!--§ Mes compétences. -->
         <article class="titreDeSection">
-            <h2 id="competences" class="text-center">Mes compétences</h2>
+            <h2 id="competences" class="text-center">Mes compétences de développeur web</h2>
             <hr>
         </article>
         
@@ -414,7 +423,7 @@
 
         <!--§ Mon portfolio. -->
         <article class="titreDeSection">
-            <h2 id="portfolio" class="text-center">Mon portfolio.</h2>
+            <h2 id="portfolio" class="text-center">Mon portfolio</h2>
             <hr>
         </article>
 
@@ -432,16 +441,20 @@
             <!--§ Mon premier projet : Mon CV. -->
             <article class="cartePortfolio cvPortolio html bootstrap">
 
-                <h3 class="titreCarte">Mon CV</h3>
+                <!--& Le titre. -->
+                <h3 class="titreCarte"> Mon CV <a href="https://github.com/YoannB91/PortFolio" target="_blank"> <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> </a> </h3>
 
+                <!--& L'image du site qui permet de rejoindre le projet. -->
                 <a href="cv.html" target="_blank">
                     <img class="imageCarte" src="img/portfolio/cv.png" alt="Une capture d'écran de la page CV. L'on peut y voir son header qui comporte mon nom, mon métier et des icônes pour accéder à mes réseaux sociaux. Il y a aussi la section 'à propos' qui est visible juste sous l'en-tête de la page." title="Mon cv, fait en utilisant les compétences en HTML5, CSS3 et Bootstrap5." loading="lazy">
                 </a>
 
+                <!--& Le descriptif du projet. -->
                 <p>
-                    Voici le CV que j'ai fait en HTML5/CSS3, exclusivement pour mon portfolio. Il à été fait durant ma remise à niveau de développeur web chez Doranco, dans le but de me permettre de pratiquer mes nouvelles compétences et d'avoir un projet à exposer dans cette partie de mon site.
+                    Voici le CV que j'ai fait en HTML5/CSS3, exclusivement pour mon portfolio. Il à été fait durant ma remise à niveau de développeur web chez Doranco, dans le but de me permettre de pratiquer mes nouvelles compétences et d'avoir un premier projet à exposer dans cette partie de mon site.
                 </p>
 
+                <!--& La liste des outils utilisés pour faire le projet. -->
                 <ul>
                     <li class="listeTech">HTML5</li>
                     <li class="listeTech">CSS3</li>
@@ -450,22 +463,24 @@
 
             </article>
 
-            <div class="videPortfolio"></div>
-
 
             <!--§ Mon second projet : Projet Véville. -->
             <article class="cartePortfolio html bootstrap php">
 
-                <h3 class="titreCarte">Projet Véville</h3>
+                <!--& Le titre. -->
+                <h3 class="titreCarte"> Projet Véville <a href="https://github.com/YoannB91/location-de-voiture" target="_blank"> <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> </a> </h3>
 
+                <!--& L'image du site qui permet de rejoindre le projet. -->
                 <a href="Location/view/index.php" target="_blank">
                     <img class="imageCarte" src="img/portfolio/projet_veville.png" alt="Il y a une barre de navigation tout en haut de l’image qui indique que la personne connecté est Yoann Bezard. En dessous se trouve le logo de Véville et la page pour sélectionner une date et une adresse de départ afin de pouvoir sélectionner son véhicule selon leurs disponibilités." title="La page d'acceuil du site que j'ai fait pour le projet véville, elle permet de sélectionner et réserver un véhicule." loading="lazy">
                 </a>
 
+                <!--& Le descriptif du projet. -->
                 <p>
                     Le projet Véville est un TP PHP d'une semaine que j'ai réalisé durant ma remise à niveau chez Doranco. Il consistait à refaire le site de location de véhicule pour une société nommé Véville en utilisant nos compétences fraîchement acquises en PHP. Il dispose d'un système d'inctiption, de connection et de réservation pour les véhicules.
                 </p>
 
+                <!--& La liste des outils utilisés pour faire le projet. -->
                 <ul>
                     <li class="listeTech">HTML5</li>
                     <li class="listeTech">CSS3</li>
@@ -475,19 +490,24 @@
 
             </article>
 
+
             <!--§ Mon second projet : Bugstastique. -->
             <article class="cartePortfolio wordpress">
 
-                <h3 class="titreCarte">Bugstastique</h3>
+                <!--& Le titre. -->
+                <h3 class="titreCarte"> Bugstastique <a href="https://github.com/YoannB91/Bugstastique" target="_blank"> <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> </a> </h3>
 
-                <a href="https://github.com/YoannB91/Bugstastique" target="_blank">
+                <!--& L'image du site qui permet de rejoindre le projet. -->
+                <a href="http://s880335714.onlinehome.fr/" target="_blank">
                     <img class="imageCarte" src="img/portfolio/Bugstastique.png" alt="Il y a une barre de navigation rouge sur laquelle se trouve une manette de playstation 1 avec un cœur. Dessous se trouve la bannière avec écrit le nom du site. En dessous de ça l’on peut voir les articles qui sont mis en avant lors de l’arrivée d’un visiteur sur le site." title="La page d'acceuil du site Bugstastique, un blog Wordpress qui se moque des bugs dans les jeux vidéo tout en parodiant des reportages." loading="lazy">
                 </a>
 
+                <!--& Le descriptif du projet. -->
                 <p>
                     Je l'ai fait en une journée et demie lors de la semaine d'initiation Wordpress de ma remise à niveau de développeur web en utilisant le thème color-newsmagazine. J'ai choisi de faire un site sur un sujet qui m'amusait: les bugs dans les jeux vidéo, et j'ai utilisé des captures d'écrans accumulées lors de mes nombreuses années de joueur pour illustrer le tout. 
                 </p>
 
+                <!--& La liste des outils utilisés pour faire le projet. -->
                 <ul>
                     <li class="listeTech">Wordpress</li>
                 </ul>
@@ -508,7 +528,7 @@
 
         <!--§ Contact.-->
         <article class="titreDeSection">
-            <h2 id="contact" class="text-center">Contactez-moi.</h2>
+            <h2 id="contact" class="text-center">Contactez-moi</h2>
             <hr>
         </article>
 

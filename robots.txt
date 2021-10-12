@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /Location/view/index.php
+Disallow: /Location/
+Disallow: /mentions_legales.html/
+Disallow: /politique_de_confidentialité.html/

@@ -278,6 +278,8 @@ q {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 /*% Mon nom. */
@@ -308,6 +310,17 @@ h1 {
     padding: 25px;
     max-width: 100vw;
     border-radius: 0px;
+}
+
+/*+ Je crée l'ancre qui va permettre de remonter tout en haut du site depuis le coin inférieur droit. */
+.propos .fas {
+    background-color: white;
+    font-size: 8vh;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 20%;
+    z-index: 5;
 }
 
 
@@ -426,17 +439,13 @@ text-align: center;
     flex-wrap: wrap;
 }
 
-/*+ Je crée un espace artificiel. */
-.videPortfolio {
-    width: 1vw;
-}
-
 /*+ Je modifie la structure des cartes. */
 .cartePortfolio {
     padding: 10px;
     padding-bottom: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 1vw;
     border: 3px solid black;
     width: 48vw;
 }
@@ -451,6 +460,12 @@ text-align: center;
     text-align: center;
     border: 3px solid black;
     display: block;
+}
+
+/*+ Je crée les règles pour les icônes github des titres. */
+.cartePortfolio .fab {
+    color: black;
+    font-size: 3.5vh;
 }
 
 /*+ Je crée les règles pour les images des cartes. */
@@ -472,6 +487,7 @@ text-align: center;
 /*+ Je centre les listes des cartes. */
 .sectionPortfolio ul {
     text-align: center;
+    margin-top: 15px;
 }
 
 /*+ Je crée les règles pour la liste des technologie utilisés des carte. */
@@ -559,6 +575,7 @@ footer p {
 .rsfin {
     margin: 0;
 }
+
 
 
 
