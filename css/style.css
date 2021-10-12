@@ -102,7 +102,7 @@ p, a, q, h1, h2, h3, h4 {
 /*µ Le style pour les sections du site. */
 /*ù Je travaille sur les sections qui comporteront les titres. */
 .titreDeSection { 
-    background-color: #91E9F2;
+    background-color: #BF8654;
     /* display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ p, a, q, h1, h2, h3, h4 {
 
 /*ù Je crée un background bleu pour les sections. */
 .sectionbleu { 
-    background-color: #79D0F2;
+    background-color: #D9C589;
 }
 
 /*µ Je centre mes citations. */
@@ -145,7 +145,7 @@ q {
 #topNav {
     width: 100vw;
     height: 4.5vh;
-    background-color: #022873;
+    background-color: #076DF2;
     position: fixed;
     display: flex;
     color: white;
@@ -441,6 +441,7 @@ text-align: center;
 
 /*+ Je modifie la structure des cartes. */
 .cartePortfolio {
+    background-color: #D9AE89;
     padding: 10px;
     padding-bottom: 5px;
     margin-top: 10px;
@@ -539,7 +540,7 @@ text-align: center;
 /*= Je centre les éléments du footer. */
 footer {
     text-align: center;
-    background: #022873;
+    background: #592A19;
 }
 
 /*= Je change les couleurs des textes du footer. */
