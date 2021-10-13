@@ -530,7 +530,7 @@ text-align: center;
 /*, Le footer. */
 
 /*= J'enlève les marges des paragraphes dans le footer. */
-.fin p {
+.fin .separation {
     padding: 0;
     margin: 0;
     padding-left: 5px;
@@ -740,11 +740,6 @@ footer p {
     /*$ J'espace mes boutons. */
     .bouton {
         margin: 5px;
-    }
-
-    /*$ J'ajoute de l'espace sous la dernière carte de la section portfolio. */
-    #transitionInformatique {
-        margin-bottom: 10px;
     }
 
     /*$ Je modifie le footer.  */

@@ -34,7 +34,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!--+ J'importe les icones du site font awesome.-->
+    <!--+ J'importe les icônes du site font awesome.-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <!--+ J'importe mes polices via google fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,12 +135,12 @@
 
 
         <!--§ La première transition: Les loisirs.-->
-        <di class="parallax transition" id="transitionLoisirs">
+        <div class="parallax transition" id="transitionLoisirs">
             <!--+ La citation -->
             <q cite="http://evene.lefigaro.fr/citation/minimum-loisir-travail-createur-consequent-culture-civilisation-58091.php"><strong>Sans un minimum de loisir, pas de travail créateur, par conséquent pas de culture ni de civilisation.</strong></q>
             <!--+ L'auteur de la citation. -->
             <p><strong>Roy Lewis.</strong></p>
-        </di>
+        </div>
 
 
         <!--§ Mes passions.-->
@@ -148,33 +148,44 @@
             <h2 id="passions" class="text-center">Mes passions</h2>
             <hr>
         </article>
-        <article class="sectionbleu container-fluid">
-            <section class="row py-3 me-3 ms-3 row-cols-1 row-cols-md-2">
+        <div class="sectionbleu container-fluid">
+            <div class="row py-3 me-3 ms-3 row-cols-1 row-cols-md-2">
 
                 <!--& La lecture.-->
                 <article class="col pb-2">
                     <div class="card h-100 border-dark">
+
                         <img id="book" src="img/passions/livres/livre.jpg" class="card-img-top pt-1 px-1" alt="Un escalier qui mène à la page gauche d’un livre, et sur laquelle nous pouvons voir une femme en blanc se protégeant du soleil à l’aide d’un parapluie. Il y a sur la page de droite une jeune fille qui fait de la balançoire sur un arbre rose. L’on peut aussi apercevoir un pic à tête rouge qui s'apprête à se poser sur l’arbre." title="Un livre qui vous emmènera dans un monde féérique." loading="lazy">
                         <div class="card-body">
+
                             <!--? Le titre de la carte lecture. -->
                             <h3 class="card-title">La lecture.</h3>
+
                             <!--? Le texte de la carte lecture. -->
                             <p class="card-text">Il est très facile de voyager en lisant un bon livre, parfois nous avons même l'impression de juste <strong>survoler</strong> les mots qui s'y trouvent en parcourant leurs pages. </p>
                             <p class="py-2 hideOrShow2"><i>Une liste de mes auteurs favoris : </i></p>
+
                             <!--? Le texte du hide and show de la carte lecture. -->
-                            <ul class="list-group list-group-flush hide cacher2">Les romanciers dont j'adore les œuvres : 
+                            <p class="list-group list-group-flush hide cacher2"> Les romanciers dont j'adore les œuvres : </p>
+                            <ul class="list-group list-group-flush hide cacher2"> 
                                 <li class="list-group-item">Stephen King (the stand, it),</li>
                                 <li class="list-group-item">Clive Barker (book of blood, hellraiser).</li>
                             </ul>
-                            <ul class="list-group list-group-flush hide cacher2">Dans la Bande dessinée :
+                            <p class="list-group list-group-flush hide cacher2"> Dans la Bande dessinée : </p>
+
+                            <ul class="list-group list-group-flush hide cacher2">
                                 <li class="list-group-item">Midam (Kid Paddle, game over),</li>
                                 <li class="list-group-item">Zep (Titeuf).</li>
                             </ul>
-                            <ul class="list-group list-group-flush hide cacher2">Les mangakas japonais :
+
+                            <p class="list-group list-group-flush hide cacher2"> Les mangakas japonais : </p>
+                            <ul class="list-group list-group-flush hide cacher2">
                                 <li class="list-group-item">Kentaro Miura (Berserk),</li>
                                 <li class="list-group-item">Yusuke Murata (eyeshield 21, one-punch man).</li>
                             </ul>
-                            <ul class="list-group list-group-flush hide cacher2">Et les comics :
+
+                            <p class="list-group list-group-flush hide cacher2"> Et les comics : </p>
+                            <ul class="list-group list-group-flush hide cacher2">
                                 <li class="list-group-item">Garth Ennis (the boys, the punisher).</li>
                             </ul>
                         </div>
@@ -183,6 +194,7 @@
 
                 <!--& La musique. -->
                 <article class="col pb-2">
+
                     <!--. Le carousel. -->
                     <div class="card h-100 border-dark">
                         <div id="moncarrousel" class="carousel slide card-img-top pt-1 px-1" data-bs-ride="carousel">
@@ -194,60 +206,81 @@
                                 <button type="button" data-bs-target="#moncarrousel" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
+
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="2000">
                                     <img src="img/passions/musique/dj.jpg" class="d-block w-100 card-img-top" alt="La main d’un DJ qui s’approche de sa table de mixage afin de commencer à mixer de la musique pour la fête qu'il doit animer. L'image dispose d’un filtre violet qui fait ressortir le côté artistique de la photo.
                                     " title="Un DJ qui mixe de la musique lors d'une fête." loading="lazy">
                                 </div>
+
                                 <div class="carousel-item" data-bs-interval="2000">
                                     <img src="img/passions/musique/casque.jpg" class="d-block w-100 card-img-top" alt="Un casque sans fil noir posé sur un sol blanc. L’on peut voir le symbole de la marque, un s en gras dans un carré, sur le côté droit du casque.
                                     " title="Un casque sans fil." loading="lazy">
                                 </div>
+
                                 <div class="carousel-item" data-bs-interval="2000">
                                     <img src="img/passions/musique/birds.jpg" class="d-block w-100 card-img-top" alt="Des oiseaux posés sur des fils électriques ont été utilisés pour recréer une partition musicale. L’on peut apercevoir des 'notes noires', des 'notes croches' et des notes ‘deux croches ramées posé aux milieux des oiseaux qui représente des ‘bémol”.
                                     " title="Des oiseaux et de la musique." loading="lazy">
                                 </div>
                             </div>
+
                             <button class="carousel-control-prev" type="button" data-bs-target="#moncarrousel"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Précédent</span>
                             </button>
+
                             <button class="carousel-control-next" type="button" data-bs-target="#moncarrousel"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Suivant</span>
                             </button>
                         </div>
+
                         <!--. Le texte sous le carousel. -->
                         <div class="card-body">
+
                             <!--? Le titre de la carte musique. -->
                             <h3 class="card-title">La musique.</h3>
+
                             <!--? Le texte de la carte musique. -->
                             <p class="card-text">J'adore écouter de la musique tout en travaillant. L'on peut écouter différents styles; selon notre humeur ou encore selon ce que l'on n'est en train de faire afin de trouver plus facilement l'inspiration.</p>
+
                             <p class="py-2 hideOrShow3"><i>Une liste des groupes, artistes et bandes originales que j'aime écouter tout en travaillant : </i></p>
+
                             <!--? Le texte du hide and show de la carte musique. -->
-                            <section class="card-text hide cacher3">
-                                <ul class="list-group list-group-flush hide cacher3">Quelques groupes de métal :
+                            <div class="card-text hide cacher3">
+
+                                <p class="list-group list-group-flush hide cacher3"> Quelques groupes de métal : </p>
+                                <ul class="list-group list-group-flush hide cacher3">
                                     <li class="list-group-item">AC/DC (highway to hell, back in black),</li>
                                     <li class="list-group-item">Iron maiden (fear of the dark, the final frontier).</li>
                                 </ul>
-                                <ul class="list-group list-group-flush hide cacher3">Quelques groupes de power métal :
+
+                                <p class="list-group list-group-flush hide cacher3"> Quelques groupes de power métal : </p>
+                                <ul class="list-group list-group-flush hide cacher3">
                                     <li class="list-group-item">Powerwolf (blessed and possessed, preachers of the night),</li>
                                     <li class="list-group-item">Gloryhammer (tales from the kingdom of fife, space 1992: rise of the chaos wizards).</li>
                                 </ul>
-                                <ul class="list-group list-group-flush hide cacher3">Un groupe de JPOP que j'adore :
+
+                                <p class="list-group list-group-flush hide cacher3"> Un groupe de JPOP que j'adore : </p>
+                                <ul class="list-group list-group-flush hide cacher3">
                                     <li class="list-group-item">Babymetal (Metal Resistance, Metal Galaxy).</li>
                                 </ul>
-                                <ul class="list-group list-group-flush hide cacher3">Quelques excellentes bandes originales de film :
+
+                                <p class="list-group list-group-flush hide cacher3"> Quelques excellentes bandes originales de film : </p>
+                                <ul class="list-group list-group-flush hide cacher3">
                                     <li class="list-group-item">Conan the Barbarian (Prometheus Edition),</li>
                                     <li class="list-group-item">Star Wars, épisode V : L'Empire contre-attaque (bande originale).</li>
                                 </ul>
-                                <ul class="list-group list-group-flush hide cacher3">Et pour finir quelques bandes originales de jeux vidéo :
+
+                                <p class="list-group list-group-flush hide cacher3">Et pour finir quelques bandes originales de jeux vidéo :</p>
+                                <ul class="list-group list-group-flush hide cacher3">
                                     <li class="list-group-item">kingdom hearts,</li>
                                     <li class="list-group-item">Super Mario Galaxy.</li>
                                 </ul>
-                            </section>
+
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -255,36 +288,49 @@
                 <!--& Les jeux vidéo.-->
                 <article class="col pb-2">
                     <div class="card h-100 border-dark">
+
                         <img id="JV" src="img/passions/jv/switch.jpg" class="card-img-top pt-1 px-1" alt="Une console Nintendo Switch. Elle est représentée en mode portable sur un fond de couleur purple; avec son joy-con bleu à gauche et son joy-con rouge à droite. Son écran est éteint." title="Une switch, une console de salon utilisable en console portable, du pur génie nippon." loading="lazy">
                         <div class="card-body">
+
                             <!--? Le titre de la carte jeux vidéo. -->
                             <h3 class="card-title">Les jeux vidéo.</h3>
+
                             <!--? Le texte de la carte jeux vidéo. -->
                             <p class="card-text">
                                 J'adore jouer aux jeux vidéo depuis que je suis petit, et il y a une fonction qui est leur est commune à tous : il faut toujours <strong>cliquer</strong> pour pouvoir continuer de jouer. J'affectionne tout particulièrement les JRPG, ils sont la fusion merveilleuse des caractéristiques des rpg et du génie japonais; c'est d'ailleurs grâce à eux que j'ai eu envie de m'investir en anglais (afin de pouvoir jouer à ces jeux dit "jeux de niches" qui sont rarement traduit chez nous.
                             </p>
+
                             <p class="py-2 hideOrShow4"><i>Une liste de mes styles de jeux préférés :</i></p>
+
                             <!--? Le texte du hide and show de la carte jeux vidéo. -->
                             <p class="card-text hide cacher4"> 
-                                <ul class="list-group list-group-flush hide cacher4">Les FPS :
+
+                                <p class="list-group list-group-flush hide cacher4"> Les FPS : </p>
+                                <ul class="list-group list-group-flush hide cacher4">
                                     <li class="list-group-item">Star wars - Battlefront 2 (le vrai, pas la purge de EA),</li>
                                     <li class="list-group-item">Doom Eternal.</li>
                                 </ul>
-                                <ul class="list-group list-group-flush hide cacher4">Les jeux de stratégie :
+
+                                <p class="list-group list-group-flush hide cacher4"> Les jeux de stratégie : </p>
+                                <ul class="list-group list-group-flush hide cacher4">
                                     <li class="list-group-item">Xcom 2,</li>
                                     <li class="list-group-item">Star wars - Galactic battlegrounds,</li>
                                     <li class="list-group-item">Fire emblem.</li>
                                 </ul>
-                                <ul class="list-group list-group-flush hide cacher4">Les RPG :
+
+                                <p class="list-group list-group-flush hide cacher4"> Les RPG : </p>
+                                <ul class="list-group list-group-flush hide cacher4">
                                     <li class="list-group-item">The elder scrolls V : Skyrim,</li>
                                     <li class="list-group-item">Divinity : original sin,</li>
                                     <li class="list-group-item">Mass effect.</li>
                                 </ul>
-                                <ul class="list-group list-group-flush hide cacher4">Les JRPG :
+
+                                <p class="list-group list-group-flush hide cacher4"> Les JRPG : </p>
+                                <ul class="list-group list-group-flush hide cacher4">
                                     <li class="list-group-item">Xenoblade chronicles 2,</li>
                                     <li class="list-group-item">Final Fantasy X.</li>
                                 </ul>
-                            </p>
+
                         </div>
                     </div>
                 </article>
@@ -292,39 +338,47 @@
                 <!--& La science-fiction et le fantastique.-->
                 <article class="col pb-2">
                     <div class="card h-100 border-dark">
+
                         <img id="SFF" src="img/passions/sff/1.jpg" class="card-img-top pt-1 px-1" alt="Des images représentant des villes cyberpunk, des robots, et des vaisseaux spatiaux défilent pour représenter la partie science-fiction. Pour la partie fantastique nous pouvons voir un manoir hanté, des dragons et un paysage représentant l'habitation de Gollum." title="Des images qui représentent les thèmes de la science-fiction et du fantastique défilent." loading="lazy">
                         <div class="card-body">
+
                             <!--? Le titre de la carte sff. -->
                             <h3 class="card-title">La science-fiction et le fantastique.</h3>
+
                             <!--? Le texte de la carte sff. -->
                             <p class="card-text">J'aime autant la science-fiction que le fantastique, ce sont deux types d'univers qui peuvent se retrouver partout et qui n'ont pour limite que notre imagination. On en compte aussi bien ces deux univers dans des œuvres cinématographiques, vidéoludiques, que littéraires.</p>
-                            <p class="py-2 hideOrShow5"><i>Une liste de mes œuvres de science-fiction et fantastique
-                                    préférés : </i></p>
+
+                            <p class="py-2 hideOrShow5"><i>Une liste de mes œuvres de science-fiction et fantastique préférés : </i></p>
+
                                     <!--? Le texte du hide and show de la carte sff. -->
                             <p class="card-text hide cacher5">
-                                <ul class="list-group list-group-flush hide cacher5">Pour le genre science-fiction :
+
+                                <p class="list-group list-group-flush hide cacher5"> Pour le genre science-fiction : </p>
+                                <ul class="list-group list-group-flush hide cacher5">
                                     <li class="list-group-item">Un film : Star Wars.</li>
                                     <li class="list-group-item">Un livre : Metro 2033.</li>
                                     <li class="list-group-item">Un jeu vidéo : Star Wars : Knights of the Old Republic.</li>
                                 </ul>
-                                <ul class="list-group list-group-flush hide cacher5">Pour le genre fantastique :
+
+                                <p class="list-group list-group-flush hide cacher5"> Pour le genre fantastique : </p>
+                                <ul class="list-group list-group-flush hide cacher5">
                                     <li class="list-group-item">Un film : Les Gremlims.</li>
                                     <li class="list-group-item">Un livre : La tour sombre.</li>
                                     <li class="list-group-item">Un jeu vidéo : The Witcher 3: Wild Hunt.</li>
                                 </ul>
-                            </p>
+
                         </div>
                     </div>
                 </article>
-            </section>
-        </article>
+            </div>
+        </div>
 
 
         <!--§ La seconde transition : Actuellement.-->
-        <article class="parallax transition" id="transitionActuellement">
+        <div class="parallax transition" id="transitionActuellement">
             <p><strong>Actuellement : </strong></p>
             <p><strong>En train de suivre une formation de remise de développeur web à niveau chez <a href="https://www.doranco.fr/" target="_blank">Doranco</a>.</strong></p>
-        </article>
+        </div>
 
 
         <!--§ Mes compétences. -->
@@ -336,37 +390,43 @@
 
 
         <!--. Sert à mettre la couleur de fond de la section. -->
-        <article class="container-fluid competence sectionbleu">        
+        <div class="container-fluid competence sectionbleu">  
+
             <!--. Le petit texte d'introduction -->
-            <article class="cvComp sectionbleu">
+            <div class="cvComp sectionbleu">
                 <p>Elles sont en constante amélioration car pour moi la joie de ce métier fait que j'en apprend tous les jours, d'autant plus en étant impliqué, curieux et passionné.</p>
                 <p>Vous pouvez aussi aller faire un tour sur <a href="cv.html" target="_blank">mon cv</a> en version html/css, ou bien aller jeter un coup d'œil sur sa <a href="pdf/cv_yoann_bezard.pdf" target="_blank">version pdf</a>, voire même regarder la version <a href="video/cv_yoann_bezard_anime.mp4" target="_blank">animé</a> pour en apprendre plus sur mes compétences et mon parcours professionnel.</p>
-            </article>
-            <section class="container">
+            </div>
+            <div class="container">
 
                 <!--. Les langages. -->
                 <section class="row">
                     <h3 class="text-center pt-2 pb-2">Langages</h3>
-                    <article class="col centré">
+
+                    <div class="col centré">
                         <p>HTML5</p>
                         <img src="img/competences/html5.png" alt="Le logo du HTML5. C'est un pentagone orange avec un 5 blanc en son centre. On à l’impression que le centre du pentagone est plié vers l’avant, cet effet donne du relief au logo." title="Le logo du HTML5." class="logo-competences pb-2" loading="lazy">
-                    </article>
-                    <article class="col centré">
+                    </div>
+
+                    <div class="col centré">
                         <p>CSS3</p>
                         <img src="img/competences/css3.png" alt="Le logo du CSS3. C'est un pentagone bleu avec un 3 blanc en son centre. On à l’impression que le centre du pentagone est plié vers l’avant, cet effet donne du relief au logo." title="Le logo du CSS3." class="logo-competences pb-2" loading="lazy">
-                    </article>
-                    <article class="col centré">
+                    </div>
+
+                    <div class="col centré">
                         <p>JavaScript</p>
                         <img src="img/competences/js.png" alt="" title="Le logo de JavaScript. C’est un carré jaune avec sobrement écrit JS en lettre noire en bas à droite." class="logo-competences pb-2" loading="lazy">
-                    </article>
-                    <article class="col centré">
+                    </div>
+
+                    <div class="col centré">
                         <p>PHP</p>
                         <img src="img/competences/php.png" alt="Le logo de PHP. C’est un oval de couleur bleu légèrement désaturé sur lequel le bord est assombri afin de donner une impression de profondeur. Le mot PHP est écrit en son centre en lettre noire entrouré d’un filet blanc." title="Le logo de PHP." class="logo-competences pb-2" loading="lazy">
-                    </article>
-                    <article class="col centré">
+                    </div>
+
+                    <div class="col centré">
                         <p>MySQL</p>
                         <img src="img/competences/mysql.png" alt="Le logo de MySQL. Le mot My est écrit en bleu, et le mot SQL est écrit en orange. L’on peut voir la silhouette d’un dauphin sortant son bec hors du mot SQL et nageant calmement vers le début du logo." title="Le logo de MySQL." class="logo-competences pb-2" loading="lazy">
-                    </article>
+                    </div>
                 </section>
 
                 <!--. Une ligne de séparation. -->
@@ -375,10 +435,12 @@
                 <!--. Les frameworks. -->
                 <section class="row pb-2">
                     <h3 class="text-center">Frameworks</h3>
-                    <article class="col centré">
+
+                    <div class="col centré">
                         <p>Bootstrap</p>
                         <img src="img/competences/bootstrap.png" alt="Le logo de Bootstrap. C’est un carré de couleur violet foncé modéré dont les bords ont été arrondis. Il y a un gros B en son centre." title="Le logo de Bootstrap." class="logo-competences pb-2" loading="lazy">
-                    </article>
+                    </div>
+
                 </section>
 
                 <!--. Une ligne de séparation. -->
@@ -387,10 +449,12 @@
                 <!--. Les CMS. -->
                 <section class="row">
                     <h3 class="text-center pt-2 pb-2">CMS</h3>
-                    <article class="col centré">
+
+                    <div class="col centré">
                         <p>Wordpress</p>
                         <img src="img/competences/wordpress.png" alt="Le logo de Wordpress. C'est cercle gris qui comporte en son centre un W noire qui se termine par une virgule montante." title="Le logo de Wordpress." class="logo-competences pb-2" loading="lazy">
-                    </article>
+                    </div>
+
                 </section>
 
                 <!--. Une ligne de séparation. -->
@@ -399,26 +463,29 @@
                 <!--. Les outils. -->
                 <section class="row">
                     <h3 class="text-center pt-2 pb-2">Outils</h3>
-                    <article class="col centré">
+
+                    <div class="col centré">
                         <p>Github</p>
                         <img src="img/competences/github.png" alt="Le logo de Github. C’est la silhouette d’un chat, avec une tentacule à sa droite, et dont la forme est dessiné par un contour noir sur un fond gris." title="Le logo de Github." class="logo-competences pb-3" loading="lazy">
-                    </article>
-                    <article class="col centré">
+                    </div>
+
+                    <div class="col centré">
                         <p>Visual studio code</p>
                         <img src="img/competences/vsc.png" alt="Le logo de visual studio code. C’est un symbole infini qui tend vers une porte ouverte." title="Le logo de Visual studio code." class="logo-competences pb-3" loading="lazy">
-                    </article>
+                    </div>
+
                 </section>
-            </section>
-        </article>
+            </div>
+        </div>
 
 
         <!--§ La troisième transition : Les études. -->
-        <article class="parallax transition" id="transitionEtude">
+        <div class="parallax transition" id="transitionEtude">
             <!--+ La citation -->
             <q cite="https://citation-celebre.leparisien.fr/citations/98971"><strong>Pendant les études, la réussite ne dépend que de soi, dans la vie professionnelle, la réussite dépend aussi des autres.</strong></q>
             <!--+ L'auteur de la citation. -->
             <p><strong>Edine-le-sage.</strong></p>
-        </article>
+        </div>
 
 
         <!--§ Mon portfolio. -->
@@ -436,7 +503,7 @@
             <button class="bouton" id="btnWp">Wordpress</button>
         </div>
 
-        <section class="sectionbleu sectionPortfolio">
+        <div class="sectionbleu sectionPortfolio">
 
             <!--§ Mon premier projet : Mon CV. -->
             <article class="cartePortfolio cvPortolio html bootstrap">
@@ -514,16 +581,16 @@
 
             </article>
 
-        </section>
+        </div>
 
 
         <!--§ La quatrième transition : L'informatique. -->
-        <article class="parallax transition" id="transitionInformatique">
+        <div class="parallax transition" id="transitionInformatique">
             <!--+ La citation -->
             <q cite="https://blog.nicolas.brondin-bernard.com/7-citations-sur-la-programmation-que-jadore/"><strong>N’importe quel idiot peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre.</strong></q>
             <!--+ L'auteur de la citation. -->
             <p><strong>Martin Fowler.</strong></p>
-        </article>
+        </div>
 
 
         <!--§ Contact.-->
@@ -532,44 +599,44 @@
             <hr>
         </article>
 
-        <section class="container-fluid sectionbleu">
-            <section class="container">
+        <div class="container-fluid sectionbleu">
+            <div class="container">
                 <form method="POST" action="php/formulaire.php">
 
                 <!--£ La section "Vos informations personelles". -->
-                    <section class="row">
+                    <div class="row">
                         <div class="col-12 col-md-6 my-3">
                             <!--* Le nom. -->
-                            <label for="nom" class="form-label">Votre nom <span class="obligatoire">(Obligatoire)</span>.</label>
-                            <input type="text" name="nom" class="form-control">
+                            <label for="nom"  class="form-label">Votre nom <span class="obligatoire">(Obligatoire)</span>.</label>
+                            <input type="text" id="nom" name="nom" class="form-control">
                         </div>
                         <div class="col-12 col-md-6 my-3">
                             <!--* Le prénom. -->
                             <label for="prenom" class="form-label">Votre prénom.</label>
-                            <input type="text" name="prenom" class="form-control">
+                            <input type="text" id="prenom" name="prenom" class="form-control">
                         </div>
-                    </section>
+                    </div>
 
                     <!--£ La section "Vos informations de contact". -->
-                    <section class="row">
+                    <div class="row">
                         <div class="col-12 col-md-6 mb-3">
                             <!--* L'adresse e-mail. -->
                             <label for="email" class="form-label">Votre adresse e-mail <span class="obligatoire">(Obligatoire)</span>.</label>
-                            <input type="email" name="email" class="form-control">
+                            <input type="email" id="email" name="email" class="form-control">
                         </div>
                         <div class="col-12 col-md-6 mb-3">
                             <!--* Le numéro de téléphone. -->
                             <label for="telephone" class="form-label">Votre numéro de téléphone.</label>
-                            <input type="tel" name="telephone" class="form-control">
+                            <input type="tel" id="telephone" name="telephone" class="form-control">
                         </div>
-                    </section>
+                    </div>
 
                     <!--£ La section "L'objet de votre message". -->
-                    <section class="row">
+                    <div class="row">
                         <!--* L'objet du message. -->
                         <div class="col-12 mb-3">
                             <label for="objet" class="form-label">L'objet de votre message <span class="obligatoire">(Obligatoire)</span>.</label>
-                            <input class="form-control" name="objet" list="datalistOptions" placeholder="Sélectionner une demande dans la liste.">
+                            <input class="form-control" id="objet" name="objet" list="datalistOptions" placeholder="Sélectionner une demande dans la liste.">
                             <datalist id="datalistOptions">
                                 <option value="Me poser une question à propos de mon Portfolio.">
                                 <option value="Me faire un commentaire sur mon Portfolio.">
@@ -580,42 +647,42 @@
                                 <option value="Autre (écrivez votre propre objet dans la case).">
                             </datalist>
                         </div>
-                    </section>
+                    </div>
 
                     <!--£ La section "Votre message". -->
-                    <section class="row">
+                    <div class="row">
                         <div class="col-12 mb-3">
                             <!--* Le message. -->
                             <div class="mb-3">
                                 <label for="message" class="form-label">Votre message <span class="obligatoire">(Obligatoire)</span>.</label>
-                                <textarea name="message" class="form-control" rows="6"></textarea>
+                                <textarea id="message" name="message" class="form-control" rows="6"></textarea>
                             </div>
                         </div>
-                    </section>
+                    </div>
 
                     <!--£ La section "Les conditions d'utilisation." -->
-                    <section class="row">
+                    <div class="row">
                         <!--* Le bouton pour accepter les conditions d'utilisation. -->
                         <div class="form-check mb-3 accepte">
                             <label for="accept" class="form-check-label">
                                 En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consulter <a href="politique_de_confidentialité.html" target="_blank">la Politique de confidentialité</a>.
                             </label>
-                            <input type="checkbox" name="accepter" class="form-check-input">
+                            <input type="checkbox" id="accept" name="accepter" class="form-check-input">
                         </div>
-                    </section>
+                    </div>
 
 
                     <!--£ La section "Envoie du formulaire." -->
-                    <section class="row">
+                    <div class="row">
                         <!--* Le bouton pour envoyer le formulaire. -->
                         <div class="mb-3 envoyer">
                             <button type="submit" class="btn btn-primary">Envoyer</button>
                         </div>
-                    </section>
+                    </div>
 
                 </form>
-            </section>
-        </section>
+            </div>
+        </div>
 
     </main>
 
@@ -623,23 +690,28 @@
     <footer>
 
         <!--: Les droits du site. -->
-        <article class="droit">
+        <div class="droit">
             <p>&copy; 2021 - Yoann Bezard - Tous droits réservés.</p>
-        </article>
+        </div>
 
-        <section>
+        <div>
             <ul class="breadcrumb fin">
 
                 <!--: Les liens des documents légaux -->
                 <li>
                     <a href="mentions_legales.html" target="_blank">Mentions légales</a>
                 </li>
-                <p>  /  </p>
+
+            </ul>
+
+            <ul class="breadcrumb fin">
+
                 <li>
                     <a href="politique_de_confidentialité.html" target="_blank" class="politique">Politique de confidentialité</a>
                 </li>
 
-                </ul>
+            </ul>
+
                 <ul class="breadcrumb rsfin">
 
                 <!--: Les icones des réseaux sociaux. -->
@@ -651,7 +723,7 @@
                 </li>
 
             </ul>
-        </section>
+        </div>
 
     </footer>
 
