@@ -36,6 +36,22 @@ for (var i=0; i < menuLink.length; i++) {
 }
 
 
+//§ La section À propos.
+
+var propos = document.getElementById('propos'); //$ Le titre de la section.
+var cacherPropos = document.getElementById('proposTexte'); //$ Le descriptif de la section.
+var image = document.getElementById('proposImage'); //$ L'image de la section.
+var texte = document.getElementById('proposParagraphe'); //$ Le paragraphe de la section.
+
+//£ Dès que l'utilisateur survole la section à propos j'active ma fonction.
+propos.addEventListener('mouseover', function showPropos() {
+
+    cacherPropos.classList.remove('hidePropos'); //£ J'affiche la section.
+    image.classList.add('proposImg'); //£ Je lance l'animation de l'image.
+    texte.classList.add('proposP'); //£ Je lance l'animation du paragraphe.
+})
+
+
 //§ La section mes passions.
 
 //& La section lecture.
@@ -173,6 +189,72 @@ for (var i=0; i<texte5.length; i++) {
 };
 
 
+//§ La section compétences. 
+
+var competences = document.getElementById('sectionCompetence'); //) La section mes compétences.
+var logo = document.getElementsByClassName('logo-competences'); //) Les images de la section compétence.
+
+//* Les différentes sous-sections d'images.
+var langage = document.getElementsByClassName('langage'); //) Les langages.
+var frameworks = document.getElementsByClassName('frameworks'); //) Les frameworks.
+var cms = document.getElementsByClassName('cms'); //) Les CMS.
+var outils = document.getElementsByClassName('outils'); //) Les outils. 
+
+//) Je lance les animations lorsque l'utilisateur survol la section.
+competences.addEventListener('mouseover', function lancerAnimation() {
+
+    for (var i=0; i < logo.length; i++) {
+        logo[i].classList.remove('hideComptecences');
+    }
+
+    //. La sous-section langage.
+    for (var i=0; i < langage.length; i++) {
+        langage[i].classList.add('animationLanguages');
+    }
+
+    //. La sous-section frameworks.
+    for (var i=0; i < frameworks.length; i++) {
+        frameworks[i].classList.add('animationFrameworks');
+    }
+
+    //. La sous-section CMS.
+    for (var i=0; i < cms.length; i++) {
+        cms[i].classList.add('animationCms');
+    }
+
+    //. La sous-section outils.
+    for (var i=0; i < outils.length; i++) {
+        outils[i].classList.add('animationOutils');
+    }
+})
+
+
+
+//) Lorsque l'utilisateur quitte la section j'enlève les classes de l'animation afin de les relancer s'il y revient.
+competences.addEventListener('mouseout', function resetAnimation() {
+
+    //. La sous-section langage.
+    for (var i=0; i < langage.length; i++) {
+        langage[i].classList.remove('animationLanguages');
+    }
+
+    //. La sous-section frameworks.
+    for (var i=0; i < frameworks.length; i++) {
+        frameworks[i].classList.remove('animationFrameworks');
+    }
+
+    //. La sous-section CMS.
+    for (var i=0; i < cms.length; i++) {
+        cms[i].classList.remove('animationCms');
+    }
+
+    //. La sous-section outils.
+    for (var i=0; i < outils.length; i++) {
+        outils[i].classList.remove('animationOutils');
+    }
+})
+
+
 //§ La section portfolio.
 
 var carte = document.getElementsByClassName('cartePortfolio'); //; Toutes les cartes. 
@@ -288,4 +370,31 @@ btnWp.addEventListener('click', function cacheEtMontreWp() {
         }
     }
     btnWp.classList.add('actif');
+})
+
+
+//§ La section contact.
+
+var titreC = document.getElementById('titreContact'); /// Le titre de la section contact.
+var showF = document.getElementById('formulaire'); /// Je vais cherché la classe hide du formulaire.
+var droite = document.getElementsByClassName('droite'); /// Les éléments sur la droite.
+var gauche = document.getElementsByClassName('gauche'); /// Les éléments sur la gauche.
+var bas = document.getElementsByClassName('bas'); /// Les éléments en bas.
+
+titreC.addEventListener('mouseover', function showFormulaire() {
+
+    //. J'affiche le formulaire.
+    showF.classList.remove('hideContact');
+
+    for (var i=0; i < droite.length; i++) {
+        droite[i].classList.add('slideDroite');
+    }
+
+    for (var i=0; i < gauche.length; i++) {
+        gauche[i].classList.add('slideGauche');
+    }
+
+    for (var i=0; i < bas.length; i++) {
+        bas[i].classList.add('slideBas');
+    }
 })
