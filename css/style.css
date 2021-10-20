@@ -290,9 +290,35 @@ h1 {
 }
 
 /*% Le petit trait qui sépare les deux titres. */
-.ligneAcceuil {
+#acceuil hr {
     width: 60vh;
     border: 1px solid ghostwhite;
+}
+
+/*% Je stylise le curseur au survol du titre. */
+#moi:hover {
+    cursor: cell;
+}
+
+/*. L'animations. */
+
+#moi {
+    animation-duration: 3.5s;
+    animation-name: pop-up;
+    text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 black, 0 7px 0 black, 0 8px 0 black, 0 9px 0 black, 0 50px 30px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pop-up {
+    0% {
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        transform: translateY(-50px);
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 black, 0 7px 0 black, 0 8px 0 black, 0 9px 0 black, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
 }
 
 
@@ -323,6 +349,82 @@ h1 {
     z-index: 5;
 }
 
+/*+ Je change le curseur pour montré qu'une animation est à attendre. */
+#titrePropos:hover {
+    cursor: wait;
+}
+
+/*+ Je cache la section avant l'arrivée de l'utilisateur. */
+.hidePropos {
+    display: none;
+}
+
+/*+ Les animations. */
+
+/*, L'image qui va rebondir. */
+.proposImg {
+    animation-duration: 4s;
+    animation-name: bounce-in;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        transform: scale(0.7);
+        animation-timing-function: ease-in;
+    }
+    72% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    81% {
+        transform: scale(0.84);
+        animation-timing-function: ease-in;
+    }
+    89% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    95% {
+        transform: scale(0.95);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+/*, Le texte qui va s'étendre. */
+.proposP {
+    animation-duration: 4s;
+    animation-name: apparition;
+}
+
+@keyframes apparition {
+    0% {
+        letter-spacing: -0.5em;
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
 
 /*, La première transition : Les loisirs. */
 
@@ -335,6 +437,32 @@ h1 {
 
 
 /*, La section Mes passions. */
+
+/*$ Je modifie les curseurs de la section. */
+
+/*£ Je modifie le curseur pour indiquer les zones sur lesquelles il est possible d'appuyer pour activer les hide and show. */
+.pointeur:hover {
+    cursor: pointer;
+}
+
+/*£ Je modifie le curseur de la section lecture pour indiquer qu'un alias apparaît lors du survol. */
+#book:hover {
+    cursor: alias;
+}
+
+#moncarrousel:hover {
+    cursor: move;
+}
+
+/*£ Le curseur de la section jeux vidéo va devenir un pointeur de FPS. */
+#JV:hover {
+    cursor: crosshair;
+}
+
+/*£ Il n'y a rien à faire sur la zone de la science-fiction et du fantastique, le curseur va donc disparaître. */
+#SFF:hover {
+    cursor: none;
+}
 
 /*$ Le hide and show de la section mes passions. */
 .hide {
@@ -391,6 +519,86 @@ text-align: center;
 /*? Je centre les logos. */
 .centré {
     text-align: center;
+}
+
+/*? J'anime mes logos. */
+
+/*= J'anime les languages */
+.animationLanguages {
+    animation-duration: 3s;
+    animation-name: languages;
+}
+
+@keyframes languages {
+    0% {
+        transform: translateY(-800px) rotate(-720deg);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+/*= J'anime les frameworks. */
+.animationFrameworks {
+    animation-duration: 3s;
+    animation-name: frameworks;
+}
+
+@keyframes frameworks {
+    0% {
+        transform: translateX(-1000px) rotate(-720deg);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+/*= J'anime les CMS. */
+.animationCms {
+    animation-duration: 3s;
+    animation-name: CMS;
+}
+
+
+@keyframes CMS {
+    0% {
+        transform: translateX(1000px) rotate(720deg);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+/*= J'anime les outils. */
+.animationOutils {
+    animation-duration: 3s;
+    animation-name: outils;
+} 
+
+
+@keyframes outils {
+    0% {
+        transform: translateY(800px) rotate(720deg);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
 }
 
 
@@ -505,6 +713,22 @@ text-align: center;
     font-size: 2vh;
 }
 
+/*+ L'animation à lancé lors de la sélection d'une catégorie. */
+.animationPf {
+    animation-duration: 3s;
+    animation-name: rotation;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
 /*, La quatrième transition : L'informatique. */
 
 /*. J'applique une image en fond pour le parallax. */
@@ -526,6 +750,70 @@ text-align: center;
 .obligatoire {
     color: white;
 }
+
+/*? Je change le curseur pour montré qu'une animation est à attendre. */
+#titreContact:hover {
+    cursor: wait;
+}
+
+/*? Je cache la section avant l'arrivée de l'utilisateur. */
+.hideContact {
+    display: none;
+}
+
+/*? Les animations. */
+
+/*. L'arrivée depuis la gauche. */
+.slideDroite {
+    animation-duration: 3s;
+    animation-name: slide-gauche;
+}
+
+@keyframes slide-gauche {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*. L'arrivée depuis la droite. */
+.slideGauche {
+    animation-duration: 3s;
+    animation-name: slide-droite;
+}
+
+@keyframes slide-droite {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*. L'arrivée depuis le bas. */
+.slideBas {
+    animation-duration: 3s;
+    animation-name: slide-bas;
+}
+
+@keyframes slide-bas {
+    0% {
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 /*, Le footer. */
 
@@ -608,7 +896,7 @@ footer p {
     #acceuil h2 {
         font-size: 6.3vh;
     }
-    .ligneAcceuil {
+    #acceuil hr {
         width: 75vw;
     }
     p, a {
