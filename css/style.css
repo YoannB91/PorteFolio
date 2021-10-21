@@ -296,13 +296,21 @@ h1 {
 }
 
 /*% Je stylise le curseur au survol du titre. */
+<<<<<<< HEAD
 #acceuil:hover {
+=======
+#moi:hover {
+>>>>>>> 48da2ea8d3d5ac316a0b3a3e3cb94c27ebb2083f
     cursor: cell;
 }
 
 /*. L'animations. */
 
+<<<<<<< HEAD
 #acceuil {
+=======
+#moi {
+>>>>>>> 48da2ea8d3d5ac316a0b3a3e3cb94c27ebb2083f
     animation-duration: 3.5s;
     animation-name: pop-up;
     text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 black, 0 7px 0 black, 0 8px 0 black, 0 9px 0 black, 0 50px 30px rgba(0, 0, 0, 0.3);
@@ -521,11 +529,14 @@ text-align: center;
     text-align: center;
 }
 
+<<<<<<< HEAD
 /*? Je cache les images avant le premier lancement de l'animation. */
 .hideComptecences {
     display: none;
 }
 
+=======
+>>>>>>> 48da2ea8d3d5ac316a0b3a3e3cb94c27ebb2083f
 /*? J'anime mes logos. */
 
 /*= J'anime les languages */
