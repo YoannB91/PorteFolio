@@ -39,22 +39,14 @@ for (var i=0; i < menuLink.length; i++) {
 //§ La section À propos.
 
 var propos = document.getElementById('propos'); //$ Le titre de la section.
-<<<<<<< HEAD
 var cacherPropos = document.getElementById('proposTexte'); //$ Le descriptif de la section.
-=======
-var cacher = document.getElementById('proposTexte'); //$ Le descriptif de la section.
->>>>>>> 48da2ea8d3d5ac316a0b3a3e3cb94c27ebb2083f
 var image = document.getElementById('proposImage'); //$ L'image de la section.
 var texte = document.getElementById('proposParagraphe'); //$ Le paragraphe de la section.
 
 //£ Dès que l'utilisateur survole la section à propos j'active ma fonction.
 propos.addEventListener('mouseover', function showPropos() {
 
-<<<<<<< HEAD
     cacherPropos.classList.remove('hidePropos'); //£ J'affiche la section.
-=======
-    cacher.classList.remove('hidePropos'); //£ J'affiche la section.
->>>>>>> 48da2ea8d3d5ac316a0b3a3e3cb94c27ebb2083f
     image.classList.add('proposImg'); //£ Je lance l'animation de l'image.
     texte.classList.add('proposP'); //£ Je lance l'animation du paragraphe.
 })
@@ -211,13 +203,10 @@ var outils = document.getElementsByClassName('outils'); //) Les outils.
 //) Je lance les animations lorsque l'utilisateur survol la section.
 competences.addEventListener('mouseover', function lancerAnimation() {
 
-<<<<<<< HEAD
     for (var i=0; i < logo.length; i++) {
         logo[i].classList.remove('hideComptecences');
     }
 
-=======
->>>>>>> 48da2ea8d3d5ac316a0b3a3e3cb94c27ebb2083f
     //. La sous-section langage.
     for (var i=0; i < langage.length; i++) {
         langage[i].classList.add('animationLanguages');
