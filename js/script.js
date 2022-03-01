@@ -1,400 +1,461 @@
-//§ La barre de naviguation.
+/*
+: ************************************************************************************************************
+                                    % La section "À propos".
+: ************************************************************************************************************
+*/
 
-//: Le clic sur l'icone du menu burger ouvre le menu vertical.
-var ham = document.getElementsByClassName('ham');
-var cacher = document.getElementsByClassName('cacher');
+/*
+. --------------------------------------------------------------------------------
+                                £ Définitions des variables.
+. --------------------------------------------------------------------------------
+*/
 
-ham[0].addEventListener('click', function show() {
-    for (var i = 0; i < cacher.length; i++) {
-        if (cacher[i].classList.contains('hide2')) {
-            cacher[i].classList.replace('hide2', 'show2');
-        }
-    };
-});
+//. --------------------Le titre de la section.--------------------
+var titreAPropos = document.getElementById('propos');
 
-//: Le clic sur l'icone X ferme le menu vertical.
-var x = document.getElementsByClassName('menuX');
+//. --------------------Le descriptif de la section.--------------------
+var AfficherAPropos = document.getElementById('proposTexte'); 
 
-x[0].addEventListener('click', function hide() {
-    for (var i = 0; i < cacher.length; i++) {
-        if (cacher[i].classList.contains('show2')) {
-            cacher[i].classList.replace('show2', 'hide2');
-        }
-    }
-});
+//. --------------------L'image principal de la section.--------------------
+var imageAPropos = document.getElementById('proposImage');
 
-//: Le clic sur l'un des liens du menu vertical le ferme.
-var menuLink = document.getElementsByClassName('menuLink');
+//. --------------------Le paragraphe de la section.--------------------
+var texteAPropos = document.getElementById('proposParagraphe');
 
-for (var i=0; i < menuLink.length; i++) {
-    menuLink[i].addEventListener('click', function hide() {
-        for (var r=0; r < cacher.length; r++) {
-        if (cacher[r].classList.contains('show2')) {
-            cacher[r].classList.replace('show2', 'hide2');
-        }}
-    })
-}
+/*
+. --------------------------------------------------------------------------------
+                                £ Au survol de la section "À propos".
+. --------------------------------------------------------------------------------
+*/
 
+//$ --------------------Le lancement des animations.--------------------
 
-//§ La section À propos.
-
-var propos = document.getElementById('propos'); //$ Le titre de la section.
-var cacherPropos = document.getElementById('proposTexte'); //$ Le descriptif de la section.
-var image = document.getElementById('proposImage'); //$ L'image de la section.
-var texte = document.getElementById('proposParagraphe'); //$ Le paragraphe de la section.
-
-//£ Dès que l'utilisateur survole la section à propos j'active ma fonction.
-propos.addEventListener('mouseover', function showPropos() {
-
-    cacherPropos.classList.remove('hidePropos'); //£ J'affiche la section.
-    image.classList.add('proposImg'); //£ Je lance l'animation de l'image.
-    texte.classList.add('proposP'); //£ Je lance l'animation du paragraphe.
+titreAPropos.addEventListener('mouseover', function showPropos() {
+    AfficherAPropos.classList.remove('hidePropos');
+    imageAPropos.classList.add('proposImg');
+    texteAPropos.classList.add('proposP');
 })
 
+/*
+: ************************************************************************************************************
+                                    % La section "Mes passions".
+: ************************************************************************************************************
+*/
 
-//§ La section mes passions.
+/*
+. --------------------------------------------------------------------------------
+                                £ Le hide and show.
+. --------------------------------------------------------------------------------
+*/
 
-//& La section lecture.
-var livre = document.getElementById('book');
+//§ La fonction qui va me permettre d'afficher ou de cacher les textes sous les sous-sections de la section "Mes passions".
+function hideAndShowPassions(titreSousSection, texteSousSection) {
+    //= Au click sur le titre du paragraphe de la sous-section.
+    titreSousSection.addEventListener('click', function hideAndShow() {
+        for (var i=0; i < texteSousSection.length; i++) {
+            //= La fonction qui va faire apparaître mon texte du site.
+            if (texteSousSection[i].classList.contains('hide')) {
+                texteSousSection[i].classList.replace('hide', 'show');
+            }
+            //= La fonction qui va faire disparaître mon texte du site.
+            else if (texteSousSection[i].classList.contains('show')) {
+                texteSousSection[i].classList.replace('show', 'hide');
+            }
+        }
+    })
+};
 
-//, Je vais créer une fonction pour changer d'image lorsque la souris de l'utilisateur passe dessus.
-livre.addEventListener('mouseover', function survolLecture() {
-    livre.src = 'img/passions/livres/library.jpg'
-    livre.setAttribute("title", "Une bibliothèque dans les nuages.")
-    livre.setAttribute("alt", "Une bibliothèque à ciel ouvert qui laisse les nuages la pénétrer afin de créer une légère couche de fumée. L’on peut voir le soleil percer le ciel au-dessus de la bibliothèque, et des oiseaux voltiger au-dessus de ces livres qui font voyager notre imaginaire à l’aide chacune de leurs pages.")
+/*
+. --------------------------------------------------------------------------------
+                                £ La sous-section "Lecture".
+. --------------------------------------------------------------------------------
+*/
+
+//$ ------------------------------Les variables.------------------------------
+
+//. --------------------L'image de la sous-section "Lecture".--------------------
+var imageSectionLecture = document.getElementById('imageSectionLecture');
+
+//. --------------------Le titre du texte de la sous-section "Lecture".--------------------
+var titreTexteSousSectionLecture = document.getElementById('titreTexteSousSectionLecture');
+
+//. --------------------Le texte de la sous-section "Lecture".--------------------
+var texteSousSectionLecture = document.getElementsByClassName('texteSousSectionLecture');
+
+//$ ------------------------------Les fonctions.------------------------------
+
+//§ L'image change lorsque la souris de l'utilisateur vient sur l'image de la sous-section "Lecture".
+imageSectionLecture.addEventListener('mouseover', function survolLecture() {
+    imageSectionLecture.src = 'img/passions/livres/library.jpg'
+    imageSectionLecture.setAttribute("title", "Une bibliothèque dans les nuages.")
+    imageSectionLecture.setAttribute("alt", "Une bibliothèque à ciel ouvert qui laisse les nuages la pénétrer afin de créer une légère couche de fumée. L’on peut voir le soleil percer le ciel au-dessus de la bibliothèque, et des oiseaux voltiger au-dessus de ces livres qui font voyager notre imaginaire à l’aide chacune de leurs pages.")
 });
 
-//, Puis remettre mon image quand la souris repart.
-livre.addEventListener('mouseout', function retourLecture() {
-    livre.src = 'img/passions/livres/livre.jpg'
-    livre.setAttribute("title", "Un livre qui vous emmènera dans un monde féérique.")
-    livre.setAttribute("alt", "Un escalier qui mène à la page gauche d’un livre, et sur laquelle nous pouvons voir une femme en blanc se protégeant du soleil à l’aide d’un parapluie. Il y a sur la page de droite une jeune fille qui fait de la balançoire sur un arbre rose. L’on peut aussi apercevoir un pic à tête rouge qui s'apprête à se poser sur l’arbre.")
+//§ L'image de base revient lorsque la souris de l'utilisateur quitte la sous-section "Lecture".
+imageSectionLecture.addEventListener('mouseout', function retourLecture() {
+    imageSectionLecture.src = 'img/passions/livres/livre.jpg'
+    imageSectionLecture.setAttribute("title", "Un livre qui vous emmènera dans un monde féerique.")
+    imageSectionLecture.setAttribute("alt", "Un escalier qui mène à la page gauche d’un livre, et sur laquelle nous pouvons voir une femme en blanc se protégeant du soleil à l’aide d’un parapluie. Il y a sur la page de droite une jeune fille qui fait de la balançoire sur un arbre rose. L’on peut aussi apercevoir un pic à tête rouge qui s'apprête à se poser sur l’arbre.")
 });
 
-//& La section jeux vidéo.
-var jv = document.getElementById('JV');
+//§ La boucle qui affiche ou cache le texte sous la sous-section "Lecture".
+hideAndShowPassions(titreTexteSousSectionLecture, texteSousSectionLecture);
 
-//$ L'image sera différente à chaque clic grâce à cette fonction.
-jv.addEventListener('click', function cliqueSwitchImage(){
-    var sourceJV = jv.getAttribute('src');
-    switch (sourceJV){
-        case 'img/passions/jv/switch.jpg':
-            jv.src = 'img/passions/jv/joycon.jpg';
-            jv.setAttribute("title", "Des joy-cons, espéront qu'ils ne vont pas drifter...");
-            jv.setAttribute("alt", "Une paire de joy-cons rouges (de la série mario odyssey) sont placés dans une poignée de confort bleu. Le tout est une référence au célèbre plombier italien de Nintendo, Mario Bros.");
+/*
+. --------------------------------------------------------------------------------
+                                £ La sous-section "Musique".
+. --------------------------------------------------------------------------------
+*/
+
+//$ ------------------------------Les variables.------------------------------
+
+//. --------------------Le titre du texte de la sous-section "Musique".--------------------
+var titreTexteSousSectionMusique = document.getElementById('titreTexteSousSectionMusique');
+
+//. --------------------Le texte de la sous-section "Musique".--------------------
+var texteSousSectionMusique = document.getElementsByClassName('texteSousSectionMusique');
+
+//§ La boucle qui affiche ou cache le texte sous la sous-section "Musique".
+hideAndShowPassions(titreTexteSousSectionMusique, texteSousSectionMusique);
+
+/*
+. --------------------------------------------------------------------------------
+                                £ La sous-section "Jeux vidéo".
+. --------------------------------------------------------------------------------
+*/
+
+//$ ------------------------------Les variables.------------------------------
+
+//. --------------------L'image de la sous-section "Jeux vidéo".--------------------
+var imageSectionJeuxVideo = document.getElementById('imageSectionJeuxVideo');
+
+//. --------------------Le titre du texte de la sous-section "Jeux vidéo".--------------------
+var titreTexteSousSectionJeuxVideo = document.getElementById('titreTexteSousSectionJeuxVideo');
+
+//. --------------------Le texte de la sous-section "Jeux vidéo".--------------------
+var texteSousSectionJeuxVideo = document.getElementsByClassName('texteSousSectionJeuxVideo');
+
+//$ ------------------------------Les fonctions.------------------------------
+
+imageSectionJeuxVideo.addEventListener('click', function cliqueSwitchImage(){
+
+    //§ Vérification de l'image présente actuellement à l'écran.
+    var sourceImageSectionJeuxVideo = imageSectionJeuxVideo.getAttribute('src');
+
+    //§ La fonction switch qui va déterminer qu'elle image afficher à chaque click.
+    switch (sourceImageSectionJeuxVideo){
+
+        //? Si l'image présente est celle de la switch.
+        case 'img/passions/jv/switch.jpg' :
+            imageSectionJeuxVideo.src = 'img/passions/jv/joycon.jpg';
+            imageSectionJeuxVideo.setAttribute("title", "Des joy-cons, espérons qu'ils ne vont pas drifter...");
+            imageSectionJeuxVideo.setAttribute("alt", "Une paire de joy-cons rouges (de la série mario odyssey) sont placés dans une poignée de confort bleu. Le tout est une référence au célèbre plombier italien de Nintendo, Mario Bros.");
             break;
-        case 'img/passions/jv/joycon.jpg':
-            jv.src = 'img/passions/jv/dualshock-4.jpg';
-            jv.setAttribute("title", "Deux dualshock 4, elles fonctionnent un peu mieux et ont moins de problèmes.");
-            jv.setAttribute("alt", "Une dualshock 4 noire est posé en biais sur la gauche d’une image ayant un fond blanc. Elle est accolé à une seconde dualshock 4, elle de couleur blanche, et leurs associations forment une forme de P (en référence à Playstation).");
+
+        //? Si l'image présente est celle des joy-cons.
+        case 'img/passions/jv/joycon.jpg' :
+            imageSectionJeuxVideo.src = 'img/passions/jv/dualshock-4.jpg';
+            imageSectionJeuxVideo.setAttribute("title", "Deux dualshock 4, elles fonctionnent un peu mieux et ont moins de problèmes.");
+            imageSectionJeuxVideo.setAttribute("alt", "Une dualshock 4 noire est posé en biais sur la gauche d’une image ayant un fond blanc. Elle est accolé à une seconde dualshock 4, elle de couleur blanche, et leurs associations forment une forme de P (en référence à Playstation).");
             break;
-        case 'img/passions/jv/dualshock-4.jpg':
-            jv.src = 'img/passions/jv/playstation-4.jpg';
-            jv.setAttribute("title", "Une playstation 4, elle est plus performante mais n'apporte aucune innovation.");
-            jv.setAttribute("alt", "Une dualshock 4 noire est posé contre une playstation 4 noire sur un fond blanc.");
+
+        //? Si l'image présente est celle des dualshocks 4.
+        case 'img/passions/jv/dualshock-4.jpg' :
+            imageSectionJeuxVideo.src = 'img/passions/jv/playstation-4.jpg';
+            imageSectionJeuxVideo.setAttribute("title", "Une playstation 4, elle est plus performante mais n'apporte aucune innovation.");
+            imageSectionJeuxVideo.setAttribute("alt", "Une dualshock 4 noire est posé contre une playstation 4 noire sur un fond blanc.");
             break;
-        case 'img/passions/jv/playstation-4.jpg':
-            jv.src = 'img/passions/jv/switch.jpg';
-            jv.setAttribute("title", "Une switch, une console de salon utilisable en console portable, du pur génie nippon.");
-            jv.setAttribute("alt", "Une console Nintendo Switch. Elle est représentée en mode portable sur un fond de couleur purple; avec son joy-con bleu à gauche et son joy-con rouge à droite. Son écran est éteint.");
+
+        //? Si l'image présente est celle de la playstation 4.
+        case 'img/passions/jv/playstation-4.jpg' :
+            imageSectionJeuxVideo.src = 'img/passions/jv/switch.jpg';
+            imageSectionJeuxVideo.setAttribute("title", "Une switch, une console de salon utilisable en console portable, du pur génie nippon.");
+            imageSectionJeuxVideo.setAttribute("alt", "Une console Nintendo Switch. Elle est représentée en mode portable sur un fond de couleur purple; avec son joy-con bleu à gauche et son joy-con rouge à droite. Son écran est éteint.");
+            break;
+
+        //? Par défaut je remet l'image de la switch, qui est celle qui apparaît en première dans la boucle.
+        default :
+            imageSectionJeuxVideo.src = 'img/passions/jv/switch.jpg';
+            imageSectionJeuxVideo.setAttribute("title", "Une switch, une console de salon utilisable en console portable, du pur génie nippon.");
+            imageSectionJeuxVideo.setAttribute("alt", "Une console Nintendo Switch. Elle est représentée en mode portable sur un fond de couleur purple; avec son joy-con bleu à gauche et son joy-con rouge à droite. Son écran est éteint.");
             break;
     }
 });
 
-//& La section science-fiction et fantastique.
+//§ La boucle qui affiche ou cache le texte sous la sous-section "Jeux vidéo".
+hideAndShowPassions(titreTexteSousSectionJeuxVideo, texteSousSectionJeuxVideo);
 
-//$ Je vais créer un carousel qui change d'image automatiquement.
-var img = 0;
+/*
+. --------------------------------------------------------------------------------
+                        £ La sous-section "science-fiction et fantastique".
+. --------------------------------------------------------------------------------
+*/
 
-function f(){
-    img += 1;
-    var monImage = document.getElementById('SFF');
-    monImage.setAttribute('src', 'img/passions/sff/' + img + '.jpg');
-    if(img == 10){
-        img = 1;
-        monImage.setAttribute('src', 'img/passions/sff/' + img + '.jpg');
-    };
+//$ ------------------------------Les variables.------------------------------
+
+//. --------------------Numéro de l'image à afficher.--------------------
+var imgSFF = 0;
+
+//. --------------------L'image de la sous-section "science-fiction et fantastique".--------------------
+var monImage = document.getElementById('imageSectionSFF');
+
+//. --------------------Définition de l'intervalles de temps entre chaque changement d'image ( en ms ).--------------------
+var timer = window.setInterval("changeImageSFF()", 5000);
+
+//. --------------------Le titre du texte de la sous-section "science-fiction et fantastique".--------------------
+var titreTexteSousSectionSFF = document.getElementById('titreTexteSousSectionSFF');
+
+//. --------------------Le texte de la sous-section "science-fiction et fantastique".--------------------
+var texteSousSectionSFF = document.getElementsByClassName('texteSousSectionSFF');
+
+//$ ------------------------------Les fonctions.------------------------------
+
+//§ Le carousel de la sous-section "science-fiction et fantastique" va automatiquement changer d'image.
+function changeImageSFF() {
+    //? Le nombre d'image maximum que j'ai dans ma banque d'image, s'il est atteint alors je reprends à 0.
+    if (imgSFF == 9) {
+        imgSFF = 0;
+    }
+
+    //? J'ajoute 1 afin de passer à l'image suivante.
+    imgSFF +=1;
+
+    //? Je remplace l'ancienne image par la nouvelle
+    monImage.setAttribute('src', 'img/passions/sff/' + imgSFF + '.jpg');
 }
 
-var timer = window.setInterval("f()", 3000); 
+//§ La boucle qui affiche ou cache le texte sous la sous-section "science-fiction et fantastique".
+hideAndShowPassions(titreTexteSousSectionSFF, texteSousSectionSFF);
 
-/// Les hide and show des textes sous les images de la section mes passions.
+/*
+: ************************************************************************************************************
+                                    % La section "Mes compétences de développeur".
+: ************************************************************************************************************
+*/
 
-//£ La section lecture.
-var texte2 = document.getElementsByClassName('hideOrShow2');
-var cacher2 = document.getElementsByClassName('cacher2');
+/*
+. --------------------------------------------------------------------------------
+                                £ Définitions des variables.
+. --------------------------------------------------------------------------------
+*/
 
-for (var i=0; i<texte2.length; i++) {
-    texte2[i].addEventListener('click', function hideAndShow() {
-        for (var i = 0; i < cacher2.length; i++) {
-            if (cacher2[i].classList.contains('hide')) {
-                cacher2[i].classList.replace('hide', 'show');
-            } else {
-                cacher2[i].classList.contains('show');
-                cacher2[i].classList.replace('show', 'hide');
-            };
-        };
-    });
-};
+//. --------------------La section "Mes compétences de développeur".--------------------
+var sectionCompetences = document.getElementById('sectionCompetence');
 
-//£ La section musique.
-var texte3 = document.getElementsByClassName('hideOrShow3');
-var cacher3 = document.getElementsByClassName('cacher3');
-
-for (var i=0; i<texte3.length; i++) {
-    texte3[i].addEventListener('click', function hideAndShow() {
-        for (var i = 0; i < cacher3.length; i++) {
-            if (cacher3[i].classList.contains('hide')) {
-                cacher3[i].classList.replace('hide', 'show');
-            } else {
-                cacher3[i].classList.contains('show');
-                cacher3[i].classList.replace('show', 'hide');
-            };
-        };
-    });
-};
-
-//£ La section jeux vidéo.
-var texte4 = document.getElementsByClassName('hideOrShow4');
-var cacher4 = document.getElementsByClassName('cacher4');
-
-for (var i=0; i<texte4.length; i++) {
-    texte4[i].addEventListener('click', function hideAndShow() {
-        for (var i = 0; i < cacher4.length; i++) {
-            if (cacher4[i].classList.contains('hide')) {
-                cacher4[i].classList.replace('hide', 'show');
-            } else {
-                cacher4[i].classList.contains('show');
-                cacher4[i].classList.replace('show', 'hide');
-            };
-        };
-    });
-};
-
-//£ La section science-fiction et fantastique.
-var texte5 = document.getElementsByClassName('hideOrShow5');
-var cacher5 = document.getElementsByClassName('cacher5');
-
-for (var i=0; i<texte5.length; i++) {
-    texte5[i].addEventListener('click', function hideAndShow() {
-        for (var i = 0; i < cacher5.length; i++) {
-            if (cacher5[i].classList.contains('hide')) {
-                cacher5[i].classList.replace('hide', 'show');
-            } else {
-                cacher5[i].classList.contains('show');
-                cacher5[i].classList.replace('show', 'hide');
-            };
-        };
-    });
-};
-
-
-//§ La section compétences. 
-
-var competences = document.getElementById('sectionCompetence'); //) La section mes compétences.
+//. --------------------Les logos de la section "Mes compétences de développeur".--------------------
 var logo = document.getElementsByClassName('logo-competences'); //) Les images de la section compétence.
 
-//* Les différentes sous-sections d'images.
-var langage = document.getElementsByClassName('langage'); //) Les langages.
-var frameworks = document.getElementsByClassName('frameworks'); //) Les frameworks.
-var cms = document.getElementsByClassName('cms'); //) Les CMS.
-var outils = document.getElementsByClassName('outils'); //) Les outils. 
+//$ ------------------------------Les sous-classes d'images.------------------------------
 
-//) Je lance les animations lorsque l'utilisateur survol la section.
-competences.addEventListener('mouseover', function lancerAnimation() {
+//. --------------------Les langages.--------------------
+var langage = document.getElementsByClassName('langage');
+
+//. --------------------Les frameworks.--------------------
+var frameworks = document.getElementsByClassName('frameworks');
+
+//. --------------------Les CMS.--------------------
+var cms = document.getElementsByClassName('cms');
+
+//. --------------------Les outils.--------------------
+var outils = document.getElementsByClassName('outils');
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Les fonctions.
+. --------------------------------------------------------------------------------
+*/
+
+//§ La fonction qui va ajouter les animations à mes logos.
+function animeLogoCompetences(logoCompetence, animationLogoCompetences) {
+    for (var i=0; i < logoCompetence.length; i++) {
+        logoCompetence[i].classList.add(animationLogoCompetences);
+    }
+}
+
+//§ Lancement des animations au survol de la souris de l'utilisateur.
+sectionCompetences.addEventListener('mouseover', function lancerAnimation() {
 
     for (var i=0; i < logo.length; i++) {
-        logo[i].classList.remove('hideComptecences');
+        logo[i].classList.remove('hideCompetences');
     }
 
-    //. La sous-section langage.
-    for (var i=0; i < langage.length; i++) {
-        langage[i].classList.add('animationLanguages');
-    }
+    //. --------------------La sous-section "langage".--------------------
+    animeLogoCompetences(langage, 'animationLanguages');
 
-    //. La sous-section frameworks.
-    for (var i=0; i < frameworks.length; i++) {
-        frameworks[i].classList.add('animationFrameworks');
-    }
+    //. --------------------La sous-section "frameworks".--------------------
+    animeLogoCompetences(frameworks, 'animationFrameworks');
 
-    //. La sous-section CMS.
-    for (var i=0; i < cms.length; i++) {
-        cms[i].classList.add('animationCms');
-    }
+    //. --------------------La sous-section "CMS".--------------------
+    animeLogoCompetences(cms, 'animationCms');
 
-    //. La sous-section outils.
-    for (var i=0; i < outils.length; i++) {
-        outils[i].classList.add('animationOutils');
-    }
+    //. --------------------La sous-section "outils".--------------------
+    animeLogoCompetences(outils, 'animationOutils');
 })
 
+/*
+: ************************************************************************************************************
+                                    % La section "Mon portfolio".
+: ************************************************************************************************************
+*/
 
+/*
+. --------------------------------------------------------------------------------
+                                £ Définitions des variables.
+. --------------------------------------------------------------------------------
+*/
 
-//) Lorsque l'utilisateur quitte la section j'enlève les classes de l'animation afin de les relancer s'il y revient.
-competences.addEventListener('mouseout', function resetAnimation() {
+//. --------------------Les cartes de la section.--------------------
+var cartesPortfolio = document.getElementsByClassName('cartePortfolio');
 
-    //. La sous-section langage.
-    for (var i=0; i < langage.length; i++) {
-        langage[i].classList.remove('animationLanguages');
-    }
+//. --------------------La section "Mes compétences de développeur".--------------------
+var filtreCartePortfolio = document.getElementsByClassName('filtreCartePortfolioCartePortfolio');
 
-    //. La sous-section frameworks.
-    for (var i=0; i < frameworks.length; i++) {
-        frameworks[i].classList.remove('animationFrameworks');
-    }
+//$ ------------------------------Les boutons.------------------------------
 
-    //. La sous-section CMS.
-    for (var i=0; i < cms.length; i++) {
-        cms[i].classList.remove('animationCms');
-    }
+//. --------------------Tout les boutons de la section.--------------------
+var boutonSelectionCategorie = document.getElementsByClassName('boutonSelectionCategorie');
 
-    //. La sous-section outils.
-    for (var i=0; i < outils.length; i++) {
-        outils[i].classList.remove('animationOutils');
-    }
-})
+//. --------------------Le bouton pour afficher tout les projets.--------------------
+var all = document.getElementById('btnAll');
 
+//. --------------------Le bouton pour afficher les projets utilisant le HTML5 et le CSS3.--------------------
+var btnHtml = document.getElementById('btnHtml');
 
-//§ La section portfolio.
+//. --------------------Le bouton pour afficher les projets utilisant Bootstrap5.--------------------
+var btnBt = document.getElementById('btnBt');
 
-var carte = document.getElementsByClassName('cartePortfolio'); //; Toutes les cartes. 
-var filtre = document.getElementsByClassName('filtre'); //; Cacher des cartes.
-var bouton = document.getElementsByClassName('bouton'); //; Les boutons de sélection.
+//. --------------------Le bouton pour afficher les projets utilisant le PHP.--------------------
+var btnPhp = document.getElementById('btnPhp');
 
+//. --------------------Le bouton pour afficher les projets utilisant wordpress.--------------------
+var btnWp = document.getElementById('btnWp');
 
-//? Si l'utilisateur veut voir tout les projets.
+//$ ------------------------------Les différents langages.------------------------------
 
-var all = document.getElementById('btnAll'); //; Le bouton pour tout voir.
+//. --------------------Les projets utilisant le HTML5 et le CSS3.--------------------
+var html = document.getElementsByClassName('html');
 
+//. --------------------Les projets utilisant bootstraps5.--------------------
+var bootstrap = document.getElementsByClassName('bootstrap');
+
+//. --------------------Les projets utilisant le PHP.--------------------
+var php = document.getElementsByClassName('php');
+
+//. --------------------Les projets utilisant wordpress.--------------------
+var wordpress = document.getElementsByClassName('wordpress');
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Les fonctions.
+. --------------------------------------------------------------------------------
+*/
+
+//§ Si l'utilisateur souhaite voir tout mes projets.
 all.addEventListener('click', function cacheEtMontre() {
-    for (var i=0; i < carte.length; i++) {
-        if (carte[i].classList.contains('filtre')) {
-            carte[i].classList.remove('filtre');
-        }
+
+    //= Je montre toutes les cartes de la section "Mon portfolio".
+    for (var i=0; i < cartesPortfolio.length; i++) {
+        cartesPortfolio[i].classList.remove('filtreCartePortfolio');
     }
-    for (var i=0; i < bouton.length; i++) {
-        if (bouton[i].classList.contains('actif')) {
-            bouton[i].classList.remove('actif');
-        }
+
+    //= J'enlève la classe "actif" de tout les boutons de la section "Mon portfolio".
+    for (var i=0; i < boutonSelectionCategorie.length; i++) {
+        boutonSelectionCategorie[i].classList.remove('actif');
     }
+
+    //= Je change la couleur du bouton "Voir tout mes projets." afin de donner un repère visuel à l'utilisateur.
     all.classList.add('actif');
 })
 
+//§ La fonction générale qui permet de filtrer les cartes de la section "Mon portfolio".
+function filtrerCartePortfolio(boutonCategoriePortfolio, langageCartePortfolio) {
 
-//? Si l'utilsateur veut uniquement voir les projets contenant du HTML5 et du CSS3.
+    //= Je définit le bouton sur lequel le click va avoir lieu.
+    boutonCategoriePortfolio.addEventListener('click', function hideAndShowCartePortfolio() {
 
-var btnHtml = document.getElementById('btnHtml'); //; Le bouton pour voir les projet utilisant le HTML5 et le CSS3.
-var html = document.getElementsByClassName('html'); //; Les projets utilisant le HTML5 et le CSS3.
-
-btnHtml.addEventListener('click', function cacheEtMontreHtml() {
-    for (var i=0; i < carte.length; i++) {
-        carte[i].classList.add('filtre');
-    }
-    for (var i=0; i < html.length; i++) {
-        if (html[i].classList.contains('filtre')) {
-            html[i].classList.remove('filtre');
+        //= Je cache toutes les carte de la section "Mon portfolio".
+        for (var i=0; i < cartesPortfolio.length; i++) {
+            cartesPortfolio[i].classList.add('filtreCartePortfolio')
         }
-    }
-    for (var i=0; i < bouton.length; i++) {
-        if (bouton[i].classList.contains('actif')) {
-            bouton[i].classList.remove('actif');
+
+        //= J'affiche les cartes utilisant le language souhaité par l'utilisateur.
+        for (var i=0; i < langageCartePortfolio.length; i++) {
+            langageCartePortfolio[i].classList.remove('filtreCartePortfolio');
         }
-    }
-    btnHtml.classList.add('actif');
-})
 
-
-//? Si l'utilisateur veut uniquement voir les projets contenant du Bootstrap5.
-
-var btnBt = document.getElementById('btnBt'); //; Le bouton pour voir les projets utilisant Boostrap5.
-var bootstrap = document.getElementsByClassName('bootstrap'); //; Les projets utilisant Bootstrap5.
-
-btnBt.addEventListener('click', function cacheEtMontreBt() {
-    for (var i=0; i < carte.length; i++) {
-        carte[i].classList.add('filtre');
-    }
-    for (var i = 0; i < bootstrap.length; i++) {
-        if (bootstrap[i].classList.contains('filtre')) {
-            bootstrap[i].classList.remove('filtre');
+        //= J'enlève la classe "actif" de tout les boutons de la section "Mon portfolio".
+        for (var i=0; i < boutonSelectionCategorie.length; i++) {
+            boutonSelectionCategorie[i].classList.remove('actif');
         }
+
+        //= Je change la couleur du bouton sur lequel l'utilisateur a cliqué afin de lui donner un repère visuel.
+        boutonCategoriePortfolio.classList.add('actif');
+    })
+}
+
+//? Si l'utilisateur souhaite voir tout mes projets contenant du HTML5 et du CSS3.
+filtrerCartePortfolio(btnHtml, html);
+
+//? Si l'utilisateur souhaite voir tout mes projets contenant du Bootstrap5.
+filtrerCartePortfolio(btnBt, bootstrap);
+
+//? Si l'utilisateur souhaite voir tout mes projets contenant du PHP.
+filtrerCartePortfolio(btnPhp, php);
+
+//? Si l'utilisateur souhaite voir tout mes projets fait avec Wordpress.
+filtrerCartePortfolio(btnWp, wordpress);
+
+/*
+: ************************************************************************************************************
+                                    % La section "Contactez-moi".
+: ************************************************************************************************************
+*/
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Définitions des variables.
+. --------------------------------------------------------------------------------
+*/
+
+//. --------------------Le titre de la section contact.--------------------
+var titreContact = document.getElementById('titreContact');
+
+//. --------------------Le formulaire de contact.--------------------
+var formulaireContact = document.getElementById('formulaireContact');
+
+//. --------------------Les projets utilisant wordpress.--------------------
+var droiteContact = document.getElementsByClassName('droiteContact'); /// Les éléments sur la droite.
+
+//. --------------------Les projets utilisant wordpress.--------------------
+var gaucheContact = document.getElementsByClassName('gaucheContact'); /// Les éléments sur la gauche.
+
+//. --------------------Les projets utilisant wordpress.--------------------
+var basContact = document.getElementsByClassName('basContact'); /// Les éléments en bas.
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Les fonctions.
+. --------------------------------------------------------------------------------
+*/
+
+//§ La fonction générale qui permet d'animer l'arrivé du formulaire.
+function animerFormulaire(direction, directionAnimation) {
+    for (var i=0; i < direction.length; i++) {
+        direction[i].classList.add(directionAnimation);
     }
-    for (var i=0; i < bouton.length; i++) {
-        if (bouton[i].classList.contains('actif')) {
-            bouton[i].classList.remove('actif');
-        }
-    }
-    btnBt.classList.add('actif');
-})
+}
 
+//§ Au survol de la souris les animations du formulaire se déclenche.
+titreContact.addEventListener('mouseover', function showFormulaire() {
+    //? Permet d'afficher le formulaire.
+    formulaireContact.classList.remove('hideContact');
 
-//? Si l'utilisateur veut uniquement les projets contenant du PHP.
+    //? Les éléments qui arrivent par la droite.
+    animerFormulaire(droiteContact, 'slideDroiteContact');
 
-var btnPhp = document.getElementById('btnPhp'); //; Le bouton pour voir les projets utilisant du PHP.
-var php = document.getElementsByClassName('php'); //; Les projets utilisant du PHP.
+    //? Les éléments qui arrivent par la gauche.
+    animerFormulaire(gaucheContact, 'slideGaucheContact');
 
-btnPhp.addEventListener('click', function cacheEtMontrePhp() {
-    for (var i=0; i < carte.length; i++) {
-        carte[i].classList.add('filtre');
-    }
-    for (var i=0; i < php.length; i++) {
-        if (php[i].classList.contains('filtre')) {
-            php[i].classList.remove('filtre');
-        }
-    }
-    for (var i=0; i < bouton.length; i++) {
-        if (bouton[i].classList.contains('actif')) {
-            bouton[i].classList.remove('actif');
-        }
-    }
-    btnPhp.classList.add('actif');
-})
-
-
-//? Si l'utilisateur veut voir les projets fait avec Wordpress.
-
-var btnWp = document.getElementById('btnWp'); //; Le bouton pour voir les projets fait en Wordpress.
-var wordpress = document.getElementsByClassName('wordpress'); //; Les projets que j'ai fait avec wordpress.
-
-btnWp.addEventListener('click', function cacheEtMontreWp() {
-    for (var i=0; i < carte.length; i++) {
-        carte[i].classList.add('filtre');
-    }
-    for (var i=0; i < wordpress.length; i++) {
-        if (wordpress[i].classList.contains('filtre')) {
-            wordpress[i].classList.remove('filtre');
-        }
-    }
-    for (var i=0; i < bouton.length; i++) {
-        if (bouton[i].classList.contains('actif')) {
-            bouton[i].classList.remove('actif');
-        }
-    }
-    btnWp.classList.add('actif');
-})
-
-
-//§ La section contact.
-
-var titreC = document.getElementById('titreContact'); /// Le titre de la section contact.
-var showF = document.getElementById('formulaire'); /// Je vais cherché la classe hide du formulaire.
-var droite = document.getElementsByClassName('droite'); /// Les éléments sur la droite.
-var gauche = document.getElementsByClassName('gauche'); /// Les éléments sur la gauche.
-var bas = document.getElementsByClassName('bas'); /// Les éléments en bas.
-
-titreC.addEventListener('mouseover', function showFormulaire() {
-
-    //. J'affiche le formulaire.
-    showF.classList.remove('hideContact');
-
-    for (var i=0; i < droite.length; i++) {
-        droite[i].classList.add('slideDroite');
-    }
-
-    for (var i=0; i < gauche.length; i++) {
-        gauche[i].classList.add('slideGauche');
-    }
-
-    for (var i=0; i < bas.length; i++) {
-        bas[i].classList.add('slideBas');
-    }
+    //? Les éléments qui arrivent par le bas.
+    animerFormulaire(basContact, 'slideBasContact');
 })
