@@ -1,13 +1,24 @@
-@charset "utf-8"; /* & J'apporte mon encodage. */
+/*
+: ************************************************************************************************************
+                                    % Les règles et styles généraux.
+: ************************************************************************************************************
+*/
 
-/*/ J'espace un peu mes paragraphes. */
+/*. --------------------J'importe mon encodage.-------------------- */
+@charset "utf-8";
 
+/*
+. --------------------------------------------------------------------------------
+                                £ Les règles générales.
+. --------------------------------------------------------------------------------
+*/
+
+/*µ J'espace un peu mes paragraphes. */
 p { 
     margin: 3px;
 }
 
-/*/ J'apllique mes polices et mes tailles. */
-
+/*µ J'applique mes polices et mes tailles. */
 h1, h2, h3 {
     font-family: 'Karma', serif;
 }
@@ -25,93 +36,169 @@ p, a, span, li, ul {
     font-family: 'Roboto', sans-serif;
 }
 
-/*/ Je change le style des pointeurs de mes listes. */
+/*µ Je change le style des pointeurs de mes listes. */
 
 ul {
     list-style-type: '➢';
 }
 
-/*/ Je modifie les interlignes. */
+/*µ Je modifie les interlignes. */
 p, a, span, li {
     line-height: 4.5vh;
 }
 
-/*/ Je modifie les espaces entre les lettres et les mots. */
+/*µ Je modifie les espaces entre les lettres et les mots. */
 p, a, span, li, h1, h2, h3 {
     word-spacing: 0.3vh;
     letter-spacing: 0.1vh;
 }
 
-/*/ J'enlève les décorations de mes liens. */
+/*µ J'enlève les décorations de mes liens. */
 a {
     text-decoration: none;
     color: black;
 }
 
 
-/*, Je change les couleurs des sections. */
+/*
+: ************************************************************************************************************
+                                    % La section "Accueil".
+: ************************************************************************************************************
+*/
 
-/** L'acceuil. */
-
-#acceuil, #acceuil .fab {
+/*: Je change la couleur de fond de la section et des lettres. */
+#accueil, #accueil .fab {
     background-color: #79BAF2;
     color: white;
 }
 
-/** Profil. */
+/*) La navbar colle un peu trop mon prénom, je l'éloigne donc. */
+#prenomAccueil {
+    margin-top: 5vh;
+}
+
+/*
+: ************************************************************************************************************
+                                    % La section "À propos de moi".
+: ************************************************************************************************************
+*/
+
+/*: Je change la couleur de fond de la section et des lettres. */
 #profil {
     background-color: #80C7F2;
     border-radius: 12px;
 }
 
-/** Détails personels. */
+/*
+: ************************************************************************************************************
+                                    % La section "Quelques informations sur moi".
+: ************************************************************************************************************
+*/
+
+/*: Je change la couleur de fond de la section et des lettres. */
 #details {
     background-color: #66B1F2;
     border-radius: 12px;
 }
 
+/*) Je change la couleur d0es icônes de la sections. */
 .fas, .fab {
     color: black;
 }
 
-/** Mes competences. */
+/*
+: ************************************************************************************************************
+                                    % La section "Mes compétences".
+: ************************************************************************************************************
+*/
+
+/*: Je change la couleur de fond de la section et des lettres. */
 #competences {
     background-color: #80C7F2;
     border-radius: 12px;
 }
 
-/** Les langues. */
+/*
+: ************************************************************************************************************
+                                    % La section "Langue ".
+: ************************************************************************************************************
+*/
+
+/*: Je change la couleur de fond de la section et des lettres. */
 #langue {
     background-color: #66B1F2;
     border-radius: 12px;
 }
 
-/** Formation. */
+/*
+: ************************************************************************************************************
+                                    % La section "Mes formations".
+: ************************************************************************************************************
+*/
+
+/*: Je change la couleur de fond de la section et des lettres. */
 #formation {
     background-color: #80C7F2;
     border-radius: 12px;
 }
+
+/*+ Je crée une couleur personnalisé pour mes panels. */
 .bg-custom1 {
     background-color: #80C7F2;
 }
 
-/** Expérience profesionnel. */
+/*
+: ************************************************************************************************************
+                                    % La section "Mes expériences professionnelles".
+: ************************************************************************************************************
+*/
+
+/*: Je change la couleur de fond de la section et des lettres. */
 #exp {
     background-color: #66B1F2;
     border-radius: 20px;
 }
+
+/*+ Je crée une couleur personnalisé pour mes panels. */
 .bg-custom2 {
     background-color: #66B1F2;
 }
 
-/*, Je cible uniquement les mobiles. */
+
+/*
+: ************************************************************************************************************
+                                    % Le footer.
+: ************************************************************************************************************
+*/
+
+/*: Je change la couleur de fond du footer. */
+footer {
+    background: #0079ae;
+}
+
+
+
+
+/*
+: ************************************************************************************************************
+                                    % Je cible les mobiles.
+: ************************************************************************************************************
+*/
 
 @media screen and (max-width: 600px) {
-    /*? Je réduis la taille des titres sur mobile. */
+
+    /*: Je réduis la taille des titres sur mobile. */
     h2 {
         font-size: 5.25vh;
     }
+
     p, a, span, li, ul {
         font-size: 3.3vh;
     }
+
+    /*) La navbar colle un peu trop mon prénom, je l'éloigne donc ( mais un peu moins que sur les plus grands écrans ). */
+    #prenomAccueil {
+        margin-top: 7.5vh;
+    }
+
 }

@@ -3,17 +3,8 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--+ Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MVW4RFG');</script>
-    <!--+ End Google Tag Manager -->
+    <!--, Je demande à inclure le fichier "head". -->
+    <div include-html="include/includeHead.html"></div>
 
     <!--+ La description de la page. -->
     <meta name="description" content="Bienvenue sur le portfolio de Yoann Bezard, en le parcourant vous découvrirez qui je suis, mon parcours et les projets que j'ai réalisé au fil du temps.">
@@ -21,1260 +12,1202 @@
     <!--+ Le titre de la page. -->
     <title>Portfolio de Yoann Bezard | Développeur web français</title>
 
-    <!--+ Les favicons. -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!--+ Les polices de google fonts. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100;1,500;1,900&display=swap" rel="stylesheet">
-
     <!--$ Les fichiers css. -->
 
-    <!--£ Le css de bootstrap. -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!--£ Les icônes de font-awesome. -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-
-    <!--£ Le css du typewriter. -->
-    <link rel="stylesheet" href="https://unpkg.com/@auroratide/typewritten-text/lib/style.css" />
-
-    <!--£ Mon fichier CSS. -->
+    <!--£ Le fichier CSS principal. -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<!--, Je demande à activer la fonction d'inclusion de fichier html dès le chargement du body. -->
+<body onload="includeHTML()">
 
-    <!--+ Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVW4RFG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!--+ End Google Tag Manager (noscript) -->
+    <!--, Je demande à inclure le fichier "navbar". -->
+    <div include-html="include/IncludeNavbar.html"></div>
 
-    <header>
+    <!--
+    : ************************************************************************************************************
+                                                    % L'accueil du site.
+    : ************************************************************************************************************
+    -->
 
-        <!--
-        : ************************************************************************************************************
-                                                        % Mon menu de navigation.
-        : ************************************************************************************************************
-        -->
-        <nav id="topNav">
+    <section id="accueil" class="parallax">
+
+        <!--? Mon prénom et mon nom. -->
+        <h1>Yoann Bezard</h1>
+
+        <!--? Une ligne de séparation. -->
+        <hr>
+
+        <!--? Mon métier. -->
+        <h1>Développeur</h1>
+
+    </section>
+
+</header>
+
+<main>
+
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "À propos".
+    : ************************************************************************************************************
+    -->
+
+    <article class="titreDeSection" id="titrePropos">
+
+        <!--ù Le titre de la section. -->
+        <h2 id="propos" class="text-center">À propos de moi</h2>
+
+    </article>
+
+    <div class="pb-2 propos sectionbleu hidePropos" id="proposTexte">
+
+        <!--µ L'image de profil. -->
+        <img id="proposImage" class="image" loading="lazy" 
+            src="img/profil/wankul.jpg"
+            alt="Mon Wankul. Il porte une chemise verte, une veste grise et des lunettes. Il pose sur un fond bleu avec têtes des wankuls de Laink et Terracid qui se répète en boucle sur l'arrière plan." 
+            title="Mon wankul, je l'utilise pour me représenter.">
+
+        <!--µ Le texte de description. -->
+        <p id="proposParagraphe">
+            Bonjour, je m'appel Yoann Bezard et je suis Développeur web. <br /> 
+            Je possède un bac STI2D et après plusieurs années passées à chercher ce qui me plaisait réellement j'ai fini par me découvrir  une passion pour la programmation, et plus particulièrement pour le domaine du web. <br /> 
+            J'ai donc commencé par suivre des cours en autodidacte sur le HTML5/CSS3 et la programmation orienté objet en Python sur le site <a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a>, avant de suivre une formation de remise à niveau chez l'organisme de formation <a href="https://www.doranco.fr/" target="_blank">Doranco</a>.
+        </p>
+
+        <!--µ L'ancre qui va permettre de remonter tout en haut du site depuis le coin inférieur droit. -->
+        <a href="#accueil"> <i class="fas fa-anchor"></i> </a>
+
+    </div>
+
+
+    <!--
+    : ************************************************************************************************************
+                                                    % La première transition: Les loisirs.
+    : ************************************************************************************************************
+    -->
+
+    <div class="parallax transition" id="transitionLoisirs">
+
+        <!--) La citation -->
+        <q cite="http://evene.lefigaro.fr/citation/minimum-loisir-travail-createur-consequent-culture-civilisation-58091.php"> 
+            <typewritten-text repeat phrase-interval="5000">
+                <strong>Sans un minimum de loisir, pas de travail créateur, par conséquent pas de culture ni de civilisation.</strong>
+            </typewritten-text>
+        </q>
+
+        <!--) L'auteur de la citation. -->
+        <p>
+            <strong>Roy Lewis.</strong>
+        </p>
+
+    </div>
+
+
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "Mes passions".
+    : ************************************************************************************************************
+    -->
+
+    <article class="titreDeSection">
+
+        <!--ù Le titre de la section. -->
+        <h2 id="passions" class="text-center">Mes passions</h2>
+
+        <!--ù La ligne de séparation. -->
+        <hr>
+
+    </article>
+
+    <div class="sectionbleu container-fluid">
+        <div class="row py-3 me-3 ms-3 row-cols-1 row-cols-md-2">
 
             <!--
             . --------------------------------------------------------------------------------
-                                    £ La barre de navigation pour les ordinateurs.
+                                                        £ La lecture.
             . --------------------------------------------------------------------------------
             -->
+
+            <article class="col pb-2">
+                <div class="card h-100 border-dark">
+
+                    <!--& L'image de la carte lecture. -->
+                    <img id="imageSectionLecture" loading="lazy" class="card-img-top pt-1 px-1" 
+                    src="img/passions/livres/livre.jpg"
+                    alt="Un escalier qui mène à la page gauche d’un livre, et sur laquelle nous pouvons voir une femme en blanc se protégeant du soleil à l’aide d’un parapluie. Il y a sur la page de droite une jeune fille qui fait de la balançoire sur un arbre rose. L’on peut aussi apercevoir un pic à tête rouge qui s'apprête à se poser sur l’arbre."
+                    title="Un livre qui vous emmènera dans un monde féerique." >
+
+                    <!--& Le corps de la carte lecture. -->
+                    <div class="card-body">
+
+                        <!--& Le titre de la carte lecture. -->
+                        <h3 class="card-title">La lecture.</h3>
+
+                        <!--& Le texte de la carte lecture. -->
+                        <p class="card-text">
+                            Il est très facile de voyager en lisant un bon livre, parfois nous avons même l'impression de juste <strong>survoler</strong> les mots qui s'y trouvent en parcourant leurs pages. 
+                        </p>
+
+                        <!--? Le titre du texte de présentation de mes auteurs favoris. -->
+                        <p class="py-2 pointeur" id="titreTexteSousSectionLecture">
+                            <i>Une liste de mes auteurs favoris : </i>
+                        </p>
+
+                        <!--? Les romanciers. -->
+                        <p class="list-group list-group-flush hide texteSousSectionLecture"> 
+                            Les romanciers dont j'adore les œuvres : 
+                        </p>
+
+                        <ul class="list-group list-group-flush hide texteSousSectionLecture">
+
+                            <li class="list-group-item">
+                                Stephen King (the stand, it),
+                            </li>
+
+                            <li class="list-group-item">
+                                Clive Barker (book of blood, hellraiser).
+                            </li>
+
+                        </ul>
+
+                        <!--? Les bédéistes. -->
+                        <p class="list-group list-group-flush hide texteSousSectionLecture">
+                            Dans la Bande dessinée :
+                        </p>
+
+                        <ul class="list-group list-group-flush hide texteSousSectionLecture">
+
+                            <li class="list-group-item">
+                                Midam (Kid Paddle, game over),
+                            </li>
+
+                            <li class="list-group-item">
+                                Zep (Titeuf).
+
+                            </li>
+
+                        </ul>
+
+                        <!--? Les mangakas. -->
+                        <p class="list-group list-group-flush hide texteSousSectionLecture">
+                            Les mangakas japonais :
+                        </p>
+
+                        <ul class="list-group list-group-flush hide texteSousSectionLecture">
+
+                            <li class="list-group-item">
+                                Kentaro Miura (Berserk),
+                            </li>
+
+                            <li class="list-group-item">
+                                Yusuke Murata (eyeshield 21, one-punch man).
+                            </li>
+
+                        </ul>
+
+                        <!--? Les comic's. -->
+                        <p class="list-group list-group-flush hide texteSousSectionLecture">
+                            Et les comics :
+                        </p>
+
+                        <ul class="list-group list-group-flush hide texteSousSectionLecture">
+
+                            <li class="list-group-item">
+                                Garth Ennis (the boys, the punisher).
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                                        £ La musique.
+            . --------------------------------------------------------------------------------
+            -->
+
+            <article class="col pb-2">
+
+                <!--& Le carousel d'images de la carte musique. -->
+                <div class="card h-100 border-dark">
+                    <div id="moncarrousel" class="carousel slide card-img-top pt-1 px-1" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+
+                            <!--= Les boutons des différentes images -->
+                            <button type="button" data-bs-target="#moncarrousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+                            <button type="button" data-bs-target="#moncarrousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                            <button type="button" data-bs-target="#moncarrousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active" data-bs-interval="2000">
+
+                                <!--= La première image : Le dj. -->
+                                <img class="d-block w-100 card-img-top" loading="lazy"
+                                src="img/passions/musique/dj.jpg"
+                                alt="La main d’un DJ qui s’approche de sa table de mixage afin de commencer à mixer de la musique pour la fête qu'il doit animer. L'image dispose d’un filtre violet qui fait ressortir le côté artistique de la photo." 
+                                title="Un DJ qui mixe de la musique lors d'une fête." >
+
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="2000">
+
+                                <!--= La seconde image : Le casque sans fil. -->
+                                <img class="d-block w-100 card-img-top" loading="lazy"
+                                src="img/passions/musique/casque.jpg"
+                                alt="Un casque sans fil noir posé sur un sol blanc. L’on peut voir le symbole de la marque, un s en gras dans un carré, sur le côté droit du casque."
+                                title="Un casque sans fil." >
+
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="2000">
+
+                                <!--= La troisième image : Les oiseaux musicaux. -->
+                                <img class="d-block w-100 card-img-top" loading="lazy"
+                                src="img/passions/musique/birds.jpg"
+                                alt="Des oiseaux posés sur des fils électriques ont été utilisés pour recréer une partition musicale. L'on peut apercevoir des notes noires, des notes croches et des notes deux croches ramées posé aux milieux des oiseaux qui représente des bémol." 
+                                title="Des oiseaux et de la musique." >
+
+                            </div>
+                        </div>
+
+                        <!--= Le bouton pour aller sur l'image précédente. -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#moncarrousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Précédent</span>
+                        </button>
+
+                        <!--= Le bouton pour aller sur l'image suivante. -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#moncarrousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Suivant</span>
+                        </button>
+                    </div>
+
+                    <!--& Le corps de la carte musique. -->
+                    <div class="card-body">
+
+                        <!--& Le titre de la carte musique. -->
+                        <h3 class="card-title">La musique.</h3>
+
+                        <!--& Le texte de la carte musique. -->
+                        <p class="card-text">
+                            J'adore écouter de la musique tout en travaillant. L'on peut écouter différents styles; selon notre humeur ou encore selon ce que l'on n'est en train de faire afin de trouver plus facilement l'inspiration.
+                        </p>
+
+                        <!--? Le titre du texte de présentation de mes groupes de musique favoris. -->
+                        <p class="py-2 pointeur" id="titreTexteSousSectionMusique">
+                            <i>Une liste des groupes, artistes et bandes originales que j'aime écouter tout en travaillant : </i>
+                        </p>
+
+                        <div class="card-text hide texteSousSectionMusique">
+
+                            <!--? Les groupes de métal. -->
+                            <p class="list-group list-group-flush hide texteSousSectionMusique"> 
+                                Quelques groupes de métal : 
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionMusique">
+
+                                <li class="list-group-item">
+                                    AC/DC (highway to hell, back in black),
+                                </li>
+
+                                <li class="list-group-item">
+                                    Iron maiden (fear of the dark, the final frontier).
+                                </li>
+
+                            </ul>
+
+                            <!--? Les groupes de power métal. -->
+                            <p class="list-group list-group-flush hide texteSousSectionMusique">
+                                Quelques groupes de power métal :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionMusique">
+
+                                <li class="list-group-item">
+                                    Powerwolf (blessed and possessed, preachers of the night),
+                                </li>
+
+                                <li class="list-group-item">
+                                    Gloryhammer (tales from the kingdom of fife, space 1992: rise of the chaos wizards).
+                                </li>
+
+                            </ul>
+
+                            <!--? Le groupe de J-POP -->
+                            <p class="list-group list-group-flush hide texteSousSectionMusique">
+                                Un groupe de J-POP que j'adore :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionMusique">
+
+                                <li class="list-group-item">
+                                    Babymetal (Metal Resistance, Metal Galaxy).
+                                </li>
+
+                            </ul>
+
+                            <!--? Les bandes originales de film. -->
+                            <p class="list-group list-group-flush hide texteSousSectionMusique">
+                                Quelques excellentes bandes originales de film :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionMusique">
+
+                                <li class="list-group-item">
+                                    Conan the Barbarian (Prometheus Edition),
+                                </li>
+
+                                <li class="list-group-item">
+                                    Star Wars, épisode V : L'Empire contre-attaque (bande originale).
+                                </li>
+
+                            </ul>
+
+                            <!--? Les bandes originales de jeux vidéo. -->
+                            <p class="list-group list-group-flush hide texteSousSectionMusique">
+                                Et pour finir quelques bandes originales de jeux vidéo :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionMusique">
+                                <li class="list-group-item">
+                                    kingdom hearts,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Super Mario Galaxy.
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                                        £ Les jeux vidéo.
+            . --------------------------------------------------------------------------------
+            -->
+
+            <article class="col pb-2">
+                <div class="card h-100 border-dark">
+
+                    <!--& L'image de la carte jeux vidéo. -->
+                    <img id="imageSectionJeuxVideo" loading="lazy" class="card-img-top pt-1 px-1"
+                    src="img/passions/jv/switch.jpg"
+                    alt="Une console Nintendo Switch. Elle est représentée en mode portable sur un fond de couleur purple; avec son joy-con bleu à gauche et son joy-con rouge à droite. Son écran est éteint."
+                    title="Une switch, une console de salon utilisable en console portable, du pur génie nippon." >
+
+                    <!--& Le corps de la carte jeux vidéo. -->
+                    <div class="card-body">
+
+                        <!--& Le titre de la carte jeux vidéo. -->
+                        <h3 class="card-title">Les jeux vidéo.</h3>
+
+                        <!--& Le texte de la carte jeux vidéo. -->
+                        <p class="card-text">
+                            J'adore jouer aux jeux vidéo depuis que je suis petit, et il y a une fonction qui est leur est commune à tous : il faut toujours <strong>cliquer</strong> pour pouvoir continuer de jouer. J'affectionne tout particulièrement les J-RPG, ils sont la fusion merveilleuse des caractéristiques des rpg et du génie japonais; c'est d'ailleurs grâce à eux que j'ai eu envie de m'investir en anglais (afin de pouvoir jouer à ces jeux dit "jeux de niches" qui sont rarement traduit chez nous.
+                        </p>
+
+                        <!--? Le titre du texte de présentation de mes styles de jeux vidéo favoris. -->
+                        <p class="py-2 pointeur" id="titreTexteSousSectionJeuxVideo">
+                            <i>Une liste de mes styles de jeux préférés :</i>
+                        </p>
+
+                        <p class="card-text hide texteSousSectionJeuxVideo"> 
+
+                            <!--? Les FPS. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                Les FPS :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    Star wars - Battlefront 2 (le vrai, pas la purge de EA),
+                                </li>
+
+                                <li class="list-group-item">
+                                    Doom Eternal.
+                                </li>
+
+                            </ul>
+
+                            <!--? Les jeux de stratégie. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                Les jeux de stratégie :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    X-com 2,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Star wars - Galactic battlegrounds,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Fire emblem.
+                                </li>
+
+                            </ul>
+
+                            <!--? Les RPG. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                Les RPG :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    The elder scrolls V : Skyrim,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Divinity : original sin 2,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Mass effect.
+                                </li>
+
+                            </ul>
+
+                            <!--? Les J-RPG. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                Les J-RPG :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    Xenoblade chronicles 2,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Final Fantasy VII.
+                                </li>
+
+                            </ul>
+
+                    </div>
+                </div>
+            </article>
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                                £ La science-fiction et le fantastique.
+            . --------------------------------------------------------------------------------
+            -->
+
+            <article class="col pb-2">
+                <div class="card h-100 border-dark">
+
+                    <!--& L'image de la carte SFF. -->
+                    <img id="imageSectionSFF" class="card-img-top pt-1 px-1" loading="lazy"
+                    src="img/passions/sff/1.jpg"
+                    alt="Des images représentant des villes cyberpunk, des robots, et des vaisseaux spatiaux défilent pour représenter la partie science-fiction. Pour la partie fantastique nous pouvons voir un manoir hanté, des dragons et un paysage représentant l'habitation de Gollum."
+                    title="Des images qui représentent les thèmes de la science-fiction et du fantastique défilent." >
+
+                    <!--& Le corps de la carte SFF. -->
+                    <div class="card-body">
+
+                        <!--& Le titre de la carte sff. -->
+                        <h3 class="card-title">La science-fiction et le fantastique.</h3>
+
+                        <!--& Le texte de la carte sff. -->
+                        <p class="card-text">
+                            J'aime autant la science-fiction que le fantastique, ce sont deux types d'univers qui peuvent se retrouver partout et qui n'ont pour limite que notre imagination. On en compte aussi bien ces deux univers dans des œuvres cinématographiques, vidéoludiques, que littéraires.
+                        </p>
+
+                        <!--? Le titre du texte de présentation de œuvres de SFF favoris. -->
+                        <p class="py-2 pointeur" id="titreTexteSousSectionSFF">
+                            <i>Une liste de mes œuvres de science-fiction et fantastique préférés : </i>
+                        </p>
+
+                        <!--? Le texte du hide and show de la carte sff. -->
+                        <p class="card-text hide texteSousSectionSFF">
+
+                            <!--? La science-fiction. -->
+                            <p class="list-group list-group-flush hide texteSousSectionSFF">
+                                Pour le genre science-fiction :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionSFF">
+
+                                <li class="list-group-item">
+                                    Un film : Star Wars.
+                                </li>
+
+                                <li class="list-group-item">
+                                    Un livre : Metro 2033.
+                                </li>
+
+                                <li class="list-group-item">
+                                    Un jeu vidéo : Star Wars : Knights of the Old Republic.
+                                </li>
+
+                            </ul>
+
+                            <!--? Le genre fantastique. -->
+                            <p class="list-group list-group-flush hide texteSousSectionSFF">
+                                Pour le genre fantastique :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionSFF">
+
+                                <li class="list-group-item">
+                                    Un film : Les Gremlins.
+                                </li>
+
+                                <li class="list-group-item">
+                                    Un livre : La tour sombre.
+                                </li>
+
+                                <li class="list-group-item">
+                                    Un jeu vidéo : Dark Souls.
+                                </li>
+
+                            </ul>
+
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+
+    <!--
+    : ************************************************************************************************************
+                                                    % La seconde transition : Actuellement.
+    : ************************************************************************************************************
+    -->
+
+    <div class="parallax transition" id="transitionActuellement">
+
+        <!--) Le titre de la transition. -->
+        <p>
+            <strong>Actuellement : </strong>
+        </p>
+
+        <!--) Le texte de la transition. -->
+        <p>
+            <typewritten-text repeat phrase-interval="5000">
+                <strong>À la recherche d'un emploi de développeur.</strong>
+            </typewritten-text>
+        </p>
+
+    </div>
+
+
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "Mes compétences".
+    : ************************************************************************************************************
+    -->
+
+    <article class="titreDeSection">
+
+        <!--ù Le titre de la section. -->
+        <h2 id="competences" class="text-center">Mes compétences de développeur</h2>
+
+        <!--ù La ligne de séparation. -->
+        <hr>
+
+    </article>
+
+
+    <div class="container-fluid competence sectionbleu" id="sectionCompetence">  
+
+        <!--) Le petit texte d'introduction. -->
+        <div class="cvComp sectionbleu">
+
+            <p>
+                Elles sont en constante amélioration car pour moi la joie de ce métier fait que j'en apprend tous les jours, d'autant plus en étant impliqué, curieux et passionné.
+            </p>
+
+            <p>
+                Vous pouvez aussi aller faire un tour sur <a href="cv.html">mon cv</a> en version html/css, ou bien aller jeter un coup d'œil sur sa <a href="pdf/cv_yoann_bezard.pdf" target="_blank">version pdf</a>, voire même regarder la version <a href="video/cv_yoann_bezard_anime.mp4" target="_blank">animé</a> pour en apprendre plus sur mes compétences et mon parcours professionnel.
+            </p>
+
+        </div>
+
+        <div class="container">
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                                        £ Les langages.
+            . --------------------------------------------------------------------------------
+            -->
+
+            <section class="row">
+
+                <!--= Le titre de la sous-section de compétences. -->
+                <h3 class="text-center pt-2 pb-2">Les langages.</h3>
+
+                <!--§ Le HTML5. -->
+                <div class="col centré">
+
+                    <p>HTML5</p>
+                    
+                    <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
+                    src="img/competences/html5.png"
+                    alt="Le logo du HTML5. C'est un pentagone orange avec un 5 blanc en son centre. On à l’impression que le centre du pentagone est plié vers l’avant, cet effet donne du relief au logo."
+                    title="Le logo du HTML5." >
+
+                </div>
+
+                <!--§ Le CSS3. -->
+                <div class="col centré">
+
+                    <p>CSS3</p>
+
+                    <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
+                    src="img/competences/css3.png"
+                    alt="Le logo du CSS3. C'est un pentagone bleu avec un 3 blanc en son centre. On à l’impression que le centre du pentagone est plié vers l’avant, cet effet donne du relief au logo."
+                    title="Le logo du CSS3." >
+
+                </div>
+
+                <!--§ Le Javascript. -->
+                <div class="col centré">
+
+                    <p>JavaScript</p>
+
+                    <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
+                    src="img/competences/js.png"
+                    alt="Le logo de JavaScript. C'est un carré jaune qui porte l'inscription JS ( pour JavaScript ) en bas à droite."
+                    title="Le logo de JavaScript. C’est un carré jaune avec sobrement écrit JS en lettre noire en bas à droite." >
+
+                </div>
+
+                <!--§ Le PHP. -->
+                <div class="col centré">
+
+                    <p>PHP</p>
+
+                    <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
+                    src="img/competences/php.png"
+                    alt="Le logo de PHP. C’est un oval de couleur bleu légèrement dénaturé sur lequel le bord est assombri afin de donner une impression de profondeur. Le mot PHP est écrit en son centre, en lettre noire entouré d’un filet blanc." 
+                    title="Le logo de PHP." >
+
+                </div>
+
+                <!--§ MySQL. -->
+                <div class="col centré">
+
+                    <p>MySQL</p>
+                    <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
+                    src="img/competences/mysql.png"
+                    alt="Le logo de MySQL. Le mot My est écrit en bleu, et le mot SQL est écrit en orange. L’on peut voir la silhouette d’un dauphin sortant son bec hors du mot SQL et nageant calmement vers le début du logo."
+                    title="Le logo de MySQL." >
+
+                </div>
+            </section>
+
+            <!--= Une ligne de séparation. -->
+            <div class="border-separate-skills my-3"></div>
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                                        £ Les frameworks.
+            . --------------------------------------------------------------------------------
+            -->
+
+            <section class="row pb-2">
+
+                <!--= Le titre de la sous-section de compétences. -->
+                <h3 class="text-center">Les frameworks.</h3>
+
+                <!--§ Bootstrap5. -->
+                <div class="col centré">
+
+                    <p>Bootstrap5</p>
+
+                    <img class="logo-competences hideCompetences pb-2 frameworks" loading="lazy"
+                    src="img/competences/bootstrap.png"
+                    alt="Le logo de Bootstrap. C’est un carré de couleur violet foncé modéré dont les bords ont été arrondis. Il y a un gros B en son centre."
+                    title="Le logo de Bootstrap." >
+
+                </div>
+
+            </section>
+
+            <!--= Une ligne de séparation. -->
+            <div class="border-separate-skills my-3"></div>
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                                        £ Les CMS.
+            . --------------------------------------------------------------------------------
+            -->
+
+            <section class="row">
+
+                <!--= Le titre de la sous-section de compétences. -->
+                <h3 class="text-center pt-2 pb-2">Les CMS.</h3>
+
+                <!--§ Wordpress. -->
+                <div class="col centré">
+
+                    <p>Wordpress</p>
+
+                    <img class="logo-competences hideCompetences pb-2 cms" loading="lazy"
+                    src="img/competences/wordpress.png"
+                    alt="Le logo de Wordpress. C'est cercle gris qui comporte en son centre un W noire qui se termine par une virgule montante."
+                    title="Le logo de Wordpress." >
+
+                </div>
+
+            </section>
+
+            <!--= Une ligne de séparation. -->
+            <div class="border-separate-skills my-3"></div>
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                                        £ Les outils.
+            . --------------------------------------------------------------------------------
+            -->
+
+            <section class="row">
+
+                <!--= Le titre de la sous-section de compétences. -->
+                <h3 class="text-center pt-2 pb-2">Les outils.</h3>
+
+                <!--§ GitHub. -->
+                <div class="col centré">
+
+                    <p>Github</p>
+
+                    <img class="logo-competences hideCompetences pb-3 outils" loading="lazy"
+                    src="img/competences/github.png"
+                    alt="Le logo de Github. C’est la silhouette d’un chat, avec une tentacule à sa droite, et dont la forme est dessiné par un contour noir sur un fond gris."
+                    title="Le logo de Github." >
+
+                </div>
+
+                <!--§ Visual studio code. -->
+                <div class="col centré">
+
+                    <p>Visual studio code</p>
+
+                    <img class="logo-competences hideCompetences pb-3 outils" loading="lazy"
+                    src="img/competences/vsc.png"
+                    alt="Le logo de visual studio code. C'est une boucle d'infinité bleu tridimensionnelle. Elle est tournés aux ¾, créant ainsi une perspective intéressante qui évoque un sentiment de mouvement, de progrès et de dynamisme."
+                    title="Le logo de Visual studio code." >
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+    <!--
+    : ************************************************************************************************************
+                                                    % La troisième transition : Les études.
+    : ************************************************************************************************************
+    -->
+    <div class="parallax transition" id="transitionEtude">
+
+        <!--) La citation -->
+        <q cite="https://citation-celebre.leparisien.fr/citations/98971">
+            <typewritten-text repeat phrase-interval="5000">
+                <strong>Pendant les études, la réussite ne dépend que de soi, dans la vie professionnelle, la réussite dépend aussi des autres.</strong>
+            </typewritten-text>
+        </q>
+
+        <!--) L'auteur de la citation. -->
+        <p><strong>Edine-le-sage.</strong></p>
+    </div>
+
+
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "Mon portfolio".
+    : ************************************************************************************************************
+    -->
+    <article class="titreDeSection">
+
+        <!--ù Le titre de la section. -->
+        <h2 id="portfolio" class="text-center">Mon portfolio</h2>
+
+        <!--ù La ligne de séparation. -->
+        <hr>
+
+    </article>
+
+    <!--
+    . --------------------------------------------------------------------------------
+                                    £ Les boutons pour sélectionner les catégories.
+    . --------------------------------------------------------------------------------
+    -->
+
+    <div class="sectionbleu" id="myBtnContainer">
+
+        <button class="boutonSelectionCategorie actif" id="btnAll">Voir tout mes projets.</button>
+
+        <button class="boutonSelectionCategorie" id="btnHtml">HTML5/CSS3</button>
+
+        <button class="boutonSelectionCategorie" id="btnJS">JavaScript</button>
+
+        <button class="boutonSelectionCategorie" id="btnBt">Bootstrap5</button>
+
+        <button class="boutonSelectionCategorie" id="btnPhp">PHP</button>
+
+        <button class="boutonSelectionCategorie" id="btnJava">Java</button>
+
+        <button class="boutonSelectionCategorie" id="btnMySql">MySQL</button>
+
+        <button class="boutonSelectionCategorie" id="btnWp">Wordpress</button>
+
+    </div>
+
+    <div class="sectionbleu sectionPortfolio">
+
+        <!--
+        . --------------------------------------------------------------------------------
+                                    £ Mon CV.
+        . --------------------------------------------------------------------------------
+        -->
+
+        <!--, Les outils utilisés durant le projet. -->
+        <article class="cartePortfolio animationPf cvPortolio html bootstrap javaScript">
+
+            <!--§ Le titre. -->
+            <h3 class="titreCarte"> Mon CV 
+                <!--§ Le lien vers le projet sur GitHub. -->
+                <a href="https://github.com/YoannB91/PortFolio" target="_blank"> 
+                    <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> 
+                </a> 
+            </h3>
+
+            <!--§ Le lien vers le projet. -->
+            <a href="cv.html">
+                <!--§ Un screen de l'accueil du site. -->
+                <img class="imageCarte" loading="lazy"
+                src="img/portfolio/cv.png"
+                alt="Une capture d'écran de la page CV. L'on peut y voir son header qui comporte mon nom, mon métier et des icônes pour accéder à mes réseaux sociaux. Il y a aussi la section 'à propos' qui est visible juste sous l'en-tête de la page."
+                title="Mon cv, fait en utilisant les compétences en HTML5, CSS3 et Bootstrap5." >
+            </a>
+
+            <!--§ Le descriptif du projet. -->
+            <p>
+                Voici le CV que j'ai fait en HTML5/CSS3, exclusivement pour mon portfolio. Il à été fait durant ma remise à niveau de développeur web chez Doranco, dans le but de me permettre de pratiquer mes nouvelles compétences et d'avoir un premier projet à exposer dans cette partie de mon site.
+            </p>
+
+            <!--§ La liste des outils utilisés pour faire le projet. -->
             <ul>
 
-                <!--: Les liens vers les sections du site en mode ordinateur. -->
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#propos">À propos</a></li>
-                <li><a href="#passions">Mes passions</a></li>
-                <li><a href="#competences">Mes compétences</a></li>                
-                <li><a href="cv.html" target="_blank">Mon cv</a></li>
-                <li><a href="#portfolio">Mon portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="listeTech">HTML5</li>
+                <li class="listeTech">CSS3</li>
+                <li class="listeTech">JavaScript</li>
+                <li class="listeTech">Bootstrap5</li>
+
             </ul>
 
-            <!--
-            . --------------------------------------------------------------------------------
-                                    £ La barre de navigation pour les mobiles et tablette.
-            . --------------------------------------------------------------------------------
-            -->
+        </article>
 
-            <!--: Le bouton du menu burger. -->
-            <button class="ham"><i class="fas fa-bars fa-2x"></i></button>
+        <!--
+        . --------------------------------------------------------------------------------
+                                    £ Le projet véville.
+        . --------------------------------------------------------------------------------
+        -->
 
-            <!--: Le titre de la barre de navigation en mode mobile et tablette. -->
-            <h2>Yoann Bezard | Développeur web</h2>
+        <!--, Les outils utilisés durant le projet. -->
+        <article class="cartePortfolio animationPf html bootstrap php mySql">
 
-        </nav>
+            <!--§ Le titre. -->
+            <h3 class="titreCarte"> Projet Véville 
+                <!--§ Le lien vers le projet sur GitHub. -->
+                <a href="https://github.com/YoannB91/location-de-voiture" target="_blank"> 
+                    <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> 
+                </a> 
+            </h3>
 
-        <!--: La navigation verticale qui apparaît lors du clic. -->
-        <nav class="sideNav hideMenuVertical" id="cacherElementMenuVertical">
+            <!--§ Le lien vers le projet. -->
+            <a href="Location/view/index.php" target="_blank">
+                <!--§ Un screen de l'accueil du site. -->
+                <img class="imageCarte" loading="lazy"
+                src="img/portfolio/projet_veville.png"
+                alt="Il y a une barre de navigation tout en haut de l’image qui indique que la personne connecté est Yoann Bezard. En dessous se trouve le logo de Véville et la page pour sélectionner une date et une adresse de départ afin de pouvoir sélectionner son véhicule selon leurs disponibilités." 
+                title="La page d'accueil du site que j'ai fait pour le projet véville, elle permet de sélectionner et réserver un véhicule." >
+            </a>
 
-            <!--: Mon bouton X qui permet de fermer la sidenav. -->
-            <button class="menuX" id="menuX"><i class="fas fa-times fa-2x"></i></button>
+            <!--§ Le descriptif du projet. -->
+            <p>
+                Le projet Véville est un TP PHP que j'ai réalisé en une semaine durant ma remise à niveau de développeur web chez Doranco. Il consistait à refaire le site de location de véhicule pour une société nommé Véville en utilisant nos compétences fraîchement acquises en PHP. Il dispose d'un système d'inscription, de connection et de réservation pour les véhicules.
+            </p>
 
-            <!--: Les liens vers les sections du site en mode mobile et tablette. -->
+            <!--§ La liste des outils utilisés pour faire le projet. -->
             <ul>
-                <li><a class="menuLink" href="#accueil">Accueil</a></li>
-                <li><a class="menuLink" href="#propos">À propos</a></li>
-                <li><a class="menuLink" href="#passions">Mes passions</a></li>
-                <li><a class="menuLink" href="#competences">Mes compétences</a></li>                
-                <li><a class="menuLink" href="cv.html">Mon cv</a></li>
-                <li><a class="menuLink" href="#portfolio">Mon portfolio</a></li>
-                <li><a class="menuLink" href="#contact">Contact</a></li>
+
+                <li class="listeTech">HTML5</li>
+                <li class="listeTech">CSS3</li>
+                <li class="listeTech">Bootstrap5</li>
+                <li class="listeTech">PHP</li>
+                <li class="listeTech">MySQL</li>
 
             </ul>
-        </nav>
-
-
-        <!--
-        : ************************************************************************************************************
-                                                        % L'accueil du site.
-        : ************************************************************************************************************
-        -->
-        <section id="accueil" class="parallax">
-
-                <h1>Yoann Bezard</h1>
-                <hr>
-                <h1>Développeur Web</h1>
-
-        </section>
-
-    </header>
-
-    <main>
-
-        <!--
-        : ************************************************************************************************************
-                                                        % La section À propos.
-        : ************************************************************************************************************
-        -->
-
-        <article class="titreDeSection" id="titrePropos">
-
-            <!--ù Le titre de la section. -->
-            <h2 id="propos" class="text-center">À propos de moi</h2>
-
-        </article>
-
-        <div class="pb-2 propos sectionbleu hidePropos" id="proposTexte">
-
-            <!--µ L'image de profil. -->
-            <img id="proposImage" class="image" loading="lazy" 
-                src="img/profil/wankul.jpg"
-                alt="Mon Wankul. Il porte une chemise verte, une veste grise et des lunettes. Il pose sur un fond bleu avec têtes des wankuls de Laink et Terracid qui se répète en boucle sur l'arrière plan." 
-                title="Mon wankul, je l'utilise pour me représenter.">
-
-            <!--µ Le texte de description. -->
-            <p id="proposParagraphe">
-                Bonjour, je m'appel Yoann Bezard et je suis Développeur web. <br /> 
-                Je possède un bac STI2D et après plusieurs années passées à chercher ce qui me plaisait réellement j'ai fini par me découvrir  une passion pour la programmation, et plus particulièrement pour le domaine du web. <br /> 
-                J'ai donc commencé par suivre des cours en autodidacte sur le HTML5/CSS3 et la programmation orienté objet en Python sur le site <a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a>, avant de suivre une formation de remise à niveau chez l'organisme de formation <a href="https://www.doranco.fr/" target="_blank">Doranco</a>.
-            </p>
-
-            <!--µ L'ancre qui va permettre de remonter tout en haut du site depuis le coin inférieur droit. -->
-            <a href="#accueil"> <i class="fas fa-anchor"></i> </a>
-
-        </div>
-
-
-        <!--
-        : ************************************************************************************************************
-                                                        % La première transition: Les loisirs.
-        : ************************************************************************************************************
-        -->
-        <div class="parallax transition" id="transitionLoisirs">
-
-            <!--) La citation -->
-            <q cite="http://evene.lefigaro.fr/citation/minimum-loisir-travail-createur-consequent-culture-civilisation-58091.php"> 
-                <typewritten-text repeat phrase-interval="5000">
-                    <strong>Sans un minimum de loisir, pas de travail créateur, par conséquent pas de culture ni de civilisation.</strong>
-                </typewritten-text>
-            </q>
-
-            <!--) L'auteur de la citation. -->
-            <p>
-                <strong>Roy Lewis.</strong>
-            </p>
-
-        </div>
-
-
-        <!--
-        : ************************************************************************************************************
-                                                        % Mes passions.
-        : ************************************************************************************************************
-        -->
-        <article class="titreDeSection">
-
-            <!--ù Le titre de la section. -->
-            <h2 id="passions" class="text-center">Mes passions</h2>
-
-            <!--ù La ligne de séparation. -->
-            <hr>
-
-        </article>
-
-        <div class="sectionbleu container-fluid">
-            <div class="row py-3 me-3 ms-3 row-cols-1 row-cols-md-2">
-
-                <!--
-                . --------------------------------------------------------------------------------
-                                                            £ La lecture.
-                . --------------------------------------------------------------------------------
-                -->
-
-                <article class="col pb-2">
-                    <div class="card h-100 border-dark">
-
-                        <!--& L'image de la carte lecture. -->
-                        <img id="imageSectionLecture" loading="lazy" class="card-img-top pt-1 px-1" 
-                        src="img/passions/livres/livre.jpg"
-                        alt="Un escalier qui mène à la page gauche d’un livre, et sur laquelle nous pouvons voir une femme en blanc se protégeant du soleil à l’aide d’un parapluie. Il y a sur la page de droite une jeune fille qui fait de la balançoire sur un arbre rose. L’on peut aussi apercevoir un pic à tête rouge qui s'apprête à se poser sur l’arbre."
-                        title="Un livre qui vous emmènera dans un monde féerique." >
-
-                        <!--& Le corps de la carte lecture. -->
-                        <div class="card-body">
-
-                            <!--& Le titre de la carte lecture. -->
-                            <h3 class="card-title">La lecture.</h3>
-
-                            <!--& Le texte de la carte lecture. -->
-                            <p class="card-text">
-                                Il est très facile de voyager en lisant un bon livre, parfois nous avons même l'impression de juste <strong>survoler</strong> les mots qui s'y trouvent en parcourant leurs pages. 
-                            </p>
-
-                            <!--? Le titre du texte de présentation de mes auteurs favoris. -->
-                            <p class="py-2 pointeur" id="titreTexteSousSectionLecture">
-                                <i>Une liste de mes auteurs favoris : </i>
-                            </p>
-
-                            <!--? Les romanciers. -->
-                            <p class="list-group list-group-flush hide texteSousSectionLecture"> 
-                                Les romanciers dont j'adore les œuvres : 
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionLecture">
-
-                                <li class="list-group-item">
-                                    Stephen King (the stand, it),
-                                </li>
-
-                                <li class="list-group-item">
-                                    Clive Barker (book of blood, hellraiser).
-                                </li>
-
-                            </ul>
-
-                            <!--? Les bédéistes. -->
-                            <p class="list-group list-group-flush hide texteSousSectionLecture">
-                                Dans la Bande dessinée :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionLecture">
-
-                                <li class="list-group-item">
-                                    Midam (Kid Paddle, game over),
-                                </li>
-
-                                <li class="list-group-item">
-                                    Zep (Titeuf).
-
-                                </li>
-
-                            </ul>
-
-                            <!--? Les mangakas. -->
-                            <p class="list-group list-group-flush hide texteSousSectionLecture">
-                                Les mangakas japonais :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionLecture">
-
-                                <li class="list-group-item">
-                                    Kentaro Miura (Berserk),
-                                </li>
-
-                                <li class="list-group-item">
-                                    Yusuke Murata (eyeshield 21, one-punch man).
-                                </li>
-
-                            </ul>
-
-                            <!--? Les comic's. -->
-                            <p class="list-group list-group-flush hide texteSousSectionLecture">
-                                Et les comics :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionLecture">
-
-                                <li class="list-group-item">
-                                    Garth Ennis (the boys, the punisher).
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!--
-                . --------------------------------------------------------------------------------
-                                                            £ La musique.
-                . --------------------------------------------------------------------------------
-                -->
-                <article class="col pb-2">
-
-                    <!--& Le carousel d'images de la carte musique. -->
-                    <div class="card h-100 border-dark">
-                        <div id="moncarrousel" class="carousel slide card-img-top pt-1 px-1" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-
-                                <!--= Les boutons des différentes images -->
-                                <button type="button" data-bs-target="#moncarrousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                                <button type="button" data-bs-target="#moncarrousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-
-                                <button type="button" data-bs-target="#moncarrousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-
-                            </div>
-
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active" data-bs-interval="2000">
-
-                                    <!--= La première image : Le dj. -->
-                                    <img class="d-block w-100 card-img-top" loading="lazy"
-                                    src="img/passions/musique/dj.jpg"
-                                    alt="La main d’un DJ qui s’approche de sa table de mixage afin de commencer à mixer de la musique pour la fête qu'il doit animer. L'image dispose d’un filtre violet qui fait ressortir le côté artistique de la photo." 
-                                    title="Un DJ qui mixe de la musique lors d'une fête." >
-
-                                </div>
-
-                                <div class="carousel-item" data-bs-interval="2000">
-
-                                    <!--= La seconde image : Le casque sans fil. -->
-                                    <img class="d-block w-100 card-img-top" loading="lazy"
-                                    src="img/passions/musique/casque.jpg"
-                                    alt="Un casque sans fil noir posé sur un sol blanc. L’on peut voir le symbole de la marque, un s en gras dans un carré, sur le côté droit du casque."
-                                    title="Un casque sans fil." >
-
-                                </div>
-
-                                <div class="carousel-item" data-bs-interval="2000">
-
-                                    <!--= La troisième image : Les oiseaux musicaux. -->
-                                    <img class="d-block w-100 card-img-top" loading="lazy"
-                                    src="img/passions/musique/birds.jpg"
-                                    alt="Des oiseaux posés sur des fils électriques ont été utilisés pour recréer une partition musicale. L'on peut apercevoir des notes noires, des notes croches et des notes deux croches ramées posé aux milieux des oiseaux qui représente des bémol." 
-                                    title="Des oiseaux et de la musique." >
-
-                                </div>
-                            </div>
-
-                            <!--= Le bouton pour aller sur l'image précédente. -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#moncarrousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Précédent</span>
-                            </button>
-
-                            <!--= Le bouton pour aller sur l'image suivante. -->
-                            <button class="carousel-control-next" type="button" data-bs-target="#moncarrousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Suivant</span>
-                            </button>
-                        </div>
-
-                        <!--& Le corps de la carte musique. -->
-                        <div class="card-body">
-
-                            <!--& Le titre de la carte musique. -->
-                            <h3 class="card-title">La musique.</h3>
-
-                            <!--& Le texte de la carte musique. -->
-                            <p class="card-text">
-                                J'adore écouter de la musique tout en travaillant. L'on peut écouter différents styles; selon notre humeur ou encore selon ce que l'on n'est en train de faire afin de trouver plus facilement l'inspiration.
-                            </p>
-
-                            <!--? Le titre du texte de présentation de mes groupes de musique favoris. -->
-                            <p class="py-2 pointeur" id="titreTexteSousSectionMusique">
-                                <i>Une liste des groupes, artistes et bandes originales que j'aime écouter tout en travaillant : </i>
-                            </p>
-
-                            <div class="card-text hide texteSousSectionMusique">
-
-                                <!--? Les groupes de métal. -->
-                                <p class="list-group list-group-flush hide texteSousSectionMusique"> 
-                                    Quelques groupes de métal : 
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionMusique">
-
-                                    <li class="list-group-item">
-                                        AC/DC (highway to hell, back in black),
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Iron maiden (fear of the dark, the final frontier).
-                                    </li>
-
-                                </ul>
-
-                                <!--? Les groupes de power métal. -->
-                                <p class="list-group list-group-flush hide texteSousSectionMusique">
-                                    Quelques groupes de power métal :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionMusique">
-
-                                    <li class="list-group-item">
-                                        Powerwolf (blessed and possessed, preachers of the night),
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Gloryhammer (tales from the kingdom of fife, space 1992: rise of the chaos wizards).
-                                    </li>
-
-                                </ul>
-
-                                <!--? Le groupe de J-POP -->
-                                <p class="list-group list-group-flush hide texteSousSectionMusique">
-                                    Un groupe de J-POP que j'adore :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionMusique">
-
-                                    <li class="list-group-item">
-                                        Babymetal (Metal Resistance, Metal Galaxy).
-                                    </li>
-
-                                </ul>
-
-                                <!--? Les bandes originales de film. -->
-                                <p class="list-group list-group-flush hide texteSousSectionMusique">
-                                    Quelques excellentes bandes originales de film :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionMusique">
-
-                                    <li class="list-group-item">
-                                        Conan the Barbarian (Prometheus Edition),
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Star Wars, épisode V : L'Empire contre-attaque (bande originale).
-                                    </li>
-
-                                </ul>
-
-                                <!--? Les bandes originales de jeux vidéo. -->
-                                <p class="list-group list-group-flush hide texteSousSectionMusique">
-                                    Et pour finir quelques bandes originales de jeux vidéo :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionMusique">
-                                    <li class="list-group-item">
-                                        kingdom hearts,
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Super Mario Galaxy.
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!--
-                . --------------------------------------------------------------------------------
-                                                            £ Les jeux vidéo.
-                . --------------------------------------------------------------------------------
-                -->
-                <article class="col pb-2">
-                    <div class="card h-100 border-dark">
-
-                        <!--& L'image de la carte jeux vidéo. -->
-                        <img id="imageSectionJeuxVideo" loading="lazy" class="card-img-top pt-1 px-1"
-                        src="img/passions/jv/switch.jpg"
-                        alt="Une console Nintendo Switch. Elle est représentée en mode portable sur un fond de couleur purple; avec son joy-con bleu à gauche et son joy-con rouge à droite. Son écran est éteint."
-                        title="Une switch, une console de salon utilisable en console portable, du pur génie nippon." >
-
-                        <!--& Le corps de la carte jeux vidéo. -->
-                        <div class="card-body">
-
-                            <!--& Le titre de la carte jeux vidéo. -->
-                            <h3 class="card-title">Les jeux vidéo.</h3>
-
-                            <!--& Le texte de la carte jeux vidéo. -->
-                            <p class="card-text">
-                                J'adore jouer aux jeux vidéo depuis que je suis petit, et il y a une fonction qui est leur est commune à tous : il faut toujours <strong>cliquer</strong> pour pouvoir continuer de jouer. J'affectionne tout particulièrement les J-RPG, ils sont la fusion merveilleuse des caractéristiques des rpg et du génie japonais; c'est d'ailleurs grâce à eux que j'ai eu envie de m'investir en anglais (afin de pouvoir jouer à ces jeux dit "jeux de niches" qui sont rarement traduit chez nous.
-                            </p>
-
-                            <!--? Le titre du texte de présentation de mes styles de jeux vidéo favoris. -->
-                            <p class="py-2 pointeur" id="titreTexteSousSectionJeuxVideo">
-                                <i>Une liste de mes styles de jeux préférés :</i>
-                            </p>
-
-                            <p class="card-text hide texteSousSectionJeuxVideo"> 
-
-                                <!--? Les FPS. -->
-                                <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                    Les FPS :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                    <li class="list-group-item">
-                                        Star wars - Battlefront 2 (le vrai, pas la purge de EA),
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Doom Eternal.
-                                    </li>
-
-                                </ul>
-
-                                <!--? Les jeux de stratégie. -->
-                                <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                    Les jeux de stratégie :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                    <li class="list-group-item">
-                                        X-com 2,
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Star wars - Galactic battlegrounds,
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Fire emblem.
-                                    </li>
-
-                                </ul>
-
-                                <!--? Les RPG. -->
-                                <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                    Les RPG :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                    <li class="list-group-item">
-                                        The elder scrolls V : Skyrim,
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Divinity : original sin 2,
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Mass effect.
-                                    </li>
-
-                                </ul>
-
-                                <!--? Les J-RPG. -->
-                                <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                    Les J-RPG :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                    <li class="list-group-item">
-                                        Xenoblade chronicles 2,
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Final Fantasy VII.
-                                    </li>
-
-                                </ul>
-
-                        </div>
-                    </div>
-                </article>
-
-                <!--
-                . --------------------------------------------------------------------------------
-                                                    £ La science-fiction et le fantastique.
-                . --------------------------------------------------------------------------------
-                -->
-
-                <article class="col pb-2">
-                    <div class="card h-100 border-dark">
-
-                        <!--& L'image de la carte SFF. -->
-                        <img id="imageSectionSFF" class="card-img-top pt-1 px-1" loading="lazy"
-                        src="img/passions/sff/1.jpg"
-                        alt="Des images représentant des villes cyberpunk, des robots, et des vaisseaux spatiaux défilent pour représenter la partie science-fiction. Pour la partie fantastique nous pouvons voir un manoir hanté, des dragons et un paysage représentant l'habitation de Gollum."
-                        title="Des images qui représentent les thèmes de la science-fiction et du fantastique défilent." >
-
-                        <!--& Le corps de la carte SFF. -->
-                        <div class="card-body">
-
-                            <!--& Le titre de la carte sff. -->
-                            <h3 class="card-title">La science-fiction et le fantastique.</h3>
-
-                            <!--& Le texte de la carte sff. -->
-                            <p class="card-text">
-                                J'aime autant la science-fiction que le fantastique, ce sont deux types d'univers qui peuvent se retrouver partout et qui n'ont pour limite que notre imagination. On en compte aussi bien ces deux univers dans des œuvres cinématographiques, vidéoludiques, que littéraires.
-                            </p>
-
-                            <!--? Le titre du texte de présentation de œuvres de SFF favoris. -->
-                            <p class="py-2 pointeur" id="titreTexteSousSectionSFF">
-                                <i>Une liste de mes œuvres de science-fiction et fantastique préférés : </i>
-                            </p>
-
-                            <!--? Le texte du hide and show de la carte sff. -->
-                            <p class="card-text hide texteSousSectionSFF">
-
-                                <!--? La science-fiction. -->
-                                <p class="list-group list-group-flush hide texteSousSectionSFF">
-                                    Pour le genre science-fiction :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionSFF">
-
-                                    <li class="list-group-item">
-                                        Un film : Star Wars.
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Un livre : Metro 2033.
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Un jeu vidéo : Star Wars : Knights of the Old Republic.
-                                    </li>
-
-                                </ul>
-
-                                <!--? Le genre fantastique. -->
-                                <p class="list-group list-group-flush hide texteSousSectionSFF">
-                                    Pour le genre fantastique :
-                                </p>
-
-                                <ul class="list-group list-group-flush hide texteSousSectionSFF">
-
-                                    <li class="list-group-item">
-                                        Un film : Les Gremlins.
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Un livre : La tour sombre.
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        Un jeu vidéo : Dark Souls.
-                                    </li>
-
-                                </ul>
-
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-
-
-        <!--
-        : ************************************************************************************************************
-                                                        % La seconde transition : Actuellement.
-        : ************************************************************************************************************
-        -->
-        <div class="parallax transition" id="transitionActuellement">
-
-            <!--) Le titre de la transition. -->
-            <p>
-                <strong>Actuellement : </strong>
-            </p>
-
-            <!--) Le texte de la transition. -->
-            <p>
-                <typewritten-text repeat phrase-interval="5000">
-                    <strong>À la recherche d'un emploi de développeur.</strong>
-                </typewritten-text>
-            </p>
-
-        </div>
-
-
-        <!--
-        : ************************************************************************************************************
-                                                        % Mes compétences.
-        : ************************************************************************************************************
-        -->
-        <article class="titreDeSection">
-
-            <!--ù Le titre de la section. -->
-            <h2 id="competences" class="text-center">Mes compétences de développeur</h2>
-
-            <!--ù La ligne de séparation. -->
-            <hr>
-
-        </article>
-
-
-        <div class="container-fluid competence sectionbleu" id="sectionCompetence">  
-
-            <!--) Le petit texte d'introduction. -->
-            <div class="cvComp sectionbleu">
-
-                <p>
-                    Elles sont en constante amélioration car pour moi la joie de ce métier fait que j'en apprend tous les jours, d'autant plus en étant impliqué, curieux et passionné.
-                </p>
-
-                <p>
-                    Vous pouvez aussi aller faire un tour sur <a href="cv.html" target="_blank">mon cv</a> en version html/css, ou bien aller jeter un coup d'œil sur sa <a href="pdf/cv_yoann_bezard.pdf" target="_blank">version pdf</a>, voire même regarder la version <a href="video/cv_yoann_bezard_anime.mp4" target="_blank">animé</a> pour en apprendre plus sur mes compétences et mon parcours professionnel.
-                </p>
-
-            </div>
-
-            <div class="container">
-
-                <!--
-                . --------------------------------------------------------------------------------
-                                                            £ Les langages.
-                . --------------------------------------------------------------------------------
-                -->
-
-                <section class="row">
-
-                    <!--= Le titre de la sous-section de compétences. -->
-                    <h3 class="text-center pt-2 pb-2">Les langages.</h3>
-
-                    <!--§ Le HTML5. -->
-                    <div class="col centré">
-
-                        <p>HTML5</p>
-                        
-                        <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
-                        src="img/competences/html5.png"
-                        alt="Le logo du HTML5. C'est un pentagone orange avec un 5 blanc en son centre. On à l’impression que le centre du pentagone est plié vers l’avant, cet effet donne du relief au logo."
-                        title="Le logo du HTML5." >
-
-                    </div>
-
-                    <!--§ Le CSS3. -->
-                    <div class="col centré">
-
-                        <p>CSS3</p>
-
-                        <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
-                        src="img/competences/css3.png"
-                        alt="Le logo du CSS3. C'est un pentagone bleu avec un 3 blanc en son centre. On à l’impression que le centre du pentagone est plié vers l’avant, cet effet donne du relief au logo."
-                        title="Le logo du CSS3." >
-
-                    </div>
-
-                    <!--§ Le Javascript. -->
-                    <div class="col centré">
-
-                        <p>JavaScript</p>
-
-                        <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
-                        src="img/competences/js.png"
-                        alt="Le logo de JavaScript. C'est un carré jaune qui porte l'inscription JS ( pour JavaScript ) en bas à droite."
-                        title="Le logo de JavaScript. C’est un carré jaune avec sobrement écrit JS en lettre noire en bas à droite." >
-
-                    </div>
-
-                    <!--§ Le PHP. -->
-                    <div class="col centré">
-
-                        <p>PHP</p>
-
-                        <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
-                        src="img/competences/php.png"
-                        alt="Le logo de PHP. C’est un oval de couleur bleu légèrement dénaturé sur lequel le bord est assombri afin de donner une impression de profondeur. Le mot PHP est écrit en son centre, en lettre noire entouré d’un filet blanc." 
-                        title="Le logo de PHP." >
-
-                    </div>
-
-                    <!--§ MySQL. -->
-                    <div class="col centré">
-
-                        <p>MySQL</p>
-                        <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
-                        src="img/competences/mysql.png"
-                        alt="Le logo de MySQL. Le mot My est écrit en bleu, et le mot SQL est écrit en orange. L’on peut voir la silhouette d’un dauphin sortant son bec hors du mot SQL et nageant calmement vers le début du logo."
-                        title="Le logo de MySQL." >
-
-                    </div>
-                </section>
-
-                <!--= Une ligne de séparation. -->
-                <div class="border-separate-skills my-3"></div>
-
-                <!--
-                . --------------------------------------------------------------------------------
-                                                            £ Les frameworks.
-                . --------------------------------------------------------------------------------
-                -->
-
-                <section class="row pb-2">
-
-                    <!--= Le titre de la sous-section de compétences. -->
-                    <h3 class="text-center">Les frameworks.</h3>
-
-                    <!--§ Bootstrap5. -->
-                    <div class="col centré">
-
-                        <p>Bootstrap5</p>
-
-                        <img class="logo-competences hideCompetences pb-2 frameworks" loading="lazy"
-                        src="img/competences/bootstrap.png"
-                        alt="Le logo de Bootstrap. C’est un carré de couleur violet foncé modéré dont les bords ont été arrondis. Il y a un gros B en son centre."
-                        title="Le logo de Bootstrap." >
-
-                    </div>
-
-                </section>
-
-                <!--= Une ligne de séparation. -->
-                <div class="border-separate-skills my-3"></div>
-
-                <!--
-                . --------------------------------------------------------------------------------
-                                                            £ Les CMS.
-                . --------------------------------------------------------------------------------
-                -->
-
-                <section class="row">
-
-                    <!--= Le titre de la sous-section de compétences. -->
-                    <h3 class="text-center pt-2 pb-2">Les CMS.</h3>
-
-                    <!--§ Wordpress. -->
-                    <div class="col centré">
-
-                        <p>Wordpress</p>
-
-                        <img class="logo-competences hideCompetences pb-2 cms" loading="lazy"
-                        src="img/competences/wordpress.png"
-                        alt="Le logo de Wordpress. C'est cercle gris qui comporte en son centre un W noire qui se termine par une virgule montante."
-                        title="Le logo de Wordpress." >
-
-                    </div>
-
-                </section>
-
-                <!--= Une ligne de séparation. -->
-                <div class="border-separate-skills my-3"></div>
-
-                <!--
-                . --------------------------------------------------------------------------------
-                                                            £ Les outils.
-                . --------------------------------------------------------------------------------
-                -->
-
-                <section class="row">
-
-                    <!--= Le titre de la sous-section de compétences. -->
-                    <h3 class="text-center pt-2 pb-2">Les outils.</h3>
-
-                    <!--§ GitHub. -->
-                    <div class="col centré">
-
-                        <p>Github</p>
-
-                        <img class="logo-competences hideCompetences pb-3 outils" loading="lazy"
-                        src="img/competences/github.png"
-                        alt="Le logo de Github. C’est la silhouette d’un chat, avec une tentacule à sa droite, et dont la forme est dessiné par un contour noir sur un fond gris."
-                        title="Le logo de Github." >
-
-                    </div>
-
-                    <!--§ Visual studio code. -->
-                    <div class="col centré">
-
-                        <p>Visual studio code</p>
-
-                        <img class="logo-competences hideCompetences pb-3 outils" loading="lazy"
-                        src="img/competences/vsc.png"
-                        alt="Le logo de visual studio code. C'est une boucle d'infinité bleu tridimensionnelle. Elle est tournés aux ¾, créant ainsi une perspective intéressante qui évoque un sentiment de mouvement, de progrès et de dynamisme."
-                        title="Le logo de Visual studio code." >
-
-                    </div>
-
-                </section>
-            </div>
-        </div>
-
-
-        <!--
-        : ************************************************************************************************************
-                                                        % La troisième transition : Les études.
-        : ************************************************************************************************************
-        -->
-        <div class="parallax transition" id="transitionEtude">
-
-            <!--) La citation -->
-            <q cite="https://citation-celebre.leparisien.fr/citations/98971">
-                <typewritten-text repeat phrase-interval="5000">
-                    <strong>Pendant les études, la réussite ne dépend que de soi, dans la vie professionnelle, la réussite dépend aussi des autres.</strong>
-                </typewritten-text>
-            </q>
-
-            <!--) L'auteur de la citation. -->
-            <p><strong>Edine-le-sage.</strong></p>
-        </div>
-
-
-        <!--
-        : ************************************************************************************************************
-                                                        % Mon portfolio.
-        : ************************************************************************************************************
-        -->
-        <article class="titreDeSection">
-
-            <!--ù Le titre de la section. -->
-            <h2 id="portfolio" class="text-center">Mon portfolio</h2>
-
-            <!--ù La ligne de séparation. -->
-            <hr>
 
         </article>
 
         <!--
         . --------------------------------------------------------------------------------
-                                        £ Les boutons pour sélectionner les catégories.
+                                    £ Bugstastique.
         . --------------------------------------------------------------------------------
         -->
 
-        <div class="sectionbleu" id="myBtnContainer">
+        <!--, Les outils utilisés durant le projet. -->
+        <article class="cartePortfolio animationPf wordpress">
 
-            <button class="boutonSelectionCategorie actif" id="btnAll">Voir tout mes projets.</button>
+            <!--§ Le titre. -->
+            <h3 class="titreCarte"> Bugstastique
+                <!--§ Le lien vers le projet sur GitHub. --> 
+                <a href="https://github.com/YoannB91/Bugstastique" target="_blank"> 
+                    <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i>
+                </a> 
+            </h3>
 
-            <button class="boutonSelectionCategorie" id="btnHtml">HTML5/CSS3</button>
+            <!--§ Le lien vers le projet. -->
+            <a href="http://s880335714.onlinehome.fr/" target="_blank">
+                <!--§ Un screen de l'accueil du site. -->
+                <img class="imageCarte" loading="lazy"
+                src="img/portfolio/Bugstastique.png"
+                alt="Il y a une barre de navigation rouge sur laquelle se trouve une manette de playstation 1 avec un cœur. Dessous se trouve la bannière avec écrit le nom du site. En dessous de ça l’on peut voir les articles qui sont mis en avant lors de l’arrivée d’un visiteur sur le site."
+                title="La page d'accueil du site Bugstastique, un blog Wordpress qui se moque des bugs dans les jeux vidéo tout en parodiant des reportages." >
+            </a>
 
-            <button class="boutonSelectionCategorie" id="btnBt">Bootstrap5</button>
-
-            <button class="boutonSelectionCategorie" id="btnPhp">PHP</button>
-
-            <button class="boutonSelectionCategorie" id="btnWp">Wordpress</button>
-
-        </div>
-
-        <div class="sectionbleu sectionPortfolio">
-
-            <!--
-            . --------------------------------------------------------------------------------
-                                        £ Mon premier projet : Mon CV.
-            . --------------------------------------------------------------------------------
-            -->
-            <article class="cartePortfolio animationPf cvPortolio html bootstrap">
-
-                <!--§ Le titre. -->
-                <h3 class="titreCarte"> Mon CV 
-                    <!--§ Le lien vers le projet sur GitHub. -->
-                    <a href="https://github.com/YoannB91/PortFolio" target="_blank"> 
-                        <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> 
-                    </a> 
-                </h3>
-
-                <!--§ Le lien vers le projet. -->
-                <a href="cv.html" target="_blank">
-                    <!--§ Un screen de l'accueil du site. -->
-                    <img class="imageCarte" loading="lazy"
-                    src="img/portfolio/cv.png"
-                    alt="Une capture d'écran de la page CV. L'on peut y voir son header qui comporte mon nom, mon métier et des icônes pour accéder à mes réseaux sociaux. Il y a aussi la section 'à propos' qui est visible juste sous l'en-tête de la page."
-                    title="Mon cv, fait en utilisant les compétences en HTML5, CSS3 et Bootstrap5." >
-                </a>
-
-                <!--§ Le descriptif du projet. -->
-                <p>
-                    Voici le CV que j'ai fait en HTML5/CSS3, exclusivement pour mon portfolio. Il à été fait durant ma remise à niveau de développeur web chez Doranco, dans le but de me permettre de pratiquer mes nouvelles compétences et d'avoir un premier projet à exposer dans cette partie de mon site.
-                </p>
-
-                <!--§ La liste des outils utilisés pour faire le projet. -->
-                <ul>
-
-                    <li class="listeTech">HTML5</li>
-                    <li class="listeTech">CSS3</li>
-                    <li class="listeTech">Bootstrap5</li>
-
-                </ul>
-
-            </article>
-
-            <!--
-            . --------------------------------------------------------------------------------
-                                        £ Mon second projet : Le projet véville.
-            . --------------------------------------------------------------------------------
-            -->
-            <article class="cartePortfolio animationPf html bootstrap php">
-
-                <!--§ Le titre. -->
-                <h3 class="titreCarte"> Projet Véville 
-                    <!--§ Le lien vers le projet sur GitHub. -->
-                    <a href="https://github.com/YoannB91/location-de-voiture" target="_blank"> 
-                        <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> 
-                    </a> 
-                </h3>
-
-                <!--§ Le lien vers le projet. -->
-                <a href="Location/view/index.php" target="_blank">
-                    <!--§ Un screen de l'accueil du site. -->
-                    <img class="imageCarte" loading="lazy"
-                    src="img/portfolio/projet_veville.png"
-                    alt="Il y a une barre de navigation tout en haut de l’image qui indique que la personne connecté est Yoann Bezard. En dessous se trouve le logo de Véville et la page pour sélectionner une date et une adresse de départ afin de pouvoir sélectionner son véhicule selon leurs disponibilités." 
-                    title="La page d'accueil du site que j'ai fait pour le projet véville, elle permet de sélectionner et réserver un véhicule." >
-                </a>
-
-                <!--§ Le descriptif du projet. -->
-                <p>
-                    Le projet Véville est un TP PHP que j'ai réalisé en une semaine durant ma remise à niveau de développeur web chez Doranco. Il consistait à refaire le site de location de véhicule pour une société nommé Véville en utilisant nos compétences fraîchement acquises en PHP. Il dispose d'un système d'inscription, de connection et de réservation pour les véhicules.
-                </p>
-
-                <!--§ La liste des outils utilisés pour faire le projet. -->
-                <ul>
-
-                    <li class="listeTech">HTML5</li>
-                    <li class="listeTech">CSS3</li>
-                    <li class="listeTech">PHP</li>
-                    <li class="listeTech">Bootstrap5</li>
-
-                </ul>
-
-            </article>
-
-            <!--
-            . --------------------------------------------------------------------------------
-                                        £ Mon second projet : Bugstastique.
-            . --------------------------------------------------------------------------------
-            -->
-            <article class="cartePortfolio animationPf wordpress">
-
-                <!--§ Le titre. -->
-                <h3 class="titreCarte"> Bugstastique
-                    <!--§ Le lien vers le projet sur GitHub. --> 
-                    <a href="https://github.com/YoannB91/Bugstastique" target="_blank"> 
-                        <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> 
-                    </a> 
-                </h3>
-
-                <!--§ Le lien vers le projet. -->
-                <a href="http://s880335714.onlinehome.fr/" target="_blank">
-                    <!--§ Un screen de l'accueil du site. -->
-                    <img class="imageCarte" loading="lazy"
-                    src="img/portfolio/Bugstastique.png"
-                    alt="Il y a une barre de navigation rouge sur laquelle se trouve une manette de playstation 1 avec un cœur. Dessous se trouve la bannière avec écrit le nom du site. En dessous de ça l’on peut voir les articles qui sont mis en avant lors de l’arrivée d’un visiteur sur le site."
-                    title="La page d'accueil du site Bugstastique, un blog Wordpress qui se moque des bugs dans les jeux vidéo tout en parodiant des reportages." >
-                </a>
-
-                <!--§ Le descriptif du projet. -->
-                <p>
-                    Je l'ai fait en une journée et demie lors de la semaine d'initiation Wordpress de ma remise à niveau de développeur web en utilisant le thème color-newsmagazine. J'ai choisi de faire un site sur un sujet qui m'amusait: les bugs dans les jeux vidéo, et j'ai utilisé des captures d'écrans accumulées lors de mes nombreuses années de joueur pour illustrer le tout. 
-                </p>
-
-                <!--§ La liste des outils utilisés pour faire le projet. -->
-                <ul>
-
-                    <li class="listeTech">Wordpress</li>
-
-                </ul>
-
-            </article>
-        </div>
-
-
-        <!--
-        : ************************************************************************************************************
-                                                        % La quatrième transition : L'informatique.
-        : ************************************************************************************************************
-        -->
-        <div class="parallax transition" id="transitionInformatique">
-
-            <!--) La citation. -->
-            <q cite="https://blog.nicolas.brondin-bernard.com/7-citations-sur-la-programmation-que-jadore/">
-                <typewritten-text repeat phrase-interval="5000">
-                    <strong>N’importe quel idiot peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre.</strong>
-                </typewritten-text>
-            </q>
-
-            <!--) L'auteur de la citation. -->
+            <!--§ Le descriptif du projet. -->
             <p>
-                <strong>Martin Fowler.</strong>
+                Je l'ai fait en une journée et demie lors de la semaine d'initiation Wordpress de ma remise à niveau de développeur web en utilisant le thème color-newsmagazine. J'ai choisi de faire un site sur un sujet qui m'amusait: les bugs dans les jeux vidéo, et j'ai utilisé des captures d'écrans accumulées lors de mes nombreuses années de joueur pour illustrer le tout. 
             </p>
 
-        </div>
+            <!--§ La liste des outils utilisés pour faire le projet. -->
+            <ul>
 
+                <li class="listeTech">Wordpress</li>
 
-        <!--
-        : ************************************************************************************************************
-                                                        % Contact.
-        : ************************************************************************************************************
-        -->
-        <article class="titreDeSection" id="titreContact">
-
-            <!--ù Le titre de la section. -->
-            <h2 id="contact" class="text-center">Contactez-moi</h2>
-
-            <!--ù La ligne de séparation. -->
-            <hr>
+            </ul>
 
         </article>
 
         <!--
         . --------------------------------------------------------------------------------
-                                            £ Le formulaire de contact.
+                                    £ Le projet recette.
         . --------------------------------------------------------------------------------
         -->
-        <div class="container-fluid sectionbleu hideContact" id="formulaireContact">
-            <div class="container">
-                <form method="POST" action="php/formulaire.php">
 
-                    <div class="row">
+        <!--, Les outils utilisés durant le projet. -->
+        <article class="cartePortfolio animationPf html bootstrap javaScript java mySql">
 
-                        <!--: Le nom. -->
-                        <div class="col-12 col-md-6 my-3">
-                            <label for="nom"  class="form-label droiteContact">Votre nom <span class="obligatoire">(Obligatoire)</span>.</label>
-                            <input type="text" id="nom" name="nom" class="form-control droiteContact">
-                        </div>
+            <!--§ Le titre. -->
+            <h3 class="titreCarte"> Le projet recette
+                <!--§ Le lien vers le projet sur GitHub. -->
+                <i class="fab fa-github-square" title="Nous tenons à garder l'api de ce projet privé."></i>
+            </h3>
 
-                        <!--: Le prénom. -->
-                        <div class="col-12 col-md-6 my-3">
-                            <label for="prenom" class="form-label gaucheContact">Votre prénom.</label>
-                            <input type="text" id="prenom" name="prenom" class="form-control gaucheContact">
+            <!--§ Le lien vers le projet. -->
+            <!-- <a href="#" target="_blank"> -->
+                <!--§ Un screen de l'accueil du site. -->
+                <img class="imageCarte" loading="lazy"
+                src="img/portfolio/projet_recette.png"
+                alt="Il y a une barre de navigation noire tout en haut du site. Dessous se trouve un plat de sushi, puis la liste des recettes ( cette zone est de couleur rouge ) et des ingrédients ( et cette zone-ci de couleur bleu ) du site. Tout en bas se trouve un footer vert."
+                title="La page d'accueil du site smithing-recette, le site qui va détrôner marmiton grâce aux merveilleuses recettes de Dark Sasuke !" >
+            <!-- </a> -->
 
+            <!--§ Le descriptif du projet. -->
+            <p>
+                C'est un projet qu'une partie du groupe avec lequel j'ai fait ma formation de développeur d’applications informatiques PGI/ERP à décider de faire afin de mettre en pratique ce que nous venions d'apprendre. <br /> 
+                C'était un <a href="pdf/projet_recette_pdf_de_base.pdf" target="_blank">exercice</a> que nous avions vu durant notre formation, et que nous avions décidé de reprendre afin de le refaire tout en en améliorant les fonctionnalités. <br />
+                Dans le but de simuler une situation réelle nous avons décidé d'utiliser la méthode agile. Nous avons commencé par faire de nouveaux <a href="img/diagrammes_projet_recette/" target="_blank">diagrammes</a> afin d'avoir un support visuel avant de nous mettre au travail. Nous avons ensuite travaillé en effectuant des "sprints" et des réunions en début et fin de projet afin de nous assurer que le travail des uns et des autres se passaient sans encombre.
+                Sur ce projet j'ai principalement travaillé l'entité Utilisateur, aussi bien en back qu'en front. J'ai aussi travaillé en duo avec Corentin Rasda sur la partie cookie du site qui permet à un utilisateur de rester connecté sur toutes les pages du site lors de sa visite. <br />
+                Enfin, lors des dernières heures du projet c'est moi qui ai refait les commentaires des fichiers HTML et JavaScript afin de les rendre plus lisible et présentable.
+            </p>
+
+            <!--§ La liste des outils utilisés pour faire le projet. -->
+            <ul>
+
+                <li class="listeTech">HTML5</li>
+                <li class="listeTech">CSS3</li>
+                <li class="listeTech">Bootstrap5</li>
+                <li class="listeTech">Java</li>
+                <li class="listeTech">MySQL</li>
+
+            </ul>
+
+        </article>
+
+    </div>
+
+
+    <!--
+    : ************************************************************************************************************
+                                                    % La quatrième transition : L'informatique.
+    : ************************************************************************************************************
+    -->
+
+    <div class="parallax transition" id="transitionInformatique">
+
+        <!--) La citation. -->
+        <q cite="https://blog.nicolas.brondin-bernard.com/7-citations-sur-la-programmation-que-jadore/">
+            <typewritten-text repeat phrase-interval="5000">
+                <strong>N’importe quel idiot peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre.</strong>
+            </typewritten-text>
+        </q>
+
+        <!--) L'auteur de la citation. -->
+        <p>
+            <strong>Martin Fowler.</strong>
+        </p>
+
+    </div>
+
+
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "Contact".
+    : ************************************************************************************************************
+    -->
+
+    <article class="titreDeSection" id="titreContact">
+
+        <!--ù Le titre de la section. -->
+        <h2 id="contact" class="text-center">Contactez-moi</h2>
+
+        <!--ù La ligne de séparation. -->
+        <hr>
+
+    </article>
+
+    <!--
+    . --------------------------------------------------------------------------------
+                                        £ Le formulaire de contact.
+    . --------------------------------------------------------------------------------
+    -->
+
+    <div class="container-fluid sectionbleu hideContact" id="formulaireContact">
+        <div class="container">
+            <form method="POST" action="php/formulaire.php">
+
+                <div class="row">
+
+                    <!--: Le nom. -->
+                    <div class="col-12 col-md-6 my-3">
+                        <label for="nom"  class="form-label droiteContact">Votre nom <span class="obligatoire">(Obligatoire)</span>.</label>
+                        <input type="text" id="nom" name="nom" class="form-control droiteContact">
+                    </div>
+
+                    <!--: Le prénom. -->
+                    <div class="col-12 col-md-6 my-3">
+                        <label for="prenom" class="form-label gaucheContact">Votre prénom.</label>
+                        <input type="text" id="prenom" name="prenom" class="form-control gaucheContact">
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!--: L'adresse e-mail. -->
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="email" class="form-label droiteContact">Votre adresse e-mail <span class="obligatoire">(Obligatoire)</span>.</label>
+                        <input type="email" id="email" name="email" class="form-control droiteContact">
+                    </div>
+
+                    <!--: Le numéro de téléphone. -->
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="telephone" class="form-label gaucheContact">Votre numéro de téléphone.</label>
+                        <input type="tel" id="telephone" name="telephone" class="form-control gaucheContact">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <!--: L'objet du message. -->
+                    <div class="col-12 mb-3">
+                        <label for="objet" class="form-label droiteContact">L'objet de votre message <span class="obligatoire">(Obligatoire)</span>.</label>
+                        <input class="form-control droiteContact" id="objet" name="objet" list="datalistOptions" placeholder="Sélectionner une demande dans la liste.">
+
+                        <!--: La liste des options des objets potentielles pour le message. -->
+                        <datalist id="datalistOptions">
+                            <option value="Me poser une question à propos de mon Portfolio.">
+                            <option value="Me faire un commentaire sur mon Portfolio.">
+                            <option value="Me poser une question à propos d'un autre projet.">
+                            <option value="Me faire un commentaire sur un autre projet.">
+                            <option value="Me commander la création d'un site web.">
+                            <option value="Me faire une proposition d'emploi.">
+                            <option value="Autre (écrivez votre propre objet dans la case).">
+                        </datalist>
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!--: Le message. -->
+                    <div class="col-12 mb-3">
+                        <div class="mb-3">
+                            <label for="message" class="form-label gaucheContact">Votre message <span class="obligatoire">(Obligatoire)</span>.</label>
+                            <textarea id="message" name="message" class="form-control gaucheContact" rows="6"></textarea>
                         </div>
                     </div>
 
-                    <div class="row">
+                </div>
 
-                        <!--: L'adresse e-mail. -->
-                        <div class="col-12 col-md-6 mb-3">
-                            <label for="email" class="form-label droiteContact">Votre adresse e-mail <span class="obligatoire">(Obligatoire)</span>.</label>
-                            <input type="email" id="email" name="email" class="form-control droiteContact">
-                        </div>
+                <div class="row">
+                    <div class="form-check mb-3 accepte basContact">
 
-                        <!--: Le numéro de téléphone. -->
-                        <div class="col-12 col-md-6 mb-3">
-                            <label for="telephone" class="form-label gaucheContact">Votre numéro de téléphone.</label>
-                            <input type="tel" id="telephone" name="telephone" class="form-control gaucheContact">
-                        </div>
+                        <!--: Le texte pour prévenir des mentions légales. -->
+                        <label for="accept" class="form-check-label">
+                            En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consulter <a href="politique_de_confidentialité.html" target="_blank">la Politique de confidentialité</a>.
+                        </label>
 
-                    </div>
-
-                    <div class="row">
-
-                        <!--: L'objet du message. -->
-                        <div class="col-12 mb-3">
-                            <label for="objet" class="form-label droiteContact">L'objet de votre message <span class="obligatoire">(Obligatoire)</span>.</label>
-                            <input class="form-control droiteContact" id="objet" name="objet" list="datalistOptions" placeholder="Sélectionner une demande dans la liste.">
-
-                            <!--: La liste des options des objets potentielles pour le message. -->
-                            <datalist id="datalistOptions">
-                                <option value="Me poser une question à propos de mon Portfolio.">
-                                <option value="Me faire un commentaire sur mon Portfolio.">
-                                <option value="Me poser une question à propos d'un autre projet.">
-                                <option value="Me faire un commentaire sur un autre projet.">
-                                <option value="Me commander la création d'un site web.">
-                                <option value="Me faire une proposition d'emploi.">
-                                <option value="Autre (écrivez votre propre objet dans la case).">
-                            </datalist>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <!--: Le message. -->
-                        <div class="col-12 mb-3">
-                            <div class="mb-3">
-                                <label for="message" class="form-label gaucheContact">Votre message <span class="obligatoire">(Obligatoire)</span>.</label>
-                                <textarea id="message" name="message" class="form-control gaucheContact" rows="6"></textarea>
-                            </div>
-                        </div>
+                        <!--: Le bouton pour accepter les conditions d'utilisation. -->
+                        <input type="checkbox" id="accept" name="accepter" class="form-check-input">
 
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="form-check mb-3 accepte basContact">
+                <div class="row">
 
-                            <!--: Le texte pour prévenir des mentions légales. -->
-                            <label for="accept" class="form-check-label">
-                                En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consulter <a href="politique_de_confidentialité.html" target="_blank">la Politique de confidentialité</a>.
-                            </label>
-
-                            <!--: Le bouton pour accepter les conditions d'utilisation. -->
-                            <input type="checkbox" id="accept" name="accepter" class="form-check-input">
-
-                        </div>
+                    <!--: Le bouton pour envoyer le formulaire. -->
+                    <div class="mb-3 envoyer">
+                        <button type="submit" class="btn btn-primary basContact">Envoyer</button>
                     </div>
 
-                    <div class="row">
+                </div>
 
-                        <!--: Le bouton pour envoyer le formulaire. -->
-                        <div class="mb-3 envoyer">
-                            <button type="submit" class="btn btn-primary basContact">Envoyer</button>
-                        </div>
-
-                    </div>
-
-                </form>
-            </div>
+            </form>
         </div>
+    </div>
 
     </main>
 
 
     <!--
     : ************************************************************************************************************
-                                                    % Le pied de ma page.
+                                                    % Le footer.
     : ************************************************************************************************************
     -->
-    <footer>
 
-        <!--: Les droits du site. -->
-        <div class="droit">
-            <p>&copy; 2021 - Yoann Bezard - Tous droits réservés.</p>
-        </div>
-
-        <div>
-            <ul class="breadcrumb fin">
-
-                <!--: Le lien vers les documents légaux. -->
-                <li>
-                    <a href="mentions_legales.html" target="_blank">Mentions légales</a>
-                </li>
-
-            </ul>
-
-            <ul class="breadcrumb fin">
-
-                <!--: Le lien vers la politique de confidentialité. -->
-                <li>
-                    <a href="politique_de_confidentialité.html" target="_blank" class="politique">Politique de confidentialité</a>
-                </li>
-
-            </ul>
-
-                <!--: Les icônes des réseaux sociaux. -->
-                <ul class="breadcrumb rsfin">
-
-                <!--: Linkedin.  -->
-                <li>
-                    <a href="https://www.linkedin.com/in/yoann-bezard-917b43204/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-
-                <!--: GitHub. -->
-                <li>
-                    <a href="https://github.com/YoannB91" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-
-            </ul>
-        </div>
-
-    </footer>
+    <!--, Je demande à inclure le fichier "footer". -->
+    <div include-html="include/includeFooter.html"></div>
 
 
     <!--
@@ -1289,11 +1222,14 @@
     <!--§ Le js du typewriter. -->
     <script type="module" src="https://unpkg.com/@auroratide/typewritten-text/lib/define.js"></script>
 
+    <!--§ Le js de l'inclusion de fichier HTML. -->
+    <script src="js/includeHtml.js"></script>
+
     <!--§ Le js de la navbar. -->
     <script src="js/navbarBurger.js"></script>
 
-    <!--§ Mon main js. -->
-    <script src="js/script.js"></script>
+    <!--§ Mon js de l'index. -->
+    <script src="js/scriptIndex.js"></script>
 
 </body>
 </html>

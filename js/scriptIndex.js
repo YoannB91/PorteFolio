@@ -321,11 +321,20 @@ var all = document.getElementById('btnAll');
 //. --------------------Le bouton pour afficher les projets utilisant le HTML5 et le CSS3.--------------------
 var btnHtml = document.getElementById('btnHtml');
 
+//. --------------------Le bouton pour afficher les projets utilisant JavaScript.--------------------
+var btnJS = document.getElementById('btnJS');
+
 //. --------------------Le bouton pour afficher les projets utilisant Bootstrap5.--------------------
 var btnBt = document.getElementById('btnBt');
 
 //. --------------------Le bouton pour afficher les projets utilisant le PHP.--------------------
 var btnPhp = document.getElementById('btnPhp');
+
+//. --------------------Le bouton pour afficher les projets utilisant Java.--------------------
+var btnJava = document.getElementById('btnJava');
+
+//. --------------------Le bouton pour afficher les projets utilisant MySQL.--------------------
+var btnMySql = document.getElementById('btnMySql')
 
 //. --------------------Le bouton pour afficher les projets utilisant wordpress.--------------------
 var btnWp = document.getElementById('btnWp');
@@ -335,11 +344,20 @@ var btnWp = document.getElementById('btnWp');
 //. --------------------Les projets utilisant le HTML5 et le CSS3.--------------------
 var html = document.getElementsByClassName('html');
 
+//. --------------------Les projets utilisant JavaScript.--------------------
+var javaScript = document.getElementsByClassName('javaScript');
+
 //. --------------------Les projets utilisant bootstraps5.--------------------
 var bootstrap = document.getElementsByClassName('bootstrap');
 
 //. --------------------Les projets utilisant le PHP.--------------------
 var php = document.getElementsByClassName('php');
+
+//. --------------------Les projets utilisant Java.--------------------
+var java = document.getElementsByClassName('java');
+
+//. --------------------Les projets utilisant MySQL.--------------------
+var mySql = document.getElementsByClassName('mySql');
 
 //. --------------------Les projets utilisant wordpress.--------------------
 var wordpress = document.getElementsByClassName('wordpress');
@@ -393,14 +411,23 @@ function filtrerCartePortfolio(boutonCategoriePortfolio, langageCartePortfolio) 
     })
 }
 
-//? Si l'utilisateur souhaite voir tout mes projets contenant du HTML5 et du CSS3.
+//? Si l'utilisateur souhaite voir tout mes projets utilisant le HTML5 et le CSS3.
 filtrerCartePortfolio(btnHtml, html);
 
-//? Si l'utilisateur souhaite voir tout mes projets contenant du Bootstrap5.
+//? Si l'utilisateur souhaite voir tout mes projets utilisant le JavaScript.
+filtrerCartePortfolio(btnJS, javaScript);
+
+//? Si l'utilisateur souhaite voir tout mes projets utilisant le Bootstrap5.
 filtrerCartePortfolio(btnBt, bootstrap);
 
-//? Si l'utilisateur souhaite voir tout mes projets contenant du PHP.
+//? Si l'utilisateur souhaite voir tout mes projets utilisant le PHP.
 filtrerCartePortfolio(btnPhp, php);
+
+//? Si l'utilisateur souhaite voir tout mes projets utilisant le Java.
+filtrerCartePortfolio(btnJava, java);
+
+//? Si l'utilisateur souhaite voir tout mes projets utilisant le MySQL.
+filtrerCartePortfolio(btnMySql, mySql);
 
 //? Si l'utilisateur souhaite voir tout mes projets fait avec Wordpress.
 filtrerCartePortfolio(btnWp, wordpress);

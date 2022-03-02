@@ -1,0 +1,72 @@
+/*
+: ************************************************************************************************************
+                                    % Le footer.
+: ************************************************************************************************************
+*/
+
+/*= J'enlève les marges des paragraphes dans le footer. */
+.fin .separation {
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*= Je centre les éléments du footer. */
+footer {
+    text-align: center;
+    background: #592A19;
+}
+
+/*= Je change les couleurs des textes du footer. */
+footer p, footer li, footer a, footer .fab {
+    color: white;
+}
+
+/*= j'enlève le style de la liste, et aligne les éléments. */
+.fin, .rsfin  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/*= J'ajoute une marge aux icônes. */
+.rsfin .fab {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+/*= J'ajoute une marge à mes liens. */
+.politique {
+    padding-right: 30px;
+}
+
+/*= J'enlève un espace entre la section contact et le footer. */
+footer p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/*= J'enlève le margin des icônes qui créait un espace blanc sous le footer. */
+.rsfin {
+    margin: 0;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Je cible les tablettes et les mobiles.
+. --------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-device-width: 1366px) {
+
+    /*$ Je modifie le footer.  */
+    .droit {
+        padding-top: 1vh;
+    }
+
+    .fin, .rsfin {
+        text-align: center;
+    }
+
+}

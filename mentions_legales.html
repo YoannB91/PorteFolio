@@ -2,51 +2,33 @@
 <html lang="fr">
 
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--, Je demande à inclure le fichier "head". -->
+        <div include-html="include/includeHead.html"></div>
+
         <!--+ Le titre de la page. -->
         <title>Mentions légales</title>
-        <!--+ J'importe mes favicons. -->
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="img/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <!--+ J'importe les icones du site font awesome.-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-        <!--+ J'importe mes polices via google fonts. -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Karma:wght@600&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-        <!--+ J'importe le css de Bootstrap.-->
-        <link rel="stylesheet" href="Assets/Bootstrap/css/bootstrap.min.css"> 
-        <!--+ J'importe mon fichier CSS. -->
-        <link rel="stylesheet" href="css/style.css"> 
+
+        <!--+ La description de la page. -->
+        <meta name="description" content="Mentions légales du site https://yoann-bezard.fr/.">
+
+        <!--$ Les fichiers css. -->
+
+        <!--£ Le fichier CSS principal. -->
+        <link rel="stylesheet" href="css/style.css">
+
     </head>
 
-<body>
+<!--, Je demande à activer la fonction d'inclusion de fichier html dès le chargement du body. -->
+<body onload="includeHTML()">
 
-    <header>
-        <nav>
-
-        </nav>
-    </header>
+    <!--, Je demande à inclure le fichier "navbar". -->
+    <div include-html="include/IncludeNavbar.html"></div>
 
     <main>
-        <h2>Définitions</h2>
+
+        <h1 style="color: black;">Définitions</h1>
+
         <p><b>Client :</b> tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code
             civil, ou personne morale, qui visite le Site objet des présentes conditions générales.<br>
             <b>Prestations et Services :</b> <a href="https://yoann-bezard.fr/">https://yoann-bezard.fr/</a> met à
@@ -454,9 +436,36 @@
             compétents de Évry (91000)</p>
     </main>
 
-    <footer>
+    <!--
+    : ************************************************************************************************************
+                                                    % Le footer.
+    : ************************************************************************************************************
+    -->
 
-    </footer>
+    <!--, Je demande à inclure le fichier "footer". -->
+    <div include-html="include/includeFooter.html"></div>
+
+    <style>
+        #topNav {
+            background-color: black;
+        }
+        footer {
+            text-align: center;
+            background: black;
+        }
+    </style>
+
+    <!--
+    : ************************************************************************************************************
+                                                    % Les fichiers JavaScript.
+    : ************************************************************************************************************
+    -->
+
+    <!--§ Le js de l'inclusion de fichier HTML. -->
+    <script src="js/includeHtml.js"></script>
+
+    <!--§ Le js de la navbar. -->
+    <script src="js/navbarBurger.js"></script>
 
 </body>
 </html>

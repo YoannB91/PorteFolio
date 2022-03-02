@@ -144,160 +144,6 @@ q {
 
 /*
 : ************************************************************************************************************
-                                    % La barre de navigation.
-: ************************************************************************************************************
-*/
-
-/*: Je place ma barre de navigation par-dessus tout les éléments du site. */
-#topNav {
-    z-index: 99;
-}
-.sideNav {
-    z-index: 100;
-}
-
-/*
-. --------------------------------------------------------------------------------
-                                £ Le mode ordinateur.
-. --------------------------------------------------------------------------------
-*/
-
-/*: La liste non-ordonnée qui sert de navigation. */
-.ham, #topNav h2, sideNav {
-    visibility: hidden;
-}
-
-/*: Les caractéristiques générales. */
-#topNav {
-    width: 100vw;
-    height: 4.5vh;
-    background-color: #076DF2;
-    position: fixed;
-    display: flex;
-    color: white;
-}
-
-/*: La liste du menu de navigation. */
-#topNav ul {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    white-space: nowrap; 
-}
-
-/*: Les liens de la liste non-ordonnée. */
-#topNav ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 10px;
-}
-
-/*: Les liens de navigation. */
-#topNav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 2vh;
-    padding: 8px 8px;
-}
-
-/*: Les liens de navigation lorsque l'on reste dessus au survol. */
-#topNav ul li a:hover, #topNav ul li a:focus {
-    border-bottom: 2px solid white;
-}
-
-/*
-. --------------------------------------------------------------------------------
-                                £ Le mode mobile.
-. --------------------------------------------------------------------------------
-*/
-
-/*: L'icône du menu burger. */
-#topNav .fas {
-    margin: 12px;
-    cursor: pointer;
-}
-
-/*: Le titre de la navbar. */
-#topNav h2 {
-    margin: auto;
-    font-size: 3vh;
-}
-
-/*: La navigation verticale. */
-.sideNav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 101;
-    background-color: black;
-    width: 50vw;
-    height: 100vh;
-    color: white;
-}
-
-/*: La fonction hide qui me permet de cacher le menu vertical. */
-.hideMenuVertical {
-    visibility: hidden;
-    height:0;
-    opacity: 0;
-    transition: opacity 600ms, visibility 600ms, height 600ms;
-}
-
-/*: La fonction show qui me permet de faire apparaître le menu vertical. */
-.showMenuVertical {
-    display: block;
-    transition: opacity 600ms, visibility 600ms, height 600ms;
-}
-
-/*: L'icône X qui sert à fermer le menu vertical. */
-.menuX {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 2rem;
-    height: 2rem;
-    margin-left: 0.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: white;
-}
-
-/*: La liste non-ordonnée qui sert de navigation. */
-.sideNav ul {
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    padding-top: 5rem;
-}
-
-/*: Les liens de la liste non-ordonnée. */
-.sideNav ul li {
-    display: list-item;
-}
-
-/*: Les liens de navigation. */
-.sideNav ul li a {
-    display: block;
-    color: white;
-    padding-bottom: 10px;
-    margin-top: 1rem;
-    border-bottom: 2px solid black;
-    text-decoration: none;
-    font-size: 3.5vh;
-}
-
-/*: Les liens de navigation lorsque l'on reste dessus au survol. */
-.sideNav ul li a:hover, .sideNav ul li a:focus {
-    border-bottom: 2px solid white;
-}
-
-/*
-: ************************************************************************************************************
                                     % La section "accueil" du site.
 : ************************************************************************************************************
 */
@@ -524,6 +370,7 @@ h1 {
                                 £ Le hide and show de la section mes passions.
 . --------------------------------------------------------------------------------
 */
+
 .hide {
     display: none;
     height:0;
@@ -914,60 +761,6 @@ text-align: center;
     }
 }
 
-/*
-: ************************************************************************************************************
-                                    % Le footer.
-: ************************************************************************************************************
-*/
-
-/*= J'enlève les marges des paragraphes dans le footer. */
-.fin .separation {
-    padding: 0;
-    margin: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-/*= Je centre les éléments du footer. */
-footer {
-    text-align: center;
-    background: #592A19;
-}
-
-/*= Je change les couleurs des textes du footer. */
-footer p, footer li, footer a, footer .fab {
-    color: white;
-}
-
-/*= j'enlève le style de la liste, et aligne les éléments. */
-.fin, .rsfin  {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-/*= J'ajoute une marge aux icônes. */
-.rsfin .fab {
-    padding-right: 8px;
-    padding-left: 8px;
-}
-
-/*= J'ajoute une marge à mes liens. */
-.politique {
-    padding-right: 30px;
-}
-
-/*= J'enlève un espace entre la section contact et le footer. */
-footer p {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-/*= J'enlève le margin des icônes qui créait un espace blanc sous le footer. */
-.rsfin {
-    margin: 0;
-}
-
 
 
 
@@ -976,26 +769,6 @@ footer p {
                                     % Les règles pour les mobiles et les tablettes.
 : ************************************************************************************************************
 */
-
-/*
-. --------------------------------------------------------------------------------
-                                £ Le mode responsive de la barre de navigation.
-. --------------------------------------------------------------------------------
-*/
-
-@media screen and (max-width: 1024px) {
-
-    /*$ Je remet les éléments de la barre de navigation mobile à l'écran. */
-    .ham, #topNav h2, sideNav {
-        visibility: visible;
-    }
-
-    /*$ Je cache les éléments de la barre de navigation pour ordinateur. */
-    #topNav ul {
-        display: none;
-    }
-
-}
 
 /*
 . --------------------------------------------------------------------------------
@@ -1044,23 +817,6 @@ footer p {
         line-height: 4.5vh;
     }
 
-    /*. --------------------La barre de navigation sur mobile.-------------------- */
-
-    /*$ J'agrandis la barre de navigation pour les mobiles. */
-    #topNav {
-        height: 9vh;
-    }
-
-    /*$ J'ajoute un peu d'espace entre le bouton et le titre de la barre de navigation. */
-    .ham {
-        margin-right: 10px;
-    }
-
-    /*$ Le menu de navigation doit prendre tout l'écran pour que les liens soient visibles. */
-    .sideNav {
-        width: 100vw;
-    }
-
     /*$ Je réajuste mes transitions pour qu'elles prennent tout l'écran. */
     .transition { 
         width: 100vw;
@@ -1095,12 +851,8 @@ footer p {
                                 £ Je cible uniquement les tablettes
 . --------------------------------------------------------------------------------
 */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
 
-    /*$ J'agrandis la barre de navigation pour les tablettes. */
-    #topNav {
-        height: 5.5vh;
-    }
+@media screen and (min-width: 601px) and (max-width: 1024px) {
 
     /*$ Je centre le titre sur l'image. */
     .présentationPortfolio {
@@ -1115,6 +867,7 @@ footer p {
                                 £ Je cible les tablettes et les mobiles.
 . --------------------------------------------------------------------------------
 */
+
 @media only screen and (max-device-width: 1366px) {
 
     /*$ Je retire l'effet parallax sur le scroll des téléphones et tablette. */
@@ -1168,15 +921,6 @@ footer p {
     /*$ La section contact doit apparaître à l'écran. */
     .hideContact {
         display: block;
-    }
-
-    /*$ Je modifie le footer.  */
-    .droit {
-        padding-top: 1vh;
-    }
-
-    .fin, .rsfin {
-        text-align: center;
     }
 
 }

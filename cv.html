@@ -2,324 +2,722 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--, Je demande à inclure le fichier "head". -->
+    <div include-html="include/includeHead.html"></div>
+
     <!--+ La description de la page. -->
     <meta name="description" content="Bienvenue sur le cv de Yoann Bezard, un développeur web passionné et curieux. Sur cette page vous allez pouvoir découvrir mon parcours, mes passions et mes compétences.">
+
+    <!--+ Le titre de la page. -->
     <title>CV de Yoann Bezard | Développeur web</title>
-    <!--+ J'importe le css de Bootstrap.-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--+ J'importe mon css. -->
-    <link rel="stylesheet" href="css/styleCV.css"> 
-    <!--+ J'importe les icones du site font awesome.-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <!--+ J'importe mes polices via google fonts. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;1,200&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+    <!--$ Les fichiers css. -->
+
+    <!--£ Le fichier CSS du cv. -->
+    <link rel="stylesheet" href="css/styleCV.css">
+
 </head>
 
-<body>
+<body onload="includeHTML()">
+
+    <!--, Je demande à inclure le fichier "navbar". -->
+    <div include-html="include/IncludeNavbar.html"></div>
+
     <main>
 
-        <!-- § Le titre du CV. -->
-        <section class="container py-2" id="acceuil">
-            <div class="text-center">
-                <h1>Yoann Bezard</h1>
-                <h1>Développeur Web</h1>
-                <a href="https://www.linkedin.com/in/yoann-bezard-917b43204/"><i class="fab fa-linkedin fa-3x"></i></a>
-                <a href="https://github.com/YoannB91"><i class="fab fa-github fa-3x"></i></a>
-            </div>
-        </section>
+    <!--
+    : ************************************************************************************************************
+                                                    % Le titre du CV.
+    : ************************************************************************************************************
+    -->
 
-        <!-- § Mon profil. -->
-        <div class="container py-4">
-            <div class="row">
-                <article class="col-12" id="profil">
-                    <h2 class="px-2 py-2 text-center">À propos de moi : </h2>
-                    <p class="px-2 pt-2 pb-4">Bonjour, je m'appelle Yoann Bezard et je suis développeur web. <br /> Je possède un bac STI2D et après plusieurs années passées à chercher ce qui me plaisait réellement j'ai fini par me découvrir  une passion pour la programmation, et plus particulièrement pour le domaine du web. <br /> J'ai donc commencé par suivre des cours en autodidacte sur le HTML5/CSS3 et la programmation orienté objet en Python sur le site <a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a>. J'ai ensuite suivi une formation de remise à niveau chez l'organisme de formation <a href="https://www.doranco.fr/" target="_blank">Doranco</a>.
-                </article>
-            </div>
+    <section class="container py-2" id="accueil">
+        <div class="text-center">
+
+            <!--? Mon prénom et mon nom. -->
+            <h1 id="prenomAccueil">Yoann Bezard</h1>
+
+            <!--? Mon métier. -->
+            <h1>Développeur</h1>
+
+            <!--? Mon linkedin. -->
+            <a href="https://www.linkedin.com/in/yoann-bezard-917b43204/">
+                <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+
+            <!--? Mon GitHub. -->
+            <a href="https://github.com/YoannB91">
+                <i class="fab fa-github fa-3x"></i>
+            </a>
+
         </div>
+    </section>
 
-            <!-- § Les détails personnels. -->
-        <div class="container py-3">
-            <div class="row">
-                <article class="col-12" id="details">
-                    <h2 class="px-2 py-2 text-center"> Quelques informations sur moi : </h2>
-                    <p class="px-2 py-2">
-                        <i class="fas fa-calendar-alt px-2"></i> Anniversaire : 23 mars 1997.
-                    </p>
-                    <p class="px-2">
-                        <i class="fas fa-envelope px-2"></i> Mon adresse e-mail : <a href="mailto:yoannbezard0@gmail.com">yoannbezard0@gmail.com</a>.
-                    </p>
-                    <p class="px-2 py-2">
-                        <i class="fas fa-phone-alt px-2"></i> Mon numéro de téléphone : <a href="tel:0667823684">06.67.82.36.84</a>.
-                    </p>
-                    <p class="px-2 py-2">
-                        <i class="fas fa-house-user px-2"></i> Mon adresse : <a href="https://osm.org/go/0BLVtthlg?m=" target="_blank">17 B rue Claude Debussy, 91580 - Étréchy</a>.
-                    </p>
-                    <p class="px-2 pt-2 pb-4">
-                        <i class="fas fa-car px-2"></i> Je possède le permis B.
-                    </p>
-                    <p class="px-2 pt-2 pb-4">
-                        <a href="https://www.linkedin.com/in/yoann-bezard-917b43204/" target="_blank"><i class="fab fa-linkedin px-2"></i> </a>Mon<a href="https://www.linkedin.com/in/yoann-bezard-917b43204/" target="_blank"> linkedin</a>.
-                    </p>
-                    <p class="px-2 pt-2 pb-4">
-                        <a href="https://github.com/YoannB91" target="_blank"><i class="fab fa-github px-2"></i></a> Mon <a href="https://github.com/YoannB91" target="_blank"> github</a>.
-                    </p>
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "À propos de moi".
+    : ************************************************************************************************************
+    -->
 
+    <div class="container py-4">
+        <div class="row">
+            <article class="col-12" id="profil">
 
-                </article>
-            </div>
+                <!--ù Le titre de la section. -->
+                <h2 class="px-2 py-2 text-center">À propos de moi : </h2>
+
+                <!--ù Le paragraphe pour me décrire.  -->
+                <p class="px-2 pt-2 pb-4">
+                    Bonjour, je m'appelle Yoann Bezard et je suis développeur web. <br /> 
+                    Je possède un bac STI2D et après plusieurs années passées à chercher ce qui me plaisait réellement j'ai fini par me découvrir  une passion pour la programmation, et plus particulièrement pour le domaine du web. 
+                    <br /> 
+                    J'ai donc commencé par suivre des cours en autodidacte sur le HTML5/CSS3 et la programmation orienté objet en Python sur le site <a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a>. J'ai ensuite suivi une formation de remise à niveau chez l'organisme de formation <a href="https://www.doranco.fr/" target="_blank">Doranco</a>.
+                </p>
+
+            </article>
         </div>
+    </div>
 
-        <!--§ La section sur mes compétences. -->
-        <div class="container">
-            <div class="row py-3">
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "Quelques informations sur moi".
+    : ************************************************************************************************************
+    -->
 
-                <!--§ La section compétences. -->
-                <article class="col-12" id="competences">
-                    <h2 class="px-2 py-2 text-center">Mes compétences.</h2>
-                    <div class="row">
-                        <div class="col">
-                            <p class="px-2 py-2"><i>Les langages dont j'ai les bases</i> : HTML, CSS, JavaScript, PHP, MySQL.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p class="px-2 py-2"><i>Le framework que je sais utiliser</i> : Bootstrap.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p class="px-2 py-2"><i>Le CMS sur lequel j'ai déjà travaillé</i> : Wordpress.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p class="px-2 pt-2 pb-4"><i>Les outils que j'utilise</i> : Git, Github, Visual studio code.</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
+    <div class="container py-3">
+        <div class="row">
+
+            <article class="col-12" id="details">
+
+                <!--ù Le titre de la section. -->
+                <h2 class="px-2 py-2 text-center"> Quelques informations sur moi : </h2>
+
+                <!--$ Ma date d'anniversaire. -->
+                <p class="px-2 py-2">
+                    <i class="fas fa-calendar-alt px-2"></i> Anniversaire : 23 mars 1997.
+                </p>
+
+                <!--$ Mon adresse e-mail. -->
+                <p class="px-2">
+                    <i class="fas fa-envelope px-2"></i> Mon adresse e-mail : <a href="mailto:yoannbezard0@gmail.com">yoannbezard0@gmail.com</a>.
+                </p>
+
+                <!--$ Mon numéro de téléphone portable. -->
+                <p class="px-2 py-2">
+                    <i class="fas fa-phone-alt px-2"></i> Mon numéro de téléphone : <a href="tel:0667823684">06.67.82.36.84</a>.
+                </p>
+
+                <!--$ Mon adresse. -->
+                <p class="px-2 py-2">
+                    <i class="fas fa-house-user px-2"></i> Mon adresse : <a href="https://osm.org/go/0BLVtthlg?m=" target="_blank">17 B rue Claude Debussy, 91580 - Étréchy</a>.
+                </p>
+
+                <!--$ Mon permis. -->
+                <p class="px-2 pt-2 pb-4">
+                    <i class="fas fa-car px-2"></i> Je possède le permis B.
+                </p>
+
+                <!--$ Mon linkedin. -->
+                <p class="px-2 pt-2 pb-4">
+                    <a href="https://www.linkedin.com/in/yoann-bezard-917b43204/" target="_blank"><i class="fab fa-linkedin px-2"></i> </a>Mon<a href="https://www.linkedin.com/in/yoann-bezard-917b43204/" target="_blank"> linkedin</a>.
+                </p>
+
+                <!--$ Mon GitHub. -->
+                <p class="px-2 pt-2 pb-4">
+                    <a href="https://github.com/YoannB91" target="_blank"><i class="fab fa-github px-2"></i></a> Mon <a href="https://github.com/YoannB91" target="_blank"> github</a>.
+                </p>
+
+
+            </article>
         </div>
+    </div>
 
-        <!--§ La section Langue. -->
-        <div class="container py-3">
-            <div class="row my-2">
-                <article class="col-12" id="langue">
-                    <h2 class="px-2 py-2 text-center">Langue : </h2>
-                    <p class="px-2 pt-2 pb-4">Anglais : Niveau B1. </p>
-                </article>
-            </div>
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "Mes compétences".
+    : ************************************************************************************************************
+    -->
+
+    <div class="container">
+        <div class="row py-3">
+            <article class="col-12" id="competences">
+
+                <!--ù Le titre de la section. -->
+                <h2 class="px-2 py-2 text-center">Mes compétences.</h2>
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <!--. --------------------Les langages.---------------------->
+                        <p class="px-2 py-2">
+                            <i>Les langages dont j'ai les bases</i> : 
+                            HTML, CSS, JavaScript, PHP, MySQL.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <!--. --------------------Les frameworks.---------------------->
+                        <p class="px-2 py-2">
+                            <i>Le framework que je sais utiliser</i> : 
+                            Bootstrap.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <!--. --------------------Les CMS.---------------------->
+                        <p class="px-2 py-2">
+                            <i>Le CMS sur lequel j'ai déjà travaillé</i> : 
+                            Wordpress.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <!--. --------------------Les outils.---------------------->
+                        <p class="px-2 pt-2 pb-4">
+                            <i>Les outils que j'utilise</i> : 
+                            Git, Github, Visual studio code.
+                        </p>
+
+                    </div>
+                </div>
+
+            </article>
         </div>
+    </div>
 
-        <!-- § La sections expérience. -->
-        <div class="container py-3">
-            <div class="row my-2">
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "Langue".
+    : ************************************************************************************************************
+    -->
 
-                <!-- § La section formation. -->
-                <div class="col-12" id="formation">
-                    <div class="row text-center"><h2>Mes formations : </h2></div>
-                    <div class="accordion" id="monaccordéon">
-                        <article class="accordion-item">
-                            <h3 class="accordion-header">
+    <div class="container py-3">
+        <div class="row my-2">
+            <article class="col-12" id="langue">
 
-                                <!--: Le bouton qui déroule premier panel. -->
-                                <span class="accordion-button collapsed bg-custom1" data-bs-toggle="collapse" data-bs-target="#panel1">
-                                    <span class="px-2 py-2"><a href="https://www.doranco.fr/formation/parcours/112-developpeur-se-web" target="_blank">Remise à niveau développeur web</a> - <a href="https://www.doranco.fr/" target="_blank"> Doranco</a> - 2021. </span>
+                <!--ù Le titre de la section. -->
+                <h2 class="px-2 py-2 text-center">Langue : </h2>
+
+                <!--ù Le texte de la section. -->
+                <p class="px-2 pt-2 pb-4">
+                    Anglais : Niveau B1.
+                </p>
+
+            </article>
+        </div>
+    </div>
+
+    <div class="container py-3">
+        <div class="row my-2">
+
+            <!--
+            : ************************************************************************************************************
+                                                            % La section "Mes formations".
+            : ************************************************************************************************************
+            -->
+
+            <div class="col-12" id="formation">
+                <div class="row text-center">
+
+                    <!--ù Le titre de la section. -->
+                    <h2>Mes formations : </h2>
+
+                </div>
+
+                <!--
+                . --------------------------------------------------------------------------------
+                                                    £ L'accordéon des formations.
+                . --------------------------------------------------------------------------------
+                -->
+
+                <div class="accordion" id="monaccordéon">
+
+                    <!--. --------------------Le panel qui parle de : Développeur d’applications informatiques PGI/ERP.---------------------->
+
+                    <article class="accordion-item">
+                        <h3 class="accordion-header">
+
+                            <!--: Le bouton qui déroule le panel. -->
+                            <span class="accordion-button collapsed bg-custom1" data-bs-toggle="collapse" data-bs-target="#panel1">
+                                <span class="px-2 py-2">
+
+                                    <!--: Le titre du panel. -->
+                                    <a href="https://www.doranco.fr/formation/parcours/144-developpeur-se-dapplications-informatiques-pgi-erp" target="_blank">
+                                        Développeur d’applications informatiques PGI/ERP
+                                    </a>
+                                    - 
+                                    <a href="https://www.doranco.fr/" target="_blank"> 
+                                        Doranco
+                                    </a>
+                                    - 2021/2022. 
+
                                 </span>
-                            </h3>
-                            
-                            <!--: Le texte du premier panel : Ma remise à niveau à Doranco. -->
-                            <div id="panel1" class="accordion-collapse collapse" data-bs-parent="#monaccordéon">
-                                <div class="accordion-body bg-custom1">
-                                    <!--? Les bases. -->
-                                    <p class="px-2 py-2">J'y ai appris les bases du métier de développeur web : les bases du HTML5 et du CSS3 pour pouvoir faire des pages web basiques; les bases de JavaScript et de PHP pour pouvoir les rendre dynamiques.</p>
-                                    <!--? Frameworks et versionning. -->
-                                    <p class="px-2 py-2">J'y ai aussi appris à utiliser le framework Bootstrap afin de me faciliter la création d'une page web, et à utiliser GIT afin de versionner mes projets.</p>
-                                    <!--? CMS. -->
-                                    <p class="px-2 py-2">Et j'ai fini en apprenant les bases de Wordpress afin de pouvoir faire des pages web plus facilement avec un CMS.</p>
-                                </div>
-                            </div>
-                        </article>
-                        <section class="accordion-item">
-                            <h3 class="accordion-header">
+                            </span>
 
-                                <!--: Le bouton du second panel. -->
-                                <span class="accordion-button collapsed bg-custom1" data-bs-toggle="collapse" data-bs-target="#panel2">
-                                    <span class="px-2 py-2"><a href="https://www.onisep.fr/Choisir-mes-etudes/Au-lycee-au-CFA/Au-lycee-general-et-technologique/La-voie-technologique-en-premiere-et-terminale/Le-bac-STI2D-sciences-et-technologies-de-l-industrie-et-du-developpement-durable"
-                                            target="_blank">Baccalauréat STI2D</a> - 2015 </span>
+                        </h3>
+
+                        <!--: Le texte du panel. -->
+                        <div id="panel1" class="accordion-collapse collapse" data-bs-parent="#monaccordéon">
+                            <div class="accordion-body bg-custom1">
+
+                                <!--? Les bases. -->
+                                <p class="px-2 py-2">
+                                    J'y ai appris les bases à développer des sites web, des applications et des applications mobiles sécurisées avec Java. J'ai eu l'occasion de travailler sur NetBeans avec GlassFish et sur Android Studio durant cette formation.
+                                </p>
+
+                                <!--? Le projet recette. -->
+                                <p class="px-2 py-2">
+                                    J'ai eu l'occasion d'approfondir les connaissances que j'avais acquises durant mes deux formations chez Doranco en participant au projet recette avec une partie de mon groupe de formation. Nous avons essayé de travailler en utilisant la méthode agile car c'était quelque chose qui nous avait été beaucoup demandé lors de notre recherche de stage d'après formation.
+
+                                <!--? L'expérience. -->
+                                <p class="px-2 py-2">
+                                    Cette expérience à été vraiment instructive pour moi : c'était le premier projet que je réalisais avec d'autres développeurs, et c'est un projet que nous avons réalisé avec une limite de temps fixé à un mois. Nous nous sommes donné un mois pour finir et mettre notre projet en ligne tout en essayant de réaliser et d'implémenter autant de fonctionnalités que possible afin de satisfaire les clients les plus difficiles qui soient : nous-mêmes.
+                                </p>
+
+                                <!--? Conclusion. -->
+                                <p class="px-2 py-2">
+                                    Cette formation, et plus particulièrement le projet auquel j'ai participé par la suite, à été une excellente source d'apprentissage pour moi. J'ai eu l'occasion de travailler comme développeur indépendant durant un mois, vivant les réussites comme les frustrations dus à ce métier.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!--. --------------------Le panel qui parle de : Remise à niveau développeur web.---------------------->
+
+                    <article class="accordion-item">
+                        <h3 class="accordion-header">
+
+                            <!--: Le bouton qui déroule le panel. -->
+                            <span class="accordion-button collapsed bg-custom1" data-bs-toggle="collapse" data-bs-target="#panel1">
+                                <span class="px-2 py-2">
+
+                                    <!--: Le titre du panel. -->
+                                    <a href="https://www.doranco.fr/formation/parcours/112-developpeur-se-web" target="_blank">
+                                        Remise à niveau développeur web
+                                    </a>
+                                    - 
+                                    <a href="https://www.doranco.fr/" target="_blank"> 
+                                        Doranco
+                                    </a>
+                                    - 2021. 
+
                                 </span>
-                            </h3>
+                            </span>
 
-                            <!--: Le texte du secon panel : Mon bac STI2D. -->
-                            <div id="panel2" class="accordion-collapse collapse bg-custom1" data-bs-parent="#monaccordéon">
-                                <div class="accordion-body">
-                                    <!--? Mon lycée. -->
-                                    <p class="px-2 py-2">Lycée <a href="http://www.lyc-st-hilaire-etampes.ac-versailles.fr/" target="_blank">Geoffroy Saint-Hilaire</a> - Étampes (91150). </p>
-                                    <!--? STI2D. -->
-                                    <p class="px-2 py-2"><a href="https://www.onisep.fr/Choisir-mes-etudes/Au-lycee-au-CFA/Au-lycee-general-et-technologique/La-voie-technologique-en-premiere-et-terminale/Le-bac-STI2D-sciences-et-technologies-de-l-industrie-et-du-developpement-durable" target="_blank">STI2D</a> = Sciences et Technologies de l'Industrie et du Développement Durable. </p>
-                                    <!--? SIN. -->
-                                    <p class="px-2 py-2"><a href="https://oniseptv.onisep.fr/onv/bac-techno-sti2d-specialite-systeme-dinformation-et-numerique-sin" target="_blank">Spécialité SIN</a> = Système d’Information et Numérique.</p>
-                                </div>
+                        </h3>
+
+                        <!--: Le texte du panel. -->
+                        <div id="panel1" class="accordion-collapse collapse" data-bs-parent="#monaccordéon">
+                            <div class="accordion-body bg-custom1">
+
+                                <!--? Les bases du développement web. -->
+                                <p class="px-2 py-2">
+                                    J'y ai appris les bases du métier de développeur web : les bases du HTML5 et du CSS3 pour pouvoir faire des pages web basiques; les bases de JavaScript et de PHP pour pouvoir les rendre dynamiques.
+                                </p>
+
+                                <!--? Bootstrap et le versioning. -->
+                                <p class="px-2 py-2">
+                                    J'y ai aussi appris à utiliser le framework Bootstrap afin de me faciliter la création d'une page web, et à utiliser GIT afin de versionner mes projets.
+                                </p>
+
+                                <!--? Mon apprentissage du CMS wordpress. -->
+                                <p class="px-2 py-2">
+                                    Et j'ai fini en apprenant les bases de Wordpress afin de pouvoir faire des pages web plus facilement avec un CMS.
+                                </p>
+
                             </div>
-                        </section>
+                        </div>
 
-                        <section class="accordion-item mb-2">
-                            <h3 class="accordion-header">
+                    </article>
 
-                                <!--: Le bouton du troisième panel. -->
-                                <span class="accordion-button collapsed bg-custom1" data-bs-toggle="collapse" data-bs-target="#panel3">
-                                    <span class="px-2 py-2"><a href="https://www.education.gouv.fr/le-diplome-national-du-brevet-10613" target="_blank">Le diplôme national du brevet</a> - 2012.</span>
+                    <!--. --------------------Le panel qui parle de : Baccalauréat STI2D.---------------------->
+
+                    <section class="accordion-item">
+                        <h3 class="accordion-header">
+
+                            <!--: Le bouton qui déroule le second panel. -->
+                            <span class="accordion-button collapsed bg-custom1" data-bs-toggle="collapse" data-bs-target="#panel2">
+
+                                <!--: Le titre du second panel. -->
+                                <span class="px-2 py-2">
+
+                                    <!--: Le titre du panel. -->
+                                    <a href="https://www.onisep.fr/Choisir-mes-etudes/Au-lycee-au-CFA/Au-lycee-general-et-technologique/La-voie-technologique-en-premiere-et-terminale/Le-bac-STI2D-sciences-et-technologies-de-l-industrie-et-du-developpement-durable"
+                                        target="_blank">
+                                        Baccalauréat STI2D
+                                    </a> 
+                                    - 2015.
+
                                 </span>
-                            </h3>
+                            </span>
 
-                            <!--: Le texte du troisième panel : Mon brevet des collèges. -->
-                            <div id="panel3" class="accordion-collapse collapse" data-bs-parent="#monaccordéon">
-                                <div class="accordion-body bg-custom1">
-                                    <!--? Collège. -->
-                                    <p class="px-2 py-2"><a href="http://www.clg-leroussay-etrechy.ac-versailles.fr/" target="_blank">Collège Le Roussay</a>, Étréchy (91580).
-                                </div>
+                        </h3>
+
+                        <!--: Le texte du panel. -->
+                        <div id="panel2" class="accordion-collapse collapse bg-custom1" data-bs-parent="#monaccordéon">
+                            <div class="accordion-body">
+
+                                <!--? Le lycée où j'ai étudié. -->
+                                <p class="px-2 py-2">
+                                    Lycée 
+                                    <a href="http://www.lyc-st-hilaire-etampes.ac-versailles.fr/" target="_blank">
+                                        Geoffroy Saint-Hilaire
+                                    </a> 
+                                    - Étampes (91150). 
+                                </p>
+
+                                <!--? Définition de STI2D. -->
+                                <p class="px-2 py-2">
+                                    <a href="https://www.onisep.fr/Choisir-mes-etudes/Au-lycee-au-CFA/Au-lycee-general-et-technologique/La-voie-technologique-en-premiere-et-terminale/Le-bac-STI2D-sciences-et-technologies-de-l-industrie-et-du-developpement-durable" target="_blank">
+                                        STI2D
+                                    </a> 
+                                    = Sciences et Technologies de l'Industrie et du Développement Durable.
+                                </p>
+
+                                <!--? Définition de SIN. -->
+                                <p class="px-2 py-2">
+                                    <a href="https://oniseptv.onisep.fr/onv/bac-techno-sti2d-specialite-systeme-dinformation-et-numerique-sin" target="_blank">
+                                        Spécialité SIN
+                                    </a>
+                                    = Système d’Information et Numérique.
+                                </p>
+
                             </div>
-                        </section>
-                    </div>
+                        </div>
+                    </section>
+
+                    <!--. --------------------Le panel qui parle de : Mon brevet des collèges.---------------------->
+
+                    <section class="accordion-item mb-2">
+                        <h3 class="accordion-header">
+
+                            <!--: Le bouton du panel. -->
+                            <span class="accordion-button collapsed bg-custom1" data-bs-toggle="collapse" data-bs-target="#panel3">
+                                <span class="px-2 py-2">
+
+                                    <!--: Le titre du panel. -->
+                                    <a href="https://www.education.gouv.fr/le-diplome-national-du-brevet-10613" target="_blank">
+                                        Le diplôme national du brevet
+                                    </a>
+                                    - 2012.
+
+                                </span>
+                            </span>
+
+                        </h3>
+
+                        <!--: Le texte du panel. -->
+                        <div id="panel3" class="accordion-collapse collapse" data-bs-parent="#monaccordéon">
+                            <div class="accordion-body bg-custom1">
+
+                                <!--? Le collège où j'ai étudié. -->
+                                <p class="px-2 py-2">
+                                    <a href="http://www.clg-leroussay-etrechy.ac-versailles.fr/" target="_blank">
+                                        Collège Le Roussay
+                                    </a>
+                                    , Étréchy (91580).
+                                </p>
+
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </div>
         </div>
+    </div>
 
-            <!-- § La section expériences profesionnels. -->
-        <div class="container py-3">
-            <div class="row my-2">
-                <div class="col-12" id="exp">
-                    <div class="row text-center"><h2>Mes expériences professionnelles : </h2></div>
-                    <div class="accordion" id="monaccordéon2">
-                        <section class="accordion-item">
-                            <h3 class="accordion-header">
+    <!--
+    : ************************************************************************************************************
+                                                    % La section "Mes expériences professionnelles".
+    : ************************************************************************************************************
+    -->
 
-                                <!--: Le bouton du quatrième panel. -->
-                                <span class="accordion-button bg-custom2" data-bs-toggle="collapse"
-                                    data-bs-target="#panel4">
-                                    <span class="px-2 py-2"><a href="https://formaposte-iledefrance.fr/formations/cap-osrcl-niv-3-operateur-colis/" target="_blank">Apprentis opérateur colis</a> - <a href="https://www.laposte.fr/" target="_blank">La Poste</a>, <a href="https://fr.kompass.com/c/la-poste/fr9174676/" target="_blank">Montgeron (91230)</a> - de septembre à décembre 2020.</span>
+    <div class="container py-3">
+        <div class="row my-2">
+            <div class="col-12" id="exp">
+                <div class="row text-center">
+
+                    <h2>Mes expériences professionnelles : </h2>
+
+                </div>
+
+                <!--
+                . --------------------------------------------------------------------------------
+                                            £ L'accordéon de mes expériences professionnelles.
+                . --------------------------------------------------------------------------------
+                -->
+
+                <div class="accordion" id="monaccordéon2">
+
+                    <!--. --------------------Le panel qui parle de : ma période d'apprentis opérateur colis.---------------------->
+
+                    <section class="accordion-item">
+                        <h3 class="accordion-header">
+
+                            <!--: Le bouton panel. -->
+                            <span class="accordion-button bg-custom2" data-bs-toggle="collapse" data-bs-target="#panel4">
+                                <span class="px-2 py-2">
+
+                                    <!--: Le titre du panel. -->
+                                    <a href="https://formaposte-iledefrance.fr/formations/cap-osrcl-niv-3-operateur-colis/" target="_blank">
+                                    Apprentis opérateur colis
+                                    </a> 
+                                    - 
+                                    <a href="https://www.laposte.fr/" target="_blank">
+                                        La Poste
+                                    </a>
+                                    , 
+                                    <a href="https://fr.kompass.com/c/la-poste/fr9174676/" target="_blank">
+                                        Montgeron (91230)
+                                    </a>
+                                    - de septembre à décembre 2020.
+
                                 </span>
-                            </h3>
+                            </span>
 
-                            <!--: Le texte du quatrième panel : La poste - Montgeron. -->
-                            <div id="panel4" class="accordion-collapse collapse" data-bs-parent="#monaccordéon2">
-                                <div class="accordion-body bg-custom2">
-                                    <p class="px-2 py-2">Les différentes tâches que j'ai eu l'occasion d'effectuer : </p>
-                                    <ul>
-                                        <li class="px-2 py-2">Travailler au service des adresses incomplètes.</li>
-                                        <li class="px-2 py-2">Faire la balance.</li>
-                                        <li class="px-2 py-2">Accueillir les poids lourds.</li>
-                                        <li class="px-2 py-2">Réparer les colis endommagés.</li>
-                                    </ul>
-                                </div>
+                        </h3>
+
+                        <div id="panel4" class="accordion-collapse collapse" data-bs-parent="#monaccordéon2">
+                            <div class="accordion-body bg-custom2">
+
+                                <!--: Le texte du panel. -->
+                                <p class="px-2 py-2">
+                                    Les différentes tâches que j'ai eu l'occasion d'effectuer :
+                                </p>
+
+                                <!--: La liste des tâches que j'y ai effectuer. -->
+                                <ul>
+
+                                    <li class="px-2 py-2">Travailler au service des adresses incomplètes.</li>
+                                    <li class="px-2 py-2">Faire la balance ( vérifier que le nombre de colis prit par les livreurs pour la livraison correspond à ce que nous avions dans l'entrepôt. ).</li>
+                                    <li class="px-2 py-2">Accueillir les poids lourds.</li>
+                                    <li class="px-2 py-2">Réparer les colis endommagés.</li>
+
+                                </ul>
+
                             </div>
-                        </section>
-                        <section class="accordion-item">
-                            <h3 class="accordion-header">
-                                
-                                <!--: Le bouton du cinquième panel. -->
-                                <span class="accordion-button collapsed bg-custom2" data-bs-toggle="collapse" data-bs-target="#panel5">
-                                    <span class="px-2 py-2"><a href="https://www.regionsjob.com/observatoire-metiers/fiche/preparateur-de-commandes" target="_blank">Préparateur de commandes</a> (stage) - <a href="https://www.larecyclerie-deslivres.fr/" target="_blank">La recyclerie des livres</a>, Étampes (91150) - mars 2019.</span>
+                        </div>
+
+                    </section>
+
+                    <!--. --------------------Le panel qui parle de mon stage de : Préparateur de commandes.---------------------->
+
+                    <section class="accordion-item">
+                        <h3 class="accordion-header">
+
+                            <!--: Le bouton du panel. -->
+                            <span class="accordion-button collapsed bg-custom2" data-bs-toggle="collapse" data-bs-target="#panel5">
+                                <span class="px-2 py-2">
+
+                                    <!--: Le titre du panel. -->
+                                    <a href="https://www.regionsjob.com/observatoire-metiers/fiche/preparateur-de-commandes" target="_blank">
+                                        Préparateur de commandes
+                                    </a>
+                                    (stage) - 
+                                    <a href="https://www.larecyclerie-deslivres.fr/" target="_blank">
+                                        La recyclerie des livres
+                                    </a>
+                                    , Étampes (91150) - mars 2019.
+
                                 </span>
-                            </h3>
+                            </span>
 
-                            <!--: Le texte du cinquième panel : La recyclerie des livres - Étampes. -->
-                            <div id="panel5" class="accordion-collapse collapse" data-bs-parent="#monaccordéon2">
-                                <div class="accordion-body bg-custom2">
-                                    <p class="px-2 py-2">Les différentes tâches que j'ai eu l'occasion d'effectuer : </p>
-                                    <ul>
-                                        <li class="px-2 py-2">Trier les nouveaux arrivages.</li>
-                                        <li class="px-2 py-2">Créer des annonces sur différents sites de e-commerce pour les marchandises.</li>
-                                        <li class="px-2 py-2">Ranger les marchandises mises en vente dans la zone de stockage.</li>
-                                    </ul>
-                                </div>
+                        </h3>
+
+                        <div id="panel5" class="accordion-collapse collapse" data-bs-parent="#monaccordéon2">
+                            <div class="accordion-body bg-custom2">
+
+                                <!--: Le texte du panel. -->
+                                <p class="px-2 py-2">Les différentes tâches que j'ai eu l'occasion d'effectuer : </p>
+
+                                <!--: La liste des tâches que j'y ai effectuer. -->
+                                <ul>
+
+                                    <li class="px-2 py-2">Trier les nouveaux arrivages.</li>
+                                    <li class="px-2 py-2">Créer des annonces sur différents sites de e-commerce pour les marchandises.</li>
+                                    <li class="px-2 py-2">Ranger les marchandises mises en vente dans la zone de stockage.</li>
+
+                                </ul>
+
                             </div>
-                        </section>
-                        <section class="accordion-item">
-                            <h3 class="accordion-header">
+                        </div>
 
-                                <!--: Le bouton du sixième panel. -->
-                                <span class="accordion-button collapsed bg-custom2" data-bs-toggle="collapse" data-bs-target="#panel6">
-                                    <span class="px-2 py-2"><a href="https://www.cidj.com/metiers/conducteur-routier-conductrice-routiere" target="_blank">Assistant chauffeur routier</a> (stage) - <a href="https://www.societe.com/societe/beauleux-sarl-382607976.html" target="_blank">Beauleux SARL</a>, Chauffour-lès-Étréchy (91580) - 2017. </span>
+                    </section>
+
+                    <!--. --------------------Le panel qui parle de mon stage : d'assistant chauffeur routier.---------------------->
+
+                    <section class="accordion-item">
+                        <h3 class="accordion-header">
+
+                            <!--: Le bouton du panel. -->
+                            <span class="accordion-button collapsed bg-custom2" data-bs-toggle="collapse" data-bs-target="#panel6">
+                                <span class="px-2 py-2">
+
+                                    <!--: Le titre du panel. -->
+                                    <a href="https://www.cidj.com/metiers/conducteur-routier-conductrice-routiere" target="_blank">
+                                        Assistant chauffeur routier
+                                    </a>
+                                    (stage) -
+                                    <a href="https://www.societe.com/societe/beauleux-sarl-382607976.html" target="_blank">
+                                        Beauleux SARL
+                                    </a>
+                                    , Chauffour-lès-Étréchy (91580) - 2017. 
+
                                 </span>
-                            </h3>
+                            </span>
 
-                            <!--: Le texte du sixième panel : Assistant chauffeur routier. -->
-                            <div id="panel6" class="accordion-collapse collapse bg-custom2" data-bs-parent="#monaccordéon2">
-                                <div class="accordion-body bg-custom2">
-                                    <p class="px-2 py-2">Les différentes tâches que j'ai eu l'occasion d'effectuer : </p>
-                                    <ul>
-                                        <li class="px-2 py-2">Accompagner les chauffeurs tout au long de leur journée.</li>
-                                        <li class="px-2 py-2">Apprentissage du fonctionnement des bennes à basculement.</li>
-                                    </ul>
-                                </div>
+                        </h3>
+
+                        <div id="panel6" class="accordion-collapse collapse bg-custom2" data-bs-parent="#monaccordéon2">
+                            <div class="accordion-body bg-custom2">
+
+                                <!--: Le texte panel. -->
+                                <p class="px-2 py-2">Les différentes tâches que j'ai eu l'occasion d'effectuer : </p>
+
+                                <!--: La liste des tâches que j'y ai effectuer. -->
+                                <ul>
+
+                                    <li class="px-2 py-2">Accompagner des chauffeurs tout au long de leur journée.</li>
+                                    <li class="px-2 py-2">Apprentissage du fonctionnement des bennes à basculement.</li>
+
+                                </ul>
+
                             </div>
-                        </section>
+                        </div>
 
-                        <section class="accordion-item mb-2">
-                            <h3 class="accordion-header">
+                    </section>
 
-                                <!--: Le bouton du septième panel. -->
-                                <span class="accordion-button collapsed bg-custom2" data-bs-toggle="collapse" data-bs-target="#panel7">
-                                    <span class="px-2 py-2"><a href="https://www.regionsjob.com/observatoire-metiers/fiche/agent-de-tri" target="_blank">Agent de tri</a>(stage) - <a href="https://www.laposte.fr/" target="_blank">La Poste</a>, <a href="https://localiser.laposte.fr/essonne/etrechy/etrechy-912260" target="_blank">Étréchy</a> (91580) - 2012.</span>
+                    <!--. --------------------Le panel qui parle de mon stage : d'agent de tri.---------------------->
+
+
+                    <section class="accordion-item mb-2">
+                        <h3 class="accordion-header">
+
+                            <!--: Le bouton du panel. -->
+                            <span class="accordion-button collapsed bg-custom2" data-bs-toggle="collapse" data-bs-target="#panel7">
+                                <span class="px-2 py-2">
+
+                                    <!--: Le titre du panel. -->
+                                    <a href="https://www.regionsjob.com/observatoire-metiers/fiche/agent-de-tri" target="_blank">
+                                        Agent de tri
+                                    </a>
+                                    (stage) -
+                                    <a href="https://www.laposte.fr/" target="_blank">
+                                        La Poste
+                                    </a>
+                                    ,
+                                    <a href="https://localiser.laposte.fr/essonne/etrechy/etrechy-912260" target="_blank">
+                                        Étréchy
+                                    </a>
+                                    (91580) - 2012.
+
                                 </span>
-                            </h3>
+                            </span>
 
-                            <!--: Le texte du septième panel : La poste Étrèchy. -->
-                            <div id="panel7" class="accordion-collapse collapse bg-custom2" data-bs-parent="#monaccordéon2">
-                                <div class="accordion-body bg-custom2">
-                                    <p class="px-2 py-2">Les différentes tâches que j'ai eu l'occasion d'effectuer : </p>
-                                    <ul>
-                                        <li class="px-2 py-2">Organisation du tri du courrier.</li>
-                                        <li class="px-2 py-2">Trier le courrier afin de préparer les tournées des facteurs.</li>
-                                    </ul>
+                        </h3>
 
-                                </div>
+
+                        <div id="panel7" class="accordion-collapse collapse bg-custom2" data-bs-parent="#monaccordéon2">
+                            <div class="accordion-body bg-custom2">
+
+                                <!--: Le texte du panel. -->
+                                <p class="px-2 py-2">Les différentes tâches que j'ai eu l'occasion d'effectuer : </p>
+
+                                <!--: La liste des tâches que j'y ai effectuer. -->
+                                <ul>
+
+                                    <li class="px-2 py-2">Organisation du tri du courrier.</li>
+                                    <li class="px-2 py-2">Trier le courrier afin de préparer les tournées des facteurs.</li>
+
+                                </ul>
+
                             </div>
-                        </section>
-                    </div>
+                        </div>
+
+                    </section>
+
                 </div>
             </div>
-        </div> 
+        </div>
+    </div>
+
+    <!--
+    : ************************************************************************************************************
+                                                    % Les boutons pour voir mon cv.
+    : ************************************************************************************************************
+    -->
+
+    <div class="container py-3">
+        <div class="row">
+
+            <!--? Consulter mon cv en pdf. -->
+            <div class="col text-center">
+
+                <a href="pdf/cv_yoann_bezard.pdf" target="_blank">
+                    <span class="btn btn-outline-success">
+                        Voir mon CV en version pdf.
+                    </span>
+                </a>
+
+            </div>
+
+            <!--? Consulter mon cv en version animé. -->
+            <div class="col text-center">
+
+                <a href="video/cv_yoann_bezard_anime.mp4" target="_blank">
+                    <span class="btn btn-outline-info">
+                        Voir la version animée de mon CV.
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
     </main>
 
-    <!--§ Le pied de la page. -->
-    <footer>
-        <div class="container py-3">
-            <div class="row">
+    <!--
+    : ************************************************************************************************************
+                                                    % Le footer.
+    : ************************************************************************************************************
+    -->
 
-                <!--? Revenir sur le site. -->
-                <div class="col">
-                    <a href="index.html#transitionActuellement">
-                        <span class="btn btn-outline-primary">Revenir sur le portfolio.</span> 
-                    </a>
-                </div>
+    <div include-html="include/includeFooter.html"></div>
 
-                <!--? Consulter le cv en pdf. -->
-                <div class="col">
-                    <a href="pdf/cv_yoann_bezard.pdf" target="_blank">
-                        <span class="btn btn-outline-success">Voir mon CV en version pdf.</span>
-                    </a>
-                </div>
+    <!--
+    : ************************************************************************************************************
+                                                    % Les fichiers JavaScript.
+    : ************************************************************************************************************
+    -->
 
-                <!--? Consulter le cv animé. -->
-                <div class="col">
-                    <a href="video/cv_yoann_bezard_anime.mp4" target="_blank">
-                        <span class="btn btn-outline-info">Voir la version animée de mon CV.</span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
-    <!--§ J'importe le JavaScript de Bootstrap. -->
+    <!--§ Le js de bootstrap. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--§ Le js du typewriter. -->
+    <script type="module" src="https://unpkg.com/@auroratide/typewritten-text/lib/define.js"></script>
+
+    <!--§ Le js de l'inclusion de fichier HTML. -->
+    <script src="js/includeHtml.js"></script>
+
+    <!--§ Le js de la navbar. -->
+    <script src="js/navbarBurger.js"></script>
 
 </body>
 </html>

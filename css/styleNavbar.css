@@ -1,0 +1,219 @@
+/*
+: ************************************************************************************************************
+                                    % La barre de navigation.
+: ************************************************************************************************************
+*/
+
+/*: Je place ma barre de navigation par-dessus tout les éléments du site. */
+#topNav {
+    z-index: 99;
+}
+.sideNav {
+    z-index: 100;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Le mode ordinateur.
+. --------------------------------------------------------------------------------
+*/
+
+/*: La liste non-ordonnée qui sert de navigation. */
+.ham, #topNav h2, sideNav {
+    visibility: hidden;
+}
+
+/*: Les caractéristiques générales. */
+#topNav {
+    width: 100vw;
+    height: 4.5vh;
+    background-color: #076DF2;
+    position: fixed;
+    display: flex;
+    color: white;
+}
+
+/*: La liste du menu de navigation. */
+#topNav ul {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    white-space: nowrap; 
+}
+
+/*: Les liens de la liste non-ordonnée. */
+#topNav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+/*: Les liens de navigation. */
+#topNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vh;
+    padding: 8px 8px;
+}
+
+/*: Les liens de navigation lorsque l'on reste dessus au survol. */
+#topNav ul li a:hover, #topNav ul li a:focus {
+    border-bottom: 2px solid white;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Le mode mobile.
+. --------------------------------------------------------------------------------
+*/
+
+/*: L'icône du menu burger. */
+#topNav .fas {
+    margin: 12px;
+    cursor: pointer;
+}
+
+/*: Le titre de la navbar. */
+#topNav h2 {
+    margin: auto;
+    font-size: 3vh;
+}
+
+/*: La navigation verticale. */
+.sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: black;
+    width: 50vw;
+    height: 100vh;
+    color: white;
+}
+
+/*: La fonction hide qui me permet de cacher le menu vertical. */
+.hideMenuVertical {
+    visibility: hidden;
+    height:0;
+    opacity: 0;
+    transition: opacity 600ms, visibility 600ms, height 600ms;
+}
+
+/*: La fonction show qui me permet de faire apparaître le menu vertical. */
+.showMenuVertical {
+    display: block;
+    transition: opacity 600ms, visibility 600ms, height 600ms;
+}
+
+/*: L'icône X qui sert à fermer le menu vertical. */
+.menuX {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/*: La liste non-ordonnée qui sert de navigation. */
+.sideNav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+/*: Les liens de la liste non-ordonnée. */
+.sideNav ul li {
+    display: list-item;
+}
+
+/*: Les liens de navigation. */
+.sideNav ul li a {
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-size: 3.5vh;
+}
+
+/*: Les liens de navigation lorsque l'on reste dessus au survol. */
+.sideNav ul li a:hover, .sideNav ul li a:focus {
+    border-bottom: 2px solid white;
+}
+
+/*
+: ************************************************************************************************************
+                                    % Les règles pour les mobiles et les tablettes.
+: ************************************************************************************************************
+*/
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Le mode responsive de la barre de navigation.
+. --------------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 1024px) {
+
+    /*$ Je remet les éléments de la barre de navigation mobile à l'écran. */
+    .ham, #topNav h2, sideNav {
+        visibility: visible;
+    }
+
+    /*$ Je cache les éléments de la barre de navigation pour ordinateur. */
+    #topNav ul {
+        display: none;
+    }
+
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Je cible uniquement les mobiles.
+. --------------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 600px) {
+
+    /*$ J'agrandis la barre de navigation pour les mobiles. */
+    #topNav {
+        height: 9vh;
+    }
+
+    /*$ J'ajoute un peu d'espace entre le bouton et le titre de la barre de navigation. */
+    .ham {
+        margin-right: 10px;
+    }
+
+    /*$ Le menu de navigation doit prendre tout l'écran pour que les liens soient visibles. */
+    .sideNav {
+        width: 100vw;
+    }
+
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Je cible uniquement les tablettes
+. --------------------------------------------------------------------------------
+*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /*$ J'agrandis la barre de navigation pour les tablettes. */
+    #topNav {
+        height: 5.5vh;
+    }
+
+}
