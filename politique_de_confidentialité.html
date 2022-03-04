@@ -22,8 +22,114 @@
 <!--, Je demande à activer la fonction d'inclusion de fichier html dès le chargement du body. -->
 <body onload="includeHTML()">
 
-    <!--, Je demande à inclure le fichier "navbar". -->
-    <div include-html="include/IncludeNavbar.html"></div>
+    <header>
+
+        <!--
+        : ************************************************************************************************************
+                                                        % Mon menu de navigation.
+        : ************************************************************************************************************
+        -->
+    
+        <nav id="topNav">
+    
+            <!--
+            . --------------------------------------------------------------------------------
+                                    £ La barre de navigation pour les ordinateurs.
+            . --------------------------------------------------------------------------------
+            -->
+    
+            <ul id="topNavUl">
+    
+                <!--: Les liens vers les sections du site en mode ordinateur. -->
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#accueil">Accueil</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#propos">À propos</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#passions">Mes passions</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#competences">Mes compétences</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="cv.html">Mon cv</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#portfolio">Mon portfolio</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#contact">Contact</a>
+                </li>
+    
+            </ul>
+    
+            <!--
+            . --------------------------------------------------------------------------------
+                                    £ La barre de navigation pour les mobiles et tablette.
+            . --------------------------------------------------------------------------------
+            -->
+    
+            <!--: Le bouton du menu burger. -->
+            <button id="ham"><i class="fas fa-bars fa-2x"></i></button>
+    
+            <!--: Le titre de la barre de navigation en mode mobile et tablette. -->
+            <h2>Yoann Bezard | Développeur web</h2>
+    
+        </nav>
+    
+        <!--: La navigation verticale qui apparaît lors du clic. -->
+        <nav class="sideNav hideMenuVertical" id="cacherElementMenuVertical">
+    
+            <!--: Mon bouton X qui permet de fermer la sidenav. -->
+            <button class="menuX" id="menuX"><i class="fas fa-times fa-2x"></i></button>
+    
+            <!--: Le side menu principal. -->
+            <ul id="sideMenu1" class="sideNavUl showSousMenu">
+    
+                <!--: Les liens vers les sections du site en mode mobile et tablette. -->
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#accueil">Accueil</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#propos">À propos</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#passions">Mes passions</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#competences">Mes compétences</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="cv.html">Mon cv</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#portfolio">Mon portfolio</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#contact">Contact</a>
+                </li>
+    
+            </ul>
+    
+        </nav>
+    
+    </header>
 
     <main>
 

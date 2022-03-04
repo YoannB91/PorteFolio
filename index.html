@@ -22,8 +22,118 @@
 <!--, Je demande à activer la fonction d'inclusion de fichier html dès le chargement du body. -->
 <body onload="includeHTML()">
 
-    <!--, Je demande à inclure le fichier "navbar". -->
-    <div include-html="include/IncludeNavbar.html"></div>
+    <!--+ Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVW4RFG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!--+ End Google Tag Manager (noscript) -->
+
+    <header>
+
+        <!--
+        : ************************************************************************************************************
+                                                        % Mon menu de navigation.
+        : ************************************************************************************************************
+        -->
+    
+        <nav id="topNav">
+    
+            <!--
+            . --------------------------------------------------------------------------------
+                                    £ La barre de navigation pour les ordinateurs.
+            . --------------------------------------------------------------------------------
+            -->
+    
+            <ul id="topNavUl">
+    
+                <!--: Les liens vers les sections du site en mode ordinateur. -->
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#accueil">Accueil</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#propos">À propos</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#passions">Mes passions</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#competences">Mes compétences</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="cv.html">Mon cv</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#portfolio">Mon portfolio</a>
+                </li>
+    
+                <li class="topNavUlLi">
+                    <a class="topNavUlLiA" href="index.html#contact">Contact</a>
+                </li>
+    
+            </ul>
+    
+            <!--
+            . --------------------------------------------------------------------------------
+                                    £ La barre de navigation pour les mobiles et tablette.
+            . --------------------------------------------------------------------------------
+            -->
+    
+            <!--: Le bouton du menu burger. -->
+            <button id="ham"><i class="fas fa-bars fa-2x"></i></button>
+    
+            <!--: Le titre de la barre de navigation en mode mobile et tablette. -->
+            <h2>Yoann Bezard | Développeur web</h2>
+    
+        </nav>
+    
+        <!--: La navigation verticale qui apparaît lors du clic. -->
+        <nav class="sideNav hideMenuVertical" id="cacherElementMenuVertical">
+    
+            <!--: Mon bouton X qui permet de fermer la sidenav. -->
+            <button class="menuX" id="menuX"><i class="fas fa-times fa-2x"></i></button>
+    
+            <!--: Le side menu principal. -->
+            <ul id="sideMenu1" class="sideNavUl showSousMenu">
+    
+                <!--: Les liens vers les sections du site en mode mobile et tablette. -->
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#accueil">Accueil</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#propos">À propos</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#passions">Mes passions</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#competences">Mes compétences</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="cv.html">Mon cv</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#portfolio">Mon portfolio</a>
+                </li>
+    
+                <li class="sideNavUlLi">
+                    <a class="sideNavUlLiA menuLink" href="index.html#contact">Contact</a>
+                </li>
+    
+            </ul>
+    
+        </nav>
+    
+    </header>
 
     <!--
     : ************************************************************************************************************
@@ -641,7 +751,11 @@
             </p>
 
             <p>
-                Vous pouvez aussi aller faire un tour sur <a href="cv.html">mon cv</a> en version html/css, ou bien aller jeter un coup d'œil sur sa <a href="pdf/cv_yoann_bezard.pdf" target="_blank">version pdf</a>, voire même regarder la version <a href="video/cv_yoann_bezard_anime.mp4" target="_blank">animé</a> pour en apprendre plus sur mes compétences et mon parcours professionnel.
+                Vous pouvez aussi aller faire un tour sur <a href="cv.html">mon cv</a> en version html/css, ou bien aller jeter un coup d'œil sur sa <a href="pdf/cv_yoann_bezard.pdf" target="_blank">version pdf</a>, voire même regarder la version <a href="video/cv_yoann_bezard_anime.mp4" target="_blank">animé</a> pour en apprendre plus sur mes compétences et mon parcours professionnel. 
+            </p>
+
+            <p>
+                Ou vous pouvez tout simplement jeter un coups d'ceil rapide sur ma <a href="pdf/Lettre_de_motivation_yoann_bezard.pdf" target="_blank">lettre de motivation</a>.
             </p>
 
         </div>
@@ -705,6 +819,17 @@
                     alt="Le logo de PHP. C’est un oval de couleur bleu légèrement dénaturé sur lequel le bord est assombri afin de donner une impression de profondeur. Le mot PHP est écrit en son centre, en lettre noire entouré d’un filet blanc." 
                     title="Le logo de PHP." >
 
+                </div>
+
+                <!--§ Java. -->
+                <div class="col centré">
+
+                    <p>Java</p>
+
+                    <img class="logo-competences hideCompetences pb-2 langage" loading="lazy"
+                    src="img/competences/java.jpg"
+                    alt="Le logo de Java. C'est une tasse de café bleu dessinée avec plusieurs lignes ondulées. Il y a des vapeurs de café rouge qui s'envolent de la tasse, montrant que le café dans la tasse est extrêmement chaud."
+                    title="Le logo de Java." >
                 </div>
 
                 <!--§ MySQL. -->
@@ -808,8 +933,20 @@
 
                     <img class="logo-competences hideCompetences pb-3 outils" loading="lazy"
                     src="img/competences/vsc.png"
-                    alt="Le logo de visual studio code. C'est une boucle d'infinité bleu tridimensionnelle. Elle est tournés aux ¾, créant ainsi une perspective intéressante qui évoque un sentiment de mouvement, de progrès et de dynamisme."
+                    alt="Le logo de visual studio code. C'est une boucle d'infinité bleu tridimensionnelle. Elle est tournée aux ¾, créant ainsi une perspective intéressante qui évoque un sentiment de mouvement, de progrès et de dynamisme."
                     title="Le logo de Visual studio code." >
+
+                </div>
+
+                <!--§ Android Studio. -->
+                <div class="col centré">
+
+                    <p>Android studio</p>
+
+                    <img class="logo-competences hideCompetences pb-3 outils" loading="lazy"
+                    src="img/competences/android_studio.png"
+                    alt="Le logo d'android studio. On peut y apercevoir la tête du robot d'android, jetant un coups d'ceil par-dessus un plan bleu maintenu en place grâce à un compas."
+                    title="Le logo d'android studio." >
 
                 </div>
 
@@ -1226,7 +1363,7 @@
     <script src="js/includeHtml.js"></script>
 
     <!--§ Le js de la navbar. -->
-    <script src="js/navbarBurger.js"></script>
+    <script src="js/navbarBurger.js" defer></script>
 
     <!--§ Mon js de l'index. -->
     <script src="js/scriptIndex.js"></script>

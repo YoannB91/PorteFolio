@@ -11,7 +11,7 @@
 */
 
 //. --------------------Le bouton du menu hamburger.--------------------
-var boutonMenuHamburger = document.getElementsByClassName('ham');
+var boutonMenuHamburger = document.getElementById('ham');
 
 //. --------------------Le bouton du menu hamburger.--------------------
 var boutonX = document.getElementById('menuX');
@@ -28,7 +28,7 @@ var menuLink = document.getElementsByClassName('menuLink');
 . --------------------------------------------------------------------------------
 */
 
-boutonMenuHamburger[0].addEventListener('click', function showMenuVertical() {
+boutonMenuHamburger.addEventListener('click', function showMenuVertical() {
     cacherElementMenuVertical.classList.replace('hideMenuVertical', 'showMenuVertical');
 });
 
