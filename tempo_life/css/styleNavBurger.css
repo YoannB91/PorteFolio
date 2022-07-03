@@ -1,0 +1,207 @@
+/*
+: ************************************************************************************************************
+                                            % Les règles générales de la navbar.
+: ************************************************************************************************************
+*/
+
+/*? La barre de navigation doit se coller en haut de l'écran. */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+/*
+: ************************************************************************************************************
+                                            % Le mode ordinateur.
+: ************************************************************************************************************
+*/
+
+/*
+. --------------------------------------------------------------------------------
+                                        £ La navbar en général.
+. --------------------------------------------------------------------------------
+*/
+
+/*£ Modification de la main nav. */
+#mainNavbar {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+
+/*£ Modification du logo de la main nav. */
+#logoMainNavbar {
+    height: 75px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    align-self: baseline;
+}
+
+/*£ Modification du titre de la main nav. */
+.titreNavbar {
+    display: block ruby;
+    font-family: 'Cookie', cursive;
+    font-size: 6vh;
+    padding: 10px 20px 10px 10px;
+}
+
+/*£ Customisation de la navbar. */
+.navbar {
+    overflow: hidden;
+    list-style: none;
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+/*£ Customisation des liens de la navbar. */
+.navbar a {
+    font-size: 2.5vh;
+    color: #835434;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*£ Application d'un style au survol des liens de la navbar. */
+.navbar a:hover {
+    color: #d9703a;
+}
+
+/*£ Ce padding crée un espacement sur la page html. */
+#liensMainNavbar {
+    padding-left: 0;
+}
+
+/*£ Espacement des liens et des icônes de la nav bar. */
+#liensMainNavbar .fa-solid {
+    padding-right: 5px;
+}
+
+/*£ Éloignement du premier lien de la navbar afin de l'éloigner du bord de l'écran. */
+#premierLienMainNavbar {
+    padding-left: 40px;
+}
+
+/*. --------------------Je cache les éléments de la side nav en mode ordinateur.-------------------- */
+
+/*£ Disparition du titre et du bouton burger de la side nav. */
+.openSideNav {
+    display: none;
+}
+
+/*
+: ************************************************************************************************************
+                                            % Le mode mobile et tablette.
+: ************************************************************************************************************
+*/
+
+/*
+. --------------------------------------------------------------------------------
+                                        £ Les éléments de remplacement pour la main nav.
+. --------------------------------------------------------------------------------
+*/
+
+/*£ L'icône du menu burger. */
+#ham {
+    margin-left: 5vw;
+    margin-right: 4vw;
+    font-size: 4vh;
+}
+
+/*£ Centrage du titre et du logo de la side nav. */
+#logoTitreSideNav {
+    display: flex;
+    align-items: center;
+}
+
+/*£ Modification du logo de la side nav. */
+#logoSideNavbar {
+    height: 8vh;
+    padding: 5vw 10px;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                        £ La side nav.
+. --------------------------------------------------------------------------------
+*/
+
+/*£ La side nav pour les mobiles. */
+.sideNav {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #b7774a;
+    width: 100%;
+    height: 100vh;
+}
+
+/*£ Un espace blanc se crée au-dessus des side menus lors de leurs ouvertures. */
+#sideMenu1 {
+    margin-top: 0;
+}
+
+/*£ Centrage de la liste des liens de la side nav. */
+#listeLienSideMenu {
+    padding-top: 15vh;
+}
+
+/*£ Les liens des side menus. */
+.liensSideMenu {
+    list-style: none;
+    padding-top: 5rem;
+}
+
+/*£ Les liens de navigation des side menu. */
+.liensSideMenu a {
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 4.5vh;
+    text-align: center;
+}
+
+/*£ L'icône X qui sert à fermer le menu vertical. */
+.menuX {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5vh;
+}
+
+/*
+: ************************************************************************************************************
+                                            % Les Hide & Show.
+: ************************************************************************************************************
+*/
+
+/*£ La fonction hide qui me permet de cacher le menu vertical. */
+.hideMenuVertical {
+    visibility: hidden;
+    height:0;
+    opacity: 0;
+    transition: opacity 600ms, visibility 600ms, height 600ms;
+}
+
+/*£ La fonction show qui me permet de faire apparaître le menu vertical. */
+.showMenuVertical {
+    display: block;
+    transition: opacity 600ms, visibility 600ms, height 600ms;
+}
+
+/*£ Disparition de la navbar lors de l'ouverture de la side nav. */
+.hideMainNavbar {
+    display: none;
+}

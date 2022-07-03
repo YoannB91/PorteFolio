@@ -9,43 +9,43 @@
 
 <url>
   <loc>https://yoann-bezard.fr/</loc>
-  <lastmod>2021-10-12T14:18:54+00:00</lastmod>
+  <lastmod>2022-04-05T11:05:20+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://yoann-bezard.fr/index.html</loc>
+  <lastmod>2022-04-05T11:05:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://yoann-bezard.fr/cv.html</loc>
-  <lastmod>2021-10-11T10:10:47+00:00</lastmod>
+  <lastmod>2022-03-07T09:17:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://yoann-bezard.fr/pdf/cv_yoann_bezard.pdf</loc>
-  <lastmod>2021-10-11T10:10:48+00:00</lastmod>
+  <lastmod>2022-03-07T09:21:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://yoann-bezard.fr/Location/view/index.php</loc>
-  <lastmod>2021-10-12T14:19:29+00:00</lastmod>
+  <loc>https://yoann-bezard.fr/pdf/Lettre_de_motivation_yoann_bezard.pdf</loc>
+  <lastmod>2022-03-07T09:17:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yoann-bezard.fr/pdf/projet_recette_pdf_de_base.pdf</loc>
+  <lastmod>2022-03-07T09:17:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yoann-bezard.fr/tempo_life/index.html</loc>
+  <lastmod>2022-04-05T11:05:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://yoann-bezard.fr/politique_de_confidentialit%C3%A9.html</loc>
-  <lastmod>2021-10-11T10:10:41+00:00</lastmod>
+  <lastmod>2022-03-07T09:16:49+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yoann-bezard.fr/mentions_legales.html</loc>
-  <lastmod>2021-10-11T10:10:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yoann-bezard.fr/index.html</loc>
-  <lastmod>2021-10-12T14:18:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://yoann-bezard.fr/pdf/politique_de_confidentialit%C3%A9.pdf</loc>
-  <lastmod>2021-10-11T10:10:49+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 
 

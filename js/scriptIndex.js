@@ -166,13 +166,6 @@ imageSectionJeuxVideo.addEventListener('click', function cliqueSwitchImage(){
             imageSectionJeuxVideo.setAttribute("alt", "Une dualshock 4 noire est posé contre une playstation 4 noire sur un fond blanc.");
             break;
 
-        //? Si l'image présente est celle de la playstation 4.
-        case 'img/passions/jv/playstation-4.jpg' :
-            imageSectionJeuxVideo.src = 'img/passions/jv/switch.jpg';
-            imageSectionJeuxVideo.setAttribute("title", "Une switch, une console de salon utilisable en console portable, du pur génie nippon.");
-            imageSectionJeuxVideo.setAttribute("alt", "Une console Nintendo Switch. Elle est représentée en mode portable sur un fond de couleur purple; avec son joy-con bleu à gauche et son joy-con rouge à droite. Son écran est éteint.");
-            break;
-
         //? Par défaut je remet l'image de la switch, qui est celle qui apparaît en première dans la boucle.
         default :
             imageSectionJeuxVideo.src = 'img/passions/jv/switch.jpg';
@@ -212,7 +205,7 @@ var texteSousSectionSFF = document.getElementsByClassName('texteSousSectionSFF')
 
 //§ Le carousel de la sous-section "science-fiction et fantastique" va automatiquement changer d'image.
 function changeImageSFF() {
-    //? Le nombre d'image maximum que j'ai dans ma banque d'image, s'il est atteint alors je reprends à 0.
+    //? Le nombre d'images disponible dans ma banque d'image, quand il est atteint je reprends à 0.
     if (imgSFF == 9) {
         imgSFF = 0;
     }

@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--+ Le titre de la page. -->
+    <title>Portfolio de Yoann Bezard | Développeur web français</title>
+
+    <!--+ La description de la page. -->
+    <meta name="description" content="Bienvenue sur le portfolio de Yoann Bezard, en le parcourant vous découvrirez qui je suis, mon parcours et les projets que j'ai réalisé au fil du temps.">
+
     <!--+ Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -38,12 +44,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100;1,500;1,900&display=swap" rel="stylesheet">
-
-    <!--+ La description de la page. -->
-    <meta name="description" content="Bienvenue sur le portfolio de Yoann Bezard, en le parcourant vous découvrirez qui je suis, mon parcours et les projets que j'ai réalisé au fil du temps.">
-
-    <!--+ Le titre de la page. -->
-    <title>Portfolio de Yoann Bezard | Développeur web français</title>
 
     <!--$ Les fichiers css. -->
 
@@ -82,7 +82,7 @@
         : ************************************************************************************************************
         -->
     
-        <nav id="topNav">
+        <nav id="topNav" aria-label="Navbar pour les ordinateurs.">
     
             <!--
             . --------------------------------------------------------------------------------
@@ -131,7 +131,9 @@
             -->
     
             <!--: Le bouton du menu burger. -->
-            <button id="ham"><i class="fas fa-bars fa-2x"></i></button>
+            <button id="ham" aria-label="Navbar pour les mobiles.">
+                <em class="fas fa-bars fa-2x"></em>
+            </button>
     
             <!--: Le titre de la barre de navigation en mode mobile et tablette. -->
             <h2>Yoann Bezard | Développeur web</h2>
@@ -139,10 +141,12 @@
         </nav>
     
         <!--: La navigation verticale qui apparaît lors du clic. -->
-        <nav class="sideNav hideMenuVertical" id="cacherElementMenuVertical">
+        <nav class="sideNav hideMenuVertical" id="cacherElementMenuVertical" aria-label="Navbar pour les mobiles.">
     
             <!--: Mon bouton X qui permet de fermer la sidenav. -->
-            <button class="menuX" id="menuX"><i class="fas fa-times fa-2x"></i></button>
+            <button class="menuX" id="menuX" aria-label="Fermer side nav.">
+                <em class="fas fa-times fa-2x"></em>
+            </button>
     
             <!--: Le side menu principal. -->
             <ul id="sideMenu1" class="sideNavUl showSousMenu">
@@ -235,7 +239,7 @@
         </p>
 
         <!--µ L'ancre qui va permettre de remonter tout en haut du site depuis le coin inférieur droit. -->
-        <a href="#accueil"> <i class="fas fa-anchor"></i> </a>
+        <a href="#accueil"> <em class="fas fa-anchor"></em> </a>
 
     </div>
 
@@ -310,7 +314,7 @@
 
                         <!--? Le titre du texte de présentation de mes auteurs favoris. -->
                         <p class="py-2 pointeur" id="titreTexteSousSectionLecture">
-                            <i>Une liste de mes auteurs favoris : </i>
+                            <em>Une liste de mes auteurs favoris : </em>
                         </p>
 
                         <!--? Les romanciers. -->
@@ -463,7 +467,7 @@
 
                         <!--? Le titre du texte de présentation de mes groupes de musique favoris. -->
                         <p class="py-2 pointeur" id="titreTexteSousSectionMusique">
-                            <i>Une liste des groupes, artistes et bandes originales que j'aime écouter tout en travaillant : </i>
+                            <em>Une liste des groupes, artistes et bandes originales que j'aime écouter tout en travaillant : </em>
                         </p>
 
                         <div class="card-text hide texteSousSectionMusique">
@@ -581,7 +585,7 @@
 
                         <!--? Le titre du texte de présentation de mes styles de jeux vidéo favoris. -->
                         <p class="py-2 pointeur" id="titreTexteSousSectionJeuxVideo">
-                            <i>Une liste de mes styles de jeux préférés :</i>
+                            <em>Une liste de mes styles de jeux préférés :</em>
                         </p>
 
                         <p class="card-text hide texteSousSectionJeuxVideo"> 
@@ -694,7 +698,7 @@
 
                         <!--? Le titre du texte de présentation de œuvres de SFF favoris. -->
                         <p class="py-2 pointeur" id="titreTexteSousSectionSFF">
-                            <i>Une liste de mes œuvres de science-fiction et fantastique préférés : </i>
+                            <em>Une liste de mes œuvres de science-fiction et fantastique préférés : </em>
                         </p>
 
                         <!--? Le texte du hide and show de la carte sff. -->
@@ -934,15 +938,15 @@
                 <!--= Le titre de la sous-section de compétences. -->
                 <h3 class="text-center pt-2 pb-2">Les CMS.</h3>
 
-                <!--§ Wordpress. -->
+                <!--§ WordPress. -->
                 <div class="col centré">
 
-                    <p>Wordpress</p>
+                    <p>WordPress</p>
 
                     <img class="logo-competences hideCompetences pb-2 cms" loading="lazy"
                     src="img/competences/wordpress.png"
-                    alt="Le logo de Wordpress. C'est cercle gris qui comporte en son centre un W noire qui se termine par une virgule montante."
-                    title="Le logo de Wordpress." >
+                    alt="Le logo de WordPress. C'est cercle gris qui comporte en son centre un W noire qui se termine par une virgule montante."
+                    title="Le logo de WordPress." >
 
                 </div>
 
@@ -1059,7 +1063,7 @@
 
         <button class="boutonSelectionCategorie" id="btnMySql">MySQL</button>
 
-        <button class="boutonSelectionCategorie" id="btnWp">Wordpress</button>
+        <button class="boutonSelectionCategorie" id="btnWp">WordPress</button>
 
     </div>
 
@@ -1078,7 +1082,7 @@
             <h3 class="titreCarte"> Mon CV 
                 <!--§ Le lien vers le projet sur GitHub. -->
                 <a href="https://github.com/YoannB91/PortFolio" target="_blank"> 
-                    <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> 
+                    <em class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></em> 
                 </a> 
             </h3>
 
@@ -1121,8 +1125,8 @@
             <h3 class="titreCarte"> Projet Véville 
                 <!--§ Le lien vers le projet sur GitHub. -->
                 <a href="https://github.com/YoannB91/location-de-voiture" target="_blank"> 
-                    <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i> 
-                </a> 
+                    <em class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></em> 
+                </a>
             </h3>
 
             <!--§ Le lien vers le projet. -->
@@ -1165,8 +1169,8 @@
             <h3 class="titreCarte"> Bugstastique
                 <!--§ Le lien vers le projet sur GitHub. --> 
                 <a href="https://github.com/YoannB91/Bugstastique" target="_blank"> 
-                    <i class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></i>
-                </a> 
+                    <em class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></em>
+                </a>
             </h3>
 
             <!--§ Le lien vers le projet. -->
@@ -1174,19 +1178,19 @@
                 <!--§ Un screen de l'accueil du site. -->
                 <img class="imageCarte" loading="lazy"
                 src="img/portfolio/Bugstastique.png"
-                alt="Il y a une barre de navigation rouge sur laquelle se trouve une manette de playstation 1 avec un cœur. Dessous se trouve la bannière avec écrit le nom du site. En dessous de ça l’on peut voir les articles qui sont mis en avant lors de l’arrivée d’un visiteur sur le site."
-                title="La page d'accueil du site Bugstastique, un blog Wordpress qui se moque des bugs dans les jeux vidéo tout en parodiant des reportages." >
+                alt="Il y a une barre de navigation rouge sur laquelle se trouve une manette de PlayStation 1 avec un cœur. Dessous se trouve la bannière avec écrit le nom du site. En dessous de ça l’on peut voir les articles qui sont mis en avant lors de l’arrivée d’un visiteur sur le site."
+                title="La page d'accueil du site Bugstastique, un blog WordPress qui se moque des bugs dans les jeux vidéo tout en parodiant des reportages." >
             </a>
 
             <!--§ Le descriptif du projet. -->
             <p>
-                Je l'ai fait en une journée et demie lors de la semaine d'initiation Wordpress de ma remise à niveau de développeur web en utilisant le thème color-newsmagazine. J'ai choisi de faire un site sur un sujet qui m'amusait: les bugs dans les jeux vidéo, et j'ai utilisé des captures d'écrans accumulées lors de mes nombreuses années de joueur pour illustrer le tout. 
+                Je l'ai fait en une journée et demie lors de la semaine d'initiation WordPress de ma remise à niveau de développeur web en utilisant le thème color-newsmagazine. J'ai choisi de faire un site sur un sujet qui m'amusait: les bugs dans les jeux vidéo, et j'ai utilisé des captures d'écrans accumulées lors de mes nombreuses années de joueur pour illustrer le tout. 
             </p>
 
             <!--§ La liste des outils utilisés pour faire le projet. -->
             <ul>
 
-                <li class="listeTech">Wordpress</li>
+                <li class="listeTech">WordPress</li>
 
             </ul>
 
@@ -1204,17 +1208,15 @@
             <!--§ Le titre. -->
             <h3 class="titreCarte"> Le projet recette
                 <!--§ Le lien vers le projet sur GitHub. -->
-                <i class="fab fa-github-square" title="Nous tenons à garder l'api de ce projet privé."></i>
+                <em class="fab fa-github-square" title="Nous tenons à garder l'api de ce projet privé."></em>
             </h3>
 
             <!--§ Le lien vers le projet. -->
-            <!-- <a href="#" target="_blank"> -->
                 <!--§ Un screen de l'accueil du site. -->
                 <img class="imageCarte" loading="lazy"
                 src="img/portfolio/projet_recette.png"
                 alt="Il y a une barre de navigation noire tout en haut du site. Dessous se trouve un plat de sushi, puis la liste des recettes ( cette zone est de couleur rouge ) et des ingrédients ( et cette zone-ci de couleur bleu ) du site. Tout en bas se trouve un footer vert."
                 title="La page d'accueil du site smithing-recette, le site qui va détrôner marmiton grâce aux merveilleuses recettes de Dark Sasuke !" >
-            <!-- </a> -->
 
             <!--§ Le descriptif du projet. -->
             <p>
@@ -1230,9 +1232,52 @@
 
                 <li class="listeTech">HTML5</li>
                 <li class="listeTech">CSS3</li>
+                <li class="listeTech">JavaScript</li>
                 <li class="listeTech">Bootstrap5</li>
                 <li class="listeTech">Java</li>
                 <li class="listeTech">MySQL</li>
+
+            </ul>
+
+        </article>
+
+        <!--
+        . --------------------------------------------------------------------------------
+                                    £ Tempo life.
+        . --------------------------------------------------------------------------------
+        -->
+
+        <!--, Les outils utilisés durant le projet. -->
+        <article class="cartePortfolio animationPf html javaScript">
+
+            <!--§ Le titre. -->
+            <h3 class="titreCarte"> Tempo life
+                <!--§ Le lien vers le projet sur GitHub. -->
+                <a href="https://github.com/YoannB91/Tempo-life" target="_blank"> 
+                    <em class="fab fa-github-square" title="Le lien vers le stockage Github du projet."></em> 
+                </a>
+            </h3>
+
+            <!--§ Le lien vers le projet. -->
+            <a href="tempo_life/index.html" target="_blank">
+                <!--§ Un screen de l'accueil du site. -->
+                <img class="imageCarte" loading="lazy"
+                src="img/portfolio/tempo_life.png"
+                alt="Tout en haut se situe une bande orange comportant les icônes des réseaux sociaux sur sa droite; puis en dessous se trouve la barre de navigation de couleur blanche sur laquelle est dessiné un guitariste et écrit Tempo life. Sous ces bandes l'on peut voir un parquet sur lequel sont parsemé un casque, un clavier et une guitare; au centre l'on peut lire la devise de l'école : La musique à tout instant."
+                title="La page d'accueil de la fausse école Tempo life, une fausse école de musique dans laquelle l'on apprend à transformer sa passion pour la musique en véritable art musicale.">
+            </a>
+
+            <!--§ Le descriptif du projet. -->
+            <p>
+                C'est un site pour une fausse école de musique que j'ai réalisé en utilisant une <a href="img/tempo_life_maquette/maquette.jpg" target="_blank">maquette</a> que j'avais faite avec l'un de mes collègues lors de ma remise à niveau de développeur web chez Doranco en 2021.
+            </p>
+
+            <!--§ La liste des outils utilisés pour faire le projet. -->
+            <ul>
+
+                <li class="listeTech">HTML5</li>
+                <li class="listeTech">CSS3</li>
+                <li class="listeTech">JavaScript</li>
 
             </ul>
 

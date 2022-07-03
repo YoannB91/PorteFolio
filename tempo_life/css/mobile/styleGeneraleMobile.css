@@ -1,0 +1,68 @@
+/*
+: ************************************************************************************************************
+										% Je cible les tablettes et les mobiles.
+: ************************************************************************************************************
+*/
+
+@media only screen and (max-device-width: 1024px) {
+
+	/*
+	: ************************************************************************************************************
+										% Les règles générales.
+	: ************************************************************************************************************
+	*/
+
+	/*
+	. --------------------------------------------------------------------------------
+									£ Définition des font-size.
+	. --------------------------------------------------------------------------------
+	*/
+
+	/*. --------------------Les titres.-------------------- */
+
+	/*é Réduction de la taille des titres secondaires. */
+
+	h2 {
+		font-size: 5vh;
+	}
+
+	h3 {
+		font-size: 3.5vh;
+	}
+
+	/*
+	: ************************************************************************************************************
+										% Les classes générales.
+	: ************************************************************************************************************
+	*/
+
+	/*é Cette classe CSS permet de centrer des éléments en mode responsive. */
+	.centrageMobile {
+		margin-right: 5vw;
+		margin-left: 5vw;
+	}
+
+	/*. --------------------Les titres.-------------------- */
+
+	/*é Certain titre ne s'affiche pas totalement à l'écran en mode responsive. */
+	.titreCenter {
+		display: flex;
+        text-align: center;
+	}
+
+	/*é Recentrage du texte et augmentation des espaces autours. */
+	.borderTitle {
+		text-align: center;
+		padding: 0 6px;
+		border-radius: 6px;
+		margin: 3vh auto 2vh;
+	}
+
+	/*. --------------------L'ancre.-------------------- */
+
+	/*- L'ancre est inutile sur mobile. */
+	.ancre {
+		display: none;
+	}
+
+}

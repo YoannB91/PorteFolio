@@ -1,0 +1,376 @@
+/*
+: ************************************************************************************************************
+										% La barre des réseaux sociaux.
+: ************************************************************************************************************
+*/
+
+/*è La barre des réseaux sociaux. */
+#socialBarHeader {
+	background-color: #b7774a;
+	height: 5vh;
+	width: 100%;
+	display: flex;
+    align-items: center;
+}
+
+/*è Alignement des icônes à droite de l'écran. */
+#barreRSFacebook {
+	margin-left: auto;
+}
+
+/*è Les règles des icônes. */
+#socialBarHeader em {
+	color: white;
+	padding-left: 25px;
+    font-size: 2.5vh;
+}
+
+/*è J'éloigne la dernière icône du bord de l'écran. */
+#socialBarHeader .fa-google {
+	padding-right: 50px;
+}
+
+/*
+: ************************************************************************************************************
+										% L'accueil.
+: ************************************************************************************************************
+*/
+
+/*= Le code CSS de l'image de fond de la page d'accueil. */
+#accueil {
+	height: 100vh;
+	background-image: url(../img/accueil/fond_accueil.jpg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 5;
+}
+
+/*= Le titre de l'accueil. */
+#accueil h2 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 10vh;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+/*= Modification de la taille des textes de l'accueil. */
+#accueil p, #accueil .fa-solid {
+	font-size: 6vh;
+}
+
+/*= La bordure qui entoure le texte de l'accueil. */
+#accueil p {
+	border: 4px solid white;
+	border-radius: 4px;
+	padding: 12px;
+}
+
+/*= Remise en forme du lien. */
+#accueil a {
+	display: contents;
+}
+
+/*
+: ************************************************************************************************************
+										% Les cours de musique.
+: ************************************************************************************************************
+*/
+
+/*& Mise en forme de la section "Les cours de musique". */
+#courMusique {
+	display: flex;
+	margin: 5vh 3vw;
+}
+
+/*. --------------------La zone de texte.-------------------- */
+
+/*& Mise en forme de la zone de texte. */
+#presentationCour {
+	margin-right: 5vw;
+}
+
+/*& Masque l'icône de CD de la version mobile. */
+#cdCourMobile {
+	display: none;
+}
+
+/*& Modification de l'icône CD. */
+.styleCDCour {
+	font-size: 6vh;
+	color: #b7774a;
+}
+
+/*& Mise en forme du texte de la section "Les cours de musique". */
+#texteCour {
+	margin-bottom: 4vh;
+}
+
+/*& Mise en forme du lien vers une autre partie du site. */
+#lienCour {
+	background-color: #b7774a;
+	color: white;
+	font-size: 4vh;
+	padding: 0px 25px;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+/*& Mise en forme de l'icône de flèche qui pointe vers la droite. */
+#lienCour .fa-arrow-right {
+	font-size: 3vh;
+}
+
+/*. --------------------La zone d'illustration.-------------------- */
+
+/*& Classe CSS permettant d'aligner le lecteur audio au centre de la section. */
+#illustrationCour {
+	text-align: center;
+}
+
+/*& Mise en forme de l'image d'illustration de la section "Les cours de musique" */
+#imgCour {
+	width: 40vw;
+	border: 8px solid #b7774a;
+	border-radius: 8px;
+	box-shadow: 3px 3px 8px 2px #dfc0ae;
+	position: relative;
+	z-index: 5;
+}
+
+/*& Mise en forme de l'audio de démonstration de la section "Les cours de musique". */
+#audioCour{
+	width: 20vw;
+	margin-top: 1.5vh;
+	/* background-color: orangered; */
+}
+
+/*
+: ************************************************************************************************************
+										% Les professeurs.
+: ************************************************************************************************************
+*/
+
+/*. --------------------Les cadres photos.-------------------- */
+
+/*- Centrage des cadres. */
+#alignementCadre {
+	display: flex; 
+	margin: 0 auto;
+}
+
+/*- Création d'un espace à droite des cadres des photos des professeurs. */
+.emplacementCadreProf {
+	margin-right: 5vw;
+}
+
+/*- Réglage de la hauteur et de la largeur des photos. */
+.photoProf {
+	height: 40vh;
+	width: 20vw;
+}
+
+/*- Le code CSS du panneau qui contient le nom du professeur sous sa photo. */
+.panneauProf {
+	width: 20vw;
+	background-color: white;
+	color: #b7774a;
+	text-align: center;
+	font-size: 4vh;
+	font-weight: bold;
+	overflow: hidden;
+	margin-top: -7px;
+}
+
+/*- Disparition du cadre mobile sur ordinateur. */
+#emplacementCadreProfMobile {
+	display: none;
+}
+
+/*. --------------------Le carousel.-------------------- */
+
+/*- Le code CSS pour le carousel des professeurs. */
+#carouselProf {
+	display: flex;
+	margin-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+/*- Le code CSS des flèches du carousel des professeurs. */
+#carouselProf em {
+	font-size: 8vh;
+	color: white;
+	cursor: pointer;
+	align-self: center;
+	position: relative;
+	z-index: 5;
+}
+
+/*- Le code CSS de la flèche gauche du carousel des professeurs. */
+#flecheGaucheProf {
+	margin-right: 5vw;
+	margin-left: 3vw;
+}
+
+/*- Le code CSS de la flèche gauche du carousel des professeurs. */
+#flecheDroiteProf {
+	margin-right: 3vw;
+}
+
+/*. --------------------L'animation.-------------------- */
+
+/*- Une règle CSS qui agrandit la photo d'un enseignant lorsque l'utilisateur passe la souris dessus. */
+.photoProf:hover {
+	transition: transform 1s ease-in-out;
+	transform: scale(1.5);
+}
+
+/*
+: ************************************************************************************************************
+										% Les témoignages.
+: ************************************************************************************************************
+*/
+
+/*é Les témoignages doivent être alignés. */
+#temoignages {
+	display: flex;
+}
+
+/*é Customisation des témoignages. */
+.temoignage {
+	background-color: #fefefe;
+	width: 30vw;
+	border: 0.5px solid #b7774a;
+	border-radius: 10px;
+	box-shadow: 0 0 16px 8px #dfc0ae;
+	margin: 5vh 2vw;
+	position: relative;
+	z-index: 5;
+}
+
+/*. --------------------L'en-tête des témoignages.-------------------- */
+
+/*é Les éléments des en-têtes des témoignages doivent être alignés. */
+.enTeteTemoignage {
+	display: flex;
+}
+
+/*é Customisation du logo des témoignages. */
+.logoTemoignage {
+	font-size: 5vh;
+	font-weight: bold;
+	text-align: center;
+	background-color: #b7774a;
+	color: white;
+	width: 7vh;
+	height: 7vh;
+	border-radius: 50px;
+	margin: 1vh 1vw;
+}
+
+/*é Centrage de la note. */
+.noteTemoignage {
+	margin-top: 1vh;
+}
+
+/*é Customisation des noms des témoins. */
+.nomTemoin {
+	font-weight: bold;
+}
+
+/*é Customisation de la taille des étoiles. */
+.noteTemoignage em {
+	font-size: 2.5vh;
+}
+
+/*é Customisation des étoiles pleines. */
+.etoilePleine {
+	color: #ffca00;
+}
+
+/*é Customisation des étoiles vides. */
+.etoileVide {
+	color: grey;
+}
+
+/*é Centrage de la date du témoignage. */
+.dateTemoignage {
+	margin: auto;
+}
+
+/*. --------------------Le corps des témoignages.-------------------- */
+
+/*é Customisation de la ligne qui sépare l'en-tête et le corps du témoignage. */
+.ligneSeparationTemoignage {
+	border-top: 1px solid gray;
+}
+
+/*é Customisation du corps du témoignage. */
+.corpsTemoignage {
+	font-size: 2vh;
+	padding: 1vh 2vw 2vh;
+	line-height: 3.5vh;
+}
+
+/*
+: ************************************************************************************************************
+										% Le footer.
+: ************************************************************************************************************
+*/
+
+/*, Modification du footer. */
+footer {
+	display: flex;
+	background-color: #432918;
+	position: relative;
+	z-index: 5;
+}
+
+/*. --------------------Le texte du copyright.-------------------- */
+
+/*, Disparition du texte pour les mobiles. */
+#copyrightMobile {
+	display: none;
+}
+
+/*, Ajout de marge autours du texte. */
+#copyright {
+	display: flex;
+	align-items: center;
+	margin: 1vh 0 1vh 3vw;
+}
+
+/*, Espacement des différentes partie du copyright. */
+#separationCopyright {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*. --------------------La mini navigation du footer.-------------------- */
+
+/*, Stylisation de la navigation du footer. */
+#navFooter {
+	display: flex;
+	align-items: center;
+	margin: 1vh 2vw 1vh auto;
+}
+
+/*, Changement de la puce des liens de la mini navigation du footer. */
+/*! Il est impossible d'utiliser la propriété [list-style: ;] avec un [display: block;]. */
+footer ul li::before {
+	content: '\01D11E';
+}
+
+/*, Customisation des liens du footer. */
+.lienFooter {
+	padding-left: 5px;
+	padding-right: 30px;
+	font-size: 3vh;
+}
+
+/*, Suppression de la marge du dernier lien de la navigation du footer. */
+#dernierLienFooter {
+	padding-right: 0;
+}

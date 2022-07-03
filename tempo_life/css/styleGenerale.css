@@ -1,0 +1,237 @@
+/*
+: ************************************************************************************************************
+                                    % Le reset CSS.
+: ************************************************************************************************************
+*/
+
+/*) Une réinitialisation CSS. */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+/*) Suppression de toute la mise en forme du HTML. */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+: ************************************************************************************************************
+                                    % Les règles générales.
+: ************************************************************************************************************
+*/
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Le scroll sur le site.
+. --------------------------------------------------------------------------------
+*/
+
+/*£ Réglage du comportement de défilement sur lisse. */
+html {
+	scroll-behavior: smooth;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Définition des polices.
+. --------------------------------------------------------------------------------
+*/
+
+/*£ Les titres. */
+
+h2 {
+	font-family: 'Slabo 27px', serif;
+	font-weight: bold;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'Dancing Script', cursive;
+}
+
+/*£ Les textes. */
+p, a, q {
+	font-family: 'Jaldi', sans-serif;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Définition des font-size.
+. --------------------------------------------------------------------------------
+*/
+
+/*. --------------------Les titres.-------------------- */
+
+/*µ Réglage de la taille des titres secondaires. */
+h2 {
+	font-size: 7vh;
+}
+
+/*µ Réglage de la taille des titres tertiaires. */
+h3 {
+	font-size: 4vh;
+}
+
+/*. --------------------Les textes.-------------------- */
+
+/*µ Réglage de la taille des textes. */
+p, a, q {
+	font-size: 3vh;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Définition des font-weight.
+. --------------------------------------------------------------------------------
+*/
+
+strong {
+	font-weight: bold;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Définition des espacements.
+. --------------------------------------------------------------------------------
+*/
+
+/*& Définition de l'espacement des lettres, de la hauteur de ligne et de l'alignement du texte pour tous les éléments du site. */
+* {
+	letter-spacing: 2px;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+/*
+: ************************************************************************************************************
+                                    % Les classes générales.
+: ************************************************************************************************************
+*/
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Colorisation des textes.
+. --------------------------------------------------------------------------------
+*/
+
+/*) Une classe CSS qui sera utilisée pour colorer le texte en blanc. */
+.couleurBlanche {
+	color: white;
+}
+
+/*) Une classe CSS qui sera utilisée pour colorer le texte en orange. */
+.couleurOrange {
+	color: #b7774a;
+}
+
+/*) Définit la couleur d'arrière-plan de l'élément sur une nuance d'orange. */
+.backgroundColorShadeOfOrange {
+	background-color: #b7774a;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Les titres.
+. --------------------------------------------------------------------------------
+*/
+
+/*) Une classe CSS qui sera utilisé pour centrer les titres. */
+.titreCenter {
+	display: flex;
+    justify-content: center;
+}
+
+/*) Une classe CSS qui sera utilisé pour définir les dimensions des titres. */
+.borderTitle {
+	padding: 2px 12px 5px 17px;
+	margin-top: 5vh;
+	margin-bottom: 2vh;
+	border-radius: 10px;
+}
+
+/*. --------------------La colorisation des titres.-------------------- */
+
+/*) Une classe CSS qui sera utilisée pour colorer le texte en blanc et le fond en orange. */
+.couleurTitreUne {
+	color: white;
+	background-color: #b7774a;
+}
+/*) Une classe CSS qui sera utilisée pour colorer le texte en orange et le fond en blanc. */
+.colorTitreDeux {
+	color: #b7774a;
+	background-color: white;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ Les alignements.
+. --------------------------------------------------------------------------------
+*/
+
+/*$ Une classe CSS qui sera utilisée pour centrer des éléments. */
+.center {
+	text-align: center;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ L'effet parallax.
+. --------------------------------------------------------------------------------
+*/
+
+/*? Une classe CSS qui sera utilisée pour créer un effet parallax sur les images. */
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*
+. --------------------------------------------------------------------------------
+                                £ L'ancre.
+. --------------------------------------------------------------------------------
+*/
+
+/*- Une classe CSS qui sera utilisée pour créer une ancre en base des pages. */
+.ancre {
+	font-size: 5vh;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	opacity: 0.2;
+	color: black;
+}
