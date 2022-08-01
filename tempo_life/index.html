@@ -2,11 +2,18 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--+ Le titre de la page. -->
     <title>Tempo life</title>
+
+    <!--+ La description de la page. -->
     <meta name="description" content="Site fictif pour un école de musique fait par le développeur web Yoann Bezard.">
+
+    <!--+ J'importe mes favicons. -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
@@ -24,14 +31,26 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!--+ J'importe mes polices via google fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@600&family=Jaldi&family=Slabo+27px&display=swap" rel="stylesheet">
+
+    <!--$ Les fichiers css. -->
+
+    <!--£ Les icônes de font-awesome. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--£ Le fichier CSS des règles générales. -->
     <link rel="stylesheet" href="css/styleGenerale.css">
     <link rel="stylesheet" href="css/mobile/styleGeneraleMobile.css" media="screen and (max-width: 1024px)">
+
+    <!--£ Le fichier CSS de la navbar. -->
     <link rel="stylesheet" href="css/styleNavBurger.css">
     <link rel="stylesheet" href="css/mobile/StyleNavBurgerMobile.css" media="screen and (max-width: 1024px)">
+
+    <!--£ Le fichier CSS principal. -->
     <link rel="stylesheet" href="css/styleIndex.css">
     <link rel="stylesheet" href="css/mobile/styleIndexMobile.css" media="screen and (max-width: 1024px)">
 
@@ -40,6 +59,13 @@
 <body>
 
     <header>
+
+        <!--
+        : ************************************************************************************************************
+                                                        % La barre des réseaux sociaux.
+        : ************************************************************************************************************
+        -->
+
         <div id="socialBarHeader">
 
             <a id="barreRSFacebook" href="#" title="Il n'existe aucun réseau social pour Tempo life.">
@@ -61,13 +87,32 @@
             <a href="#" title="Il n'existe aucun réseau social pour Tempo life.">
                 <em class="fab fa-google"></em>
             </a>
+
         </div>
 
-        <nav id="mainNavbar" aria-label="Navbar ordinateur.">
 
+
+        <!--
+        : ************************************************************************************************************
+                                                    % La barre de navigation.
+        : ************************************************************************************************************
+        -->
+
+        <!--
+        . --------------------------------------------------------------------------------
+                                                    £ Le mode ordinateur.
+        . --------------------------------------------------------------------------------
+        -->
+
+        <nav id="mainNavbar" aria-label="La barre de navigation pour les ordinateurs.">
+
+            <!--: Le logo de la navbar. -->
             <img id="logoMainNavbar" class="logoTitreMainNavbar" src="img/navbar/logo.png" title="Tempo life, la passion de la musique avant tout." alt="C'est un homme portant un t-shirt de couleur banana mania. Il joue de la guitare et l'on peut voir trois deux doubles-croches s'envoler au dessus de lui." loading="lazy">
 
+            <!--: Le titre la navbar. -->
             <h1 class="logoTitreMainNavbar titreNavbar">Tempo life</h1>
+
+            <!--. --------------------La liste des liens principaux de la barre de navigation.-------------------- -->
 
             <ul id="liensMainNavbar" class="navbar">
 
@@ -95,22 +140,27 @@
                 <li>
                     <a href="#">
                         <em class="fa-solid fa-envelope"></em>
-                        Contacter-nous
+                        Contactez-nous
                     </a>
                 </li>
 
             </ul>
 
+            <!--. --------------------Les éléments de la barre principal en mode mobile.-------------------- -->
+
             <div class="navbar openSideNav">
 
-                <button id="ham" aria-label="Ouvrir side nav.">
+                <!--: Le bouton qui permet l'ouverture de la side nav. -->
+                <button id="ham" aria-label="Ouvrir la barre de navigation pour les mobiles.">
                     <em class="fa-solid fa-bars"></em>
                 </button>
 
                 <div id="logoTitreSideNav">
 
+                    <!--: Le logo de la barre de navigation en mode mobile. -->
                     <img id="logoSideNavbar" src="img/navbar/logo.png" title="Tempo life, la passion de la musique avant tout." alt="C'est un homme portant un t-shirt de couleur banana mania. Il joue de la guitare et l'on peut voir trois deux doubles-croches s'envoler au dessus de lui." loading="lazy">
 
+                    <!--: Le titre de la barre de navigation en mode mobile. -->
                     <h1 class="titreNavbar">Tempo life</h1>
 
                 </div>
@@ -119,11 +169,20 @@
 
         </nav>
 
-        <nav id="cacherElementMenuVertical" class="sideNav hideMenuVertical" aria-label="Navbar mobile.">
+        <!--
+        . --------------------------------------------------------------------------------
+                                £ La barre de navigation pour les mobiles et tablette.
+        . --------------------------------------------------------------------------------
+        -->
 
-            <button class="menuX" id="menuX" aria-label="Fermer side nav.">
+        <nav id="cacherElementMenuVertical" class="sideNav hideMenuVertical" aria-label="La navigation latérale pour les mobiles.">
+
+            <!--: Le bouton "X" qui permet la fermeture de la side nav. -->
+            <button class="menuX" id="menuX" aria-label="Fermer la navigation latérale.">
                 <em class="fas fa-times fa-2x"></em>
             </button>
+
+            <!--. --------------------Les liens de la side nav pour mobile.-------------------- -->
 
             <div id="listeLienSideMenu">
 
@@ -153,7 +212,7 @@
                     <li>
                         <a href="#" class="menuLink">
                             <em class="fa-solid fa-envelope"></em>
-                            Contacter-nous
+                            Contactez-nous
                         </a>
                     </li>
 
@@ -167,14 +226,92 @@
 
     <main>
 
+        <!--
+        : ************************************************************************************************************
+                                                    % L'ancre.
+        : ************************************************************************************************************
+        -->
+
         <a href="index.html">
             <em class="fa-solid fa-music ancre" title="Revenir à l'accueil."></em>
         </a>
 
+        <!--
+        : ************************************************************************************************************
+                                                    % Les cookies.
+        : ************************************************************************************************************
+        -->
+
+        <!-- <div style="display: block;text-align: center;margin: 0 auto;width: 50vw;z-index: 100;position: absolute;left: 20vw;bottom: 15vh;padding: 3vh 5vw;background-color: red;">
+
+            <h2 style="font-size: 4vh;padding-bottom: 2vh;">
+                Ce site promeut une fausse école de musique.
+            </h2>
+
+            <p style="padding-bottom: 2vh;">
+
+                Bonjour et bienvenue sur le site de Tempo life.
+
+                <br />
+
+                Si je vous demande l'autorisation de déposer des cookies ou autres technologies c'est pour trois raisons :
+
+            </p>
+
+            <ol style="padding-left: 3vw; padding-bottom: 2vh;">
+
+                <li>
+                    Mieux vous guider dans votre orientation sur mes sites avec des contenus adaptés.
+                </li>
+
+                <li>
+                    Assurer une performance optimale du site et une navigation sécurisée.
+                </li>
+
+                <li>
+                    Récolter des statistiques de fréquentation et de navigation pour améliorer l'expérience.
+                </li>
+
+            </ol>
+
+            <p style="padding-bottom: 1vh;">
+
+                Ces données strictement anonymes ne seront JAMAIS revendues à des tiers.
+
+            </p>
+
+            <p style="padding-bottom: 2vh;">
+
+                À vous de choisir !
+
+                <a href="politique_cookie.html">
+                    Notre politique de cookies.
+                </a>
+
+            </p>
+
+            <button id="boutonNonCookies" style="padding: 1vh;margin-right: 1vw;">
+                No
+            </button>
+
+            <button id="boutonOuiCookies" style="padding: 1vh;">
+                Agreed
+            </button>
+
+        </div> -->
+
+        <!--
+        : ************************************************************************************************************
+                                                    % L'accueil.
+        : ************************************************************************************************************
+        -->
+
         <section id="accueil" class="parallax">
 
+            <!--. --------------------Le titre.-------------------- -->
             <h2 class="couleurBlanche">La Musique À Tout Instant</h2>
 
+            <!--. --------------------Le lien pour descendre sur le site.-------------------- -->
             <a href="#introCoursMusique">
                 <p class="couleurBlanche">En savoir plus</p>
                 <em class="fa-solid fa-chevron-down couleurBlanche"></em>
@@ -182,20 +319,31 @@
 
         </section>
 
+        <!--
+        : ************************************************************************************************************
+                                                    % Les cours de musique.
+        : ************************************************************************************************************
+        -->
+
         <div class="titreCenter">
 
+        <!--. --------------------Le titre.-------------------- -->
         <h2 id="introCoursMusique" class="borderTitle couleurTitreUne">Les cours de musique proposés</h2>
 
         </div>
 
+        <!--. --------------------Le sous-titre.-------------------- -->
         <h3 class="titreCenter centrageMobile couleurOrange">Des cours de guitare, de batterie, de violon et de piano.</h3>
 
         <div id="courMusique">
 
+            <!--. --------------------Le texte.-------------------- -->
             <div id="presentationCour" class="centrageMobile">
 
+                <!--. --------------------Une icône de CD pour les mobiles.-------------------- -->
                 <em id="cdCourMobile" class="fa-solid fa-compact-disc fa-light styleCDCour"></em>
 
+                <!--. --------------------Le texte de présentation.-------------------- -->
                 <p id="texteCour">
                     <em id="cdCour" class="fa-solid fa-compact-disc fa-light styleCDCour"></em>
                     L'ensemble des classes de pratiques musicales sont rassemblés dans le département des musiques actuelles.
@@ -204,16 +352,20 @@
                     Ces classes offrent tout au longs de l'année scolaire aux étudiants un enseignement technique des instruments, du chant, des temps de partage et des évènements où sont conviés familles et amis des participants.
                 </p>
 
+                <!--. --------------------Le lien vers une page plus précise.-------------------- -->
                 <a href="#" id="lienCour">
                     Découvrir <em class="fa-solid fa-arrow-right"></em>
                 </a>
 
             </div>
 
+            <!--. --------------------Les illustrations.-------------------- -->
             <div id="illustrationCour" class="centrageMobile">
 
+                <!--. --------------------L'image d'illustration.-------------------- -->
                 <img id="imgCour" src="img/accueil/guitare_accueil.jpg" title="Les cours de guitare." alt="Un homme portant une veste en cuir noire et un jean bleu joue un air sur une guitare Hofner" loading="lazy">
 
+                <!--. --------------------L'audio de démonstration.-------------------- -->
                 <audio id="audioCour" src="sons/accueil/demo_guitare.mp3" controls preload="metadata" title="Extrait d'un morceau de guitare joué par l'un de nos élèves de première année." aria-label="Lire un extrait d'un morceau de guitare.">
                     Votre navigateur ne prend pas en charge l'audio HTML5. 
                     Voici un <a href="myAudio.mp3">lien vers le fichier audio</a> à la place.
@@ -223,22 +375,38 @@
 
         </div>
 
+        <!--
+        : ************************************************************************************************************
+                                                    % Les professeurs.
+        : ************************************************************************************************************
+        -->
+
         <section class="backgroundColorShadeOfOrange">
 
             <div class="titreCenter">
 
+                <!--. --------------------Le titre.-------------------- -->
                 <h2 class="borderTitle colorTitreDeux">Les professeurs</h2>
 
             </div>
 
+            <!--. --------------------Le sous-titre.-------------------- -->
             <h3 id="sousTitreProfesseur" class="titreCenter centrageMobile couleurBlanche">Nos professeurs et intervenants.</h3>
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                    £ Les emplacements pour les photos des professeurs.
+            . --------------------------------------------------------------------------------
+            -->
 
             <div id="carouselProf">
 
+                <!--. --------------------La flèche de gauche.-------------------- -->
                 <em id="flecheGaucheProf" class="fa-solid fa-arrow-left-long"></em>
 
                 <div id="alignementCadre">
 
+                    <!--. --------------------Le premier emplacement.-------------------- -->
                     <div class="emplacementCadreProf">
 
                         <img id="cadrePhotoProf1" class="photoProf" src="img/profs/1.jpg" title="Mélodie Babin, professeur de chant." alt="Photo d'une jeune femme blonde souriante, ses yeux sont de couleur bleus. Son sourire laisse apparaître un creux au niveau de ses joues. Elle à une petite cicatrice au niveau de l'œil droit, et des cernes peu profonde sont creusés sous ses yeux.">
@@ -247,6 +415,7 @@
 
                     </div>
 
+                    <!--. --------------------Le second emplacement.-------------------- -->
                     <div class="emplacementCadreProf">
 
                         <img id="cadrePhotoProf2" class="photoProf" src="img/profs/2.jpg" title="Bruce ruel, professeur de guitare acoustique." alt="Photo d'un homme noire d'âge mûre souriant, ses yeux sont de couleur marrons. Ses cheveux sont de couleur noire grisonnante, sa barbe est quand à elle grise. Il porte une boucle d'oreille tombante sur son oreille gauche.">
@@ -255,6 +424,7 @@
 
                     </div>
 
+                    <!--. --------------------Le troisième emplacement.-------------------- -->
                     <div class="emplacementCadreProf">
 
                         <img id="cadrePhotoProf3" class="photoProf" src="img/profs/3.jpg" title="Charlotte Jobin, professeur de batterie." alt="Photo d'une jeune femme souriante aux cheveux châtains foncés, ses yeux sont de couleur marron. Son grand sourire laisse apparaître une rangée de dents blanches et un creux au niveau de ses joues. Elle porte une paire de boucle d'oreille et son t-shirt est de couleur bleu foncé.">
@@ -262,6 +432,7 @@
 
                     </div>
 
+                    <!--. --------------------L'emplacement pour les mobiles.-------------------- -->
                     <div id="emplacementCadreProfMobile">
 
                         <img id="cadrePhotoProfMobile" class="photoProf" src="img/profs/1.jpg" title="Mélodie Babin, professeur de chant." alt="Photo d'une jeune femme blonde souriante, ses yeux sont de couleur bleus. Son sourire laisse apparaître un creux au niveau de ses joues. Elle à une petite cicatrice au niveau de l'œil droit, et des cernes peu profonde sont creusés sous ses yeux.">
@@ -271,35 +442,55 @@
 
                 </div>
 
+                <!--. --------------------La flèche de droite.-------------------- -->
                 <em id="flecheDroiteProf" class="fa-solid fa-arrow-right-long"></em>
 
             </div>
 
         </section>
 
+        <!--
+        : ************************************************************************************************************
+                                                    % Les témoignages.
+        : ************************************************************************************************************
+        -->
+
         <div class="titreCenter">
 
+            <!--. --------------------Le titre.-------------------- -->
             <h2 class="borderTitle couleurTitreUne">Témoignages</h2>
     
             </div>
-
+    
+            <!--. --------------------Le sous-titre.-------------------- -->
             <h3 class="titreCenter centrageMobile couleurOrange">Ce qu'ils pensent de nous est gage de qualité.</h3>
 
             <div id="temoignages">
 
+                <!--
+                . --------------------------------------------------------------------------------
+                                        £ Le premier témoignage.
+                . --------------------------------------------------------------------------------
+                -->
+
                 <div class="temoignage">
 
+                    <!--. --------------------L'en-tête du témoignage.-------------------- -->
                     <div class="enTeteTemoignage">
 
+                        <!--. --------------------Le logo du témoignage.-------------------- -->
                         <p class="logoTemoignage">
                             C
                         </p>
 
                         <div class="noteTemoignage">
 
+                            <!--. --------------------Le nom du témoin.-------------------- -->
                             <p class="nomTemoin">
                                 Sarah Coj
                             </p>
+
+                            <!--. --------------------Les étoiles.-------------------- -->
 
                             <em class="fa-solid fa-star etoilePleine"></em>
                             <em class="fa-solid fa-star etoilePleine"></em>
@@ -309,12 +500,15 @@
 
                         </div>
 
+                        <!--. --------------------La date du témoignage.-------------------- -->
                         <p class="dateTemoignage">17/06/2021</p>
 
                     </div>
 
+                    <!--. --------------------La bordure de séparation.-------------------- -->
                     <hr class="ligneSeparationTemoignage">
 
+                    <!--. --------------------Le corps du témoignage.-------------------- -->
                     <p class="corpsTemoignage">
                         Grande fan de musique classique, mais débutante dans le domaine, je me suis lancée dans l'apprentissage du piano avec plaisir et facilité il y a quelques mois à peine en découvrant Tempo life.
                         <br />
@@ -325,19 +519,30 @@
 
                 </div>
 
+                <!--
+                . --------------------------------------------------------------------------------
+                                        £ Le second témoignage.
+                . --------------------------------------------------------------------------------
+                -->
+
                 <div class="temoignage">
 
+                    <!--. --------------------L'en-tête du témoignage.-------------------- -->
                     <div class="enTeteTemoignage">
 
+                        <!--. --------------------Le logo du témoignage.-------------------- -->
                         <p class="logoTemoignage">
                             M
                         </p>
 
                         <div class="noteTemoignage">
 
+                            <!--. --------------------Le nom du témoin.-------------------- -->
                             <p class="nomTemoin">
                                 Maxence Heacky
                             </p>
+
+                            <!--. --------------------Les étoiles.-------------------- -->
 
                             <em class="fa-solid fa-star etoilePleine"></em>
                             <em class="fa-solid fa-star etoilePleine"></em>
@@ -347,12 +552,15 @@
 
                         </div>
 
+                        <!--. --------------------La date du témoignage.-------------------- -->
                         <p class="dateTemoignage">01/02/2022</p>
 
                     </div>
 
+                    <!--. --------------------La bordure de séparation.-------------------- -->
                     <hr class="ligneSeparationTemoignage">
 
+                    <!--. --------------------Le corps du témoignage.-------------------- -->
                     <p class="corpsTemoignage">
                         Les évènements organisés lors des fêtes ( Pâque, halloween, noël ) sont des moments de joie intense qui auront rendus mes 3 années chez Tempo life inoubliable !
                         <br />
@@ -365,19 +573,30 @@
 
                 </div>
 
+                <!--
+                . --------------------------------------------------------------------------------
+                                        £ Le troisième témoignage.
+                . --------------------------------------------------------------------------------
+                -->
+
                 <div class="temoignage">
 
+                    <!--. --------------------L'en-tête du témoignage.-------------------- -->
                     <div class="enTeteTemoignage">
 
+                        <!--. --------------------Le logo du témoignage.-------------------- -->
                         <p class="logoTemoignage">
                             A
                         </p>
 
                         <div class="noteTemoignage">
 
+                            <!--. --------------------Le nom du témoin.-------------------- -->
                             <p class="nomTemoin">
                                 Clara Boni
                             </p>
+
+                            <!--. --------------------Les étoiles.-------------------- -->
 
                             <em class="fa-solid fa-star etoilePleine"></em>
                             <em class="fa-solid fa-star etoilePleine"></em>
@@ -387,12 +606,15 @@
 
                         </div>
 
+                        <!--. --------------------La date du témoignage.-------------------- -->
                         <p class="dateTemoignage">24/03/2022</p>
 
                     </div>
 
+                    <!--. --------------------La bordure de séparation.-------------------- -->
                     <hr class="ligneSeparationTemoignage">
 
+                    <!--. --------------------Le corps du témoignage.-------------------- -->
                     <p class="corpsTemoignage">
                         Ancienne étudiante, j'ai été très satisfaite de la formation.
                         N'étant pas faite pour la fac, je me suis dirigée dans ce domaine par passion pour la musique et pour connaître la réalité des métiers ... et j'ai été servie !
@@ -408,6 +630,12 @@
             </div>
 
     </main>
+
+    <!--
+    : ************************************************************************************************************
+                                                    % Le footer.
+    : ************************************************************************************************************
+    -->
 
     <footer class="couleurBlanche">
 
@@ -448,7 +676,7 @@
             </li>
 
             <li class="lienFooter center">
-                <a href="#" class="couleurBlanche">
+                <a href="politique_cookie.html" class="couleurBlanche">
                     Données Personnelles
                 </a>
             </li>
@@ -463,8 +691,16 @@
 
     </footer>
 
+    <!--
+    : ************************************************************************************************************
+                                                    % Les fichiers JavaScript.
+    : ************************************************************************************************************
+    -->
+
+    <!--§ Le fichier js de la navbar. -->
     <script src="js/navBurger.js"></script>
 
+    <!--§ Le fichier js principal. -->
     <script src="js/scriptIndex.js"></script>
 
 </body>

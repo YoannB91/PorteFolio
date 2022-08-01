@@ -8,17 +8,6 @@
 
 	/*
 	. --------------------------------------------------------------------------------
-									£ La barre des réseaux sociaux.
-	. --------------------------------------------------------------------------------
-	*/
-
-	/*è Réduction de l'espace entre les icônes. */
-	#socialBarHeader em {
-		padding-left: 18px;
-	}
-
-	/*
-	. --------------------------------------------------------------------------------
 									£ L'accueil.
 	. --------------------------------------------------------------------------------
 	*/
@@ -144,22 +133,6 @@
 */
 
 @media only screen and (max-device-width: 1024px) {
-
-	/*
-	. --------------------------------------------------------------------------------
-									£ La barre des réseaux sociaux.
-	. --------------------------------------------------------------------------------
-	*/
-
-	/*è Réduction de la taille des la barre des réseaux sociaux en mode responsive. */
-	#socialBarHeader {
-		height: 4vh;
-	}
-
-	/*è Réduction de l'espace entre la dernière icône et le bord de l'écran. */
-	#socialBarHeader .fa-google {
-		padding-right: 25px;
-	}
 
 	/*
 	. --------------------------------------------------------------------------------
@@ -307,40 +280,5 @@
 	.corpsTemoignage {
 		padding-left: 5vw;
 		padding-right: 5vw;
-	}
-
-	/*
-	. --------------------------------------------------------------------------------
-									£ Le footer.
-	. --------------------------------------------------------------------------------
-	*/
-
-	/*, Modification de la disposition des éléments du footer, et apparition du copyright pour les mobiles. */
-	footer, #copyrightMobile, #navFooter {
-		display: block;
-	}
-
-	/*. --------------------Le texte du copyright.-------------------- */
-
-	/*, Disparition du texte pour les ordinateurs. */
-	#copyright {
-		display: none;
-	}
-
-	/*, Espacement du texte du copyright pour les mobiles. */
-	#texteCopyrightMobile {
-		padding-top: 1vh;
-	}
-
-	/*. --------------------La mini navigation du footer.-------------------- */
-
-	/*, Les marges étaient de trop. */
-	#navFooter {
-		margin: 0;
-	}
-
-	/*, Espacement des liens  */
-	.lienFooter {
-		margin-top: 1vh;
 	}
 }

@@ -356,7 +356,7 @@ h1 {
 }
 
 /*£ Le curseur de la section jeux vidéo va devenir un pointeur de FPS. */
-#JV:hover {
+#imageSectionJeuxVideo:hover {
     cursor: crosshair;
 }
 

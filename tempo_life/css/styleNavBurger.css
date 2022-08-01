@@ -1,5 +1,37 @@
 /*
 : ************************************************************************************************************
+										% La barre des réseaux sociaux.
+: ************************************************************************************************************
+*/
+
+/*è La barre des réseaux sociaux. */
+#socialBarHeader {
+	background-color: #b7774a;
+	height: 5vh;
+	width: 100%;
+	display: flex;
+    align-items: center;
+}
+
+/*è Alignement des icônes à droite de l'écran. */
+#barreRSFacebook {
+	margin-left: auto;
+}
+
+/*è Les règles des icônes. */
+#socialBarHeader em {
+	color: white;
+	padding-left: 25px;
+    font-size: 2.5vh;
+}
+
+/*è J'éloigne la dernière icône du bord de l'écran. */
+#socialBarHeader .fa-google {
+	padding-right: 50px;
+}
+
+/*
+: ************************************************************************************************************
                                             % Les règles générales de la navbar.
 : ************************************************************************************************************
 */
@@ -204,4 +236,65 @@ header {
 /*£ Disparition de la navbar lors de l'ouverture de la side nav. */
 .hideMainNavbar {
     display: none;
+}
+
+/*
+: ************************************************************************************************************
+										% Le footer.
+: ************************************************************************************************************
+*/
+
+/*, Modification du footer. */
+footer {
+	display: flex;
+	background-color: #432918;
+	position: relative;
+	z-index: 5;
+}
+
+/*. --------------------Le texte du copyright.-------------------- */
+
+/*, Disparition du texte pour les mobiles. */
+#copyrightMobile {
+	display: none;
+}
+
+/*, Ajout de marge autours du texte. */
+#copyright {
+	display: flex;
+	align-items: center;
+	margin: 1vh 0 1vh 3vw;
+}
+
+/*, Espacement des différentes partie du copyright. */
+#separationCopyright {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*. --------------------La mini navigation du footer.-------------------- */
+
+/*, Stylisation de la navigation du footer. */
+#navFooter {
+	display: flex;
+	align-items: center;
+	margin: 1vh 2vw 1vh auto;
+}
+
+/*, Changement de la puce des liens de la mini navigation du footer. */
+/*! Il est impossible d'utiliser la propriété [list-style: ;] avec un [display: block;]. */
+footer ul li::before {
+	content: '\01D11E';
+}
+
+/*, Customisation des liens du footer. */
+.lienFooter {
+	padding-left: 5px;
+	padding-right: 30px;
+	font-size: 3vh;
+}
+
+/*, Suppression de la marge du dernier lien de la navigation du footer. */
+#dernierLienFooter {
+	padding-right: 0;
 }

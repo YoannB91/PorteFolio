@@ -1,10 +1,84 @@
 /*
 : ************************************************************************************************************
-                                            % Le mode responsive de la barre de navigation.
+										% Je cible uniquement les mobiles.
+: ************************************************************************************************************
+*/
+
+@media screen and (max-width: 600px) {
+
+	/*
+	. --------------------------------------------------------------------------------
+									£ La barre des réseaux sociaux.
+	. --------------------------------------------------------------------------------
+	*/
+
+	/*è Réduction de l'espace entre les icônes. */
+	#socialBarHeader em {
+		padding-left: 18px;
+	}
+
+    /*
+	. --------------------------------------------------------------------------------
+									£ La navbar.
+	. --------------------------------------------------------------------------------
+	*/
+
+    /*è Réduction du logo de la side nav. */
+    #logoSideNavbar {
+        height: 7vh;
+    }
+
+}
+
+/*
+: ************************************************************************************************************
+                                            % Je cible uniquement les tablettes.
+: ************************************************************************************************************
+*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /*$ Éloignement du bouton burger du bord de l'écran. */
+    #ham {
+        margin-right: 15vw;
+    }
+
+    /*$ Centrage de la liste des liens de la side nav. */
+    #listeLienSideMenu {
+        padding-top: 20vh;
+    }
+
+}
+
+/*
+: ************************************************************************************************************
+                                            % Je cible les tablettes et les mobiles.
 : ************************************************************************************************************
 */
 
 @media screen and (max-width: 1024px) {
+
+    /*
+    : ************************************************************************************************************
+                                                % La barre des réseaux sociaux.
+    : ************************************************************************************************************
+    */
+
+	/*è Réduction de la taille des la barre des réseaux sociaux en mode responsive. */
+	#socialBarHeader {
+		height: 4vh;
+	}
+
+	/*è Réduction de l'espace entre la dernière icône et le bord de l'écran. */
+	#socialBarHeader .fa-google {
+		padding-right: 25px;
+	}
+
+    /*
+    : ************************************************************************************************************
+                                                % La navbar.
+    : ************************************************************************************************************
+    */
 
     /*
     . --------------------------------------------------------------------------------
@@ -42,39 +116,39 @@
     .navbar {
         height: 9vh;
     }
-}
 
-/*
-: ************************************************************************************************************
-                                            % Je cible uniquement les mobiles.
-: ************************************************************************************************************
-*/
+    /*
+    : ************************************************************************************************************
+                                                % Le footer.
+    : ************************************************************************************************************
+    */
 
-@media screen and (max-width: 600px) {
+	/*, Modification de la disposition des éléments du footer, et apparition du copyright pour les mobiles. */
+	footer, #copyrightMobile, #navFooter {
+		display: block;
+	}
 
-    /*$ Réduction du logo de la side nav. */
-    #logoSideNavbar {
-        height: 7vh;
-    }
+	/*. --------------------Le texte du copyright.-------------------- */
 
-}
+	/*, Disparition du texte pour les ordinateurs. */
+	#copyright {
+		display: none;
+	}
 
-/*
-: ************************************************************************************************************
-                                            % Je cible uniquement les tablettes.
-: ************************************************************************************************************
-*/
+	/*, Espacement du texte du copyright pour les mobiles. */
+	#texteCopyrightMobile {
+		padding-top: 1vh;
+	}
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+	/*. --------------------La mini navigation du footer.-------------------- */
 
-    /*$ Éloignement du bouton burger du bord de l'écran. */
-    #ham {
-        margin-right: 15vw;
-    }
+	/*, Les marges étaient de trop. */
+	#navFooter {
+		margin: 0;
+	}
 
-    /*$ Centrage de la liste des liens de la side nav. */
-    #listeLienSideMenu {
-        padding-top: 20vh;
-    }
-
+	/*, Espacement des liens  */
+	.lienFooter {
+		margin-top: 1vh;
+	}
 }
