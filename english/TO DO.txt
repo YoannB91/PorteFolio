@@ -1,27 +1,53 @@
+* La navbar.
+
+- Ajouter un lien vers le site dans d'autres langages.
+; Un menu déroulant ?
+; Un drapeau devant le langage en question ? 
+; Fr - Français.
+; En - English.
+
 * Les fichiers JavaScript :
 
 - Faire des fichiers JS différents ou recycler ceux déjà présent ?
-; Le recyclage créerait moins d'emcombrement dans les fichiers mais risque d'être plus chiant à faire. Il reste toutefois la solution première pour le moment.
+; Le recyclage créerait moins d'encombrement dans les fichiers mais risque d'être plus chiant à faire. Il reste toutefois la solution première pour le moment.
 
 - Modifier les liens des images dans les fichiers JS.
+; Essayer de détecter la page html sur laquelle l'utilisateur se trouve afin de définir une variable 'src'.
 
 
-* Les fichiers à " angliser " :
+* Les fichiers à "anglaiser" :
+
+- La photo de la page d'accueil du CV pour la partie "portfolio" sera à modifier quand j'aurais traduit mon cv en anglais.
 
 - legal_notice.html.
-- privacy_policy.
+- Privacy_policy.
 ; Travail chiant mais à faire absolument.
 
 - Créer une version pdf anglaise de mon cv et de ma lettre de motivation.
-; Optionel : Regarder des fichiers d'américains pour voir s'ils font les choses différamment.
+; Optionel : Regarder des fichiers d'américains pour voir s'ils font les choses différemment.
 
 
 * Les liens :
 
 - Vérifier si des versions anglaises existe pour les sites suivants :
 
-OpenClassrooms.
-Doranco.
-Onisep.
-Tout les liens disponible dans le cv-eng.html.
-; Beaucoups de site d'école locale qui ne seront de toute façon pas disponible, personne ne va sur ces sites de toute façon.
+OpenClassrooms. https://openclassrooms.com/en/
+Doranco. $Indisponible.
+Onisep. $Indisponible.
+; Chercher des liens vers des docs en anglais ?
+
+Tous les liens disponibles dans le cv-eng.html.
+; Beaucoup de sites d'école locale qui ne seront de toute façon pas disponibles, personne ne va sur ces sites de toute façon.
+Lycée Geoffroy-Saint-Hilaire. $Indisponible.
+Brevet. $Indisponible.
+; Chercher des liens vers des docs en anglais ?
+Le Roussay. $Indisponible.
+Formaposte. $Indisponible.
+La poste. $Indisponible.
+Kompass - La poste de Montgeron. https://fr.kompass.com/en/c/la-poste/fr9174676/
+Hello work - Préparateur de commande + agent de tri. $Indisponible.
+; Chercher des liens vers des docs en anglais ?
+Recyclerie livre. $Indisponible.
+cidj - Conducteur routier. $Indisponible.
+; Chercher des liens vers des docs en anglais ?
+Societe - Beauleux. https://fr.kompass.com/en/c/beauleux-sarl/fr0253615/

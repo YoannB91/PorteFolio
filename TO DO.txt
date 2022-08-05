@@ -1,0 +1,19 @@
+* La section portfolio :
+
+- Remettre Bugstatique en ligne.
+; Si le site est irrécupérable alors l'indiquer comme étant hors-ligne sur mon cv et le site.
+
+- Refaire le screen pour Bugstastique, en se connectant au site en tant qu'invité pour éviter de voir apparaître la barre WordPress de modification d'administrateur.
+
+- La liste des outils utilisés est collée sur les petits écrans.
+; Penser à augmenter le margin.
+
+- Faire des vidéos / gifs ( quelque chose de léger ) pour illustrer les sites dans leur ensemble. Cela permettrait de faire une petite démonstration de tout ce qu'il est possible de faire sur un site ( pratique pour les sites indisponible en ligne ).
+; Si je fais ça il faudra que je pense à un moyen d'afficher la présentation en grand sinon l'on ne verra rien.
+
+- Ajouter une seconde face aux cartes afin de montrer les versions mobiles des sites.
+; Ajouter une petite icône de téléphone pour les versions ordinateur, puis une icône d'ordinateur ( ou un grand écran ) pour la version mobile.
+
+* La section contact :
+
+- Centré le carré de validation du formulaire sur son texte.

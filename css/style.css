@@ -680,6 +680,11 @@ text-align: center;
 : ************************************************************************************************************
 */
 
+/*? Permet de centré le texte de validation. */
+.accepte label {
+    display: inline;
+}
+
 /*? Je réduis la taille du texte pour accepter les conditions d'utilisation. */
 .accepte label, .accepte a {
     font-size: 1.5vh;
