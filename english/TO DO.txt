@@ -6,30 +6,15 @@
 ; Fr - Français.
 ; En - English.
 
-* Les fichiers JavaScript :
-
-- Faire des fichiers JS différents ou recycler ceux déjà présent ?
-; Le recyclage créerait moins d'encombrement dans les fichiers mais risque d'être plus chiant à faire. Il reste toutefois la solution première pour le moment.
-
-- Modifier les liens des images dans les fichiers JS.
-; Essayer de détecter la page html sur laquelle l'utilisateur se trouve afin de définir une variable 'src'.
-
-
-* Les fichiers à "anglaiser" :
+* Les fichiers à "angliser" :
 
 - La photo de la page d'accueil du CV pour la partie "portfolio" sera à modifier quand j'aurais traduit mon cv en anglais.
-
-- legal_notice.html.
-- Privacy_policy.
-; Travail chiant mais à faire absolument.
 
 - Créer une version pdf anglaise de mon cv et de ma lettre de motivation.
 ; Optionel : Regarder des fichiers d'américains pour voir s'ils font les choses différemment.
 
 
 * Les liens :
-
-- Vérifier si des versions anglaises existe pour les sites suivants :
 
 OpenClassrooms. https://openclassrooms.com/en/
 Doranco. $Indisponible.

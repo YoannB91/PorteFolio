@@ -144,7 +144,7 @@ q {
 
 /*
 : ************************************************************************************************************
-                                    % La section "accueil" du site.
+                                    % Accueil.
 : ************************************************************************************************************
 */
 
@@ -206,7 +206,7 @@ h1 {
 
 /*
 : ************************************************************************************************************
-                                    % La section À propos.
+                                    % À propos.
 : ************************************************************************************************************
 */
 
@@ -331,7 +331,7 @@ h1 {
 
 /*
 : ************************************************************************************************************
-                                    % La section Mes passions.
+                                    % Mes passions.
 : ************************************************************************************************************
 */
 
@@ -377,10 +377,6 @@ h1 {
     opacity: 0;
     transition: opacity 600ms, visibility 600ms, height 600ms;
 }
-.show {
-    display: block;
-    transition: opacity 600ms, visibility 600ms, height 600ms;
-}
 
 /*: J'ajoute une bordure rondes aux images dans les cartes. */
 :root {
@@ -403,7 +399,7 @@ h1 {
 
 /*
 : ************************************************************************************************************
-                                    % La section mes compétences.
+                                    % Mes compétences.
 : ************************************************************************************************************
 */
 
@@ -533,7 +529,7 @@ text-align: center;
 
 /*
 : ************************************************************************************************************
-                                    % La section portfolio.
+                                    % Portfolio.
 : ************************************************************************************************************
 */
 
@@ -599,7 +595,7 @@ text-align: center;
 }
 
 /*+ Je crée les règles pour les icônes github des titres. */
-.cartePortfolio .fab {
+.gitHubPortfolio {
     color: black;
     font-size: 3.5vh;
 }
@@ -640,6 +636,16 @@ text-align: center;
     font-size: 2vh;
 }
 
+/*+ Application d'une couleur sur les liens inactifs. */
+.inactif {
+    color: red;
+}
+
+/*+ Application d'un effet sur les images de présentation des sites hors-ligne. */
+.siteHorsLigne {
+    filter: blur(10px);
+}
+
 /*
 . --------------------------------------------------------------------------------
                                 £ L'animation.
@@ -676,7 +682,7 @@ text-align: center;
 
 /*
 : ************************************************************************************************************
-                                    % La section contact.
+                                    % Contact.
 : ************************************************************************************************************
 */
 
@@ -766,6 +772,33 @@ text-align: center;
     }
 }
 
+/*
+: ************************************************************************************************************
+                                    % Les pages HTML administratives.
+: ************************************************************************************************************
+*/
+
+/*= Les titres des pages administratives. */
+.titreDocumentAdministratif {
+    display: block;
+    text-align: center;
+    color: black; 
+    padding-top: 10px;
+}
+
+/*= Les sous-titres des pages administratives. */
+.sousTitreDocumentAdministratif {
+    padding-left: 20px;
+}
+
+/*= Les éléments des listes des pages administratives. */
+.listeDocumentAdministratif {
+    word-spacing: 0.25vh;
+    letter-spacing: 0.05vh;
+    line-height: 4vh;
+    font-size: 2.5vh;
+}
+
 
 
 
@@ -847,6 +880,19 @@ text-align: center;
     .accepte label, .accepte a {
         font-size: 2.5vh;
         line-height: 3.2vh;
+    }
+
+    /*. --------------------Les pages HTML administratives.-------------------- */
+
+    /*$ Les titres des pages administratives. */
+    .titreDocumentAdministratif {
+        padding-top: 60px;
+        font-size: 6vh;
+    }
+
+    /*$ Le titre principal des pages administratives. */
+    #titreDocumentAdministratifFR {
+        padding-top: 80px;
     }
 
 }

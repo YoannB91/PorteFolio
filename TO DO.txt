@@ -14,6 +14,16 @@
 - Ajouter une seconde face aux cartes afin de montrer les versions mobiles des sites.
 ; Ajouter une petite icône de téléphone pour les versions ordinateur, puis une icône d'ordinateur ( ou un grand écran ) pour la version mobile.
 
+- Mettre un symbole interdit et un filtre rouge sur les images des sites innacessible ( Projet recette et bugstastique ).
+; L'enlever au survol afin de laisser l'utilisateur voir l'image ?
+; Une classe CSS + un toggle en JS pourrait largement le faire.
+
 * La section contact :
 
 - Centré le carré de validation du formulaire sur son texte.
+
+* La documentation :
+
+- Créer une doc.
+; Détailler comment ajouter des images et comment modifier / ajouter des alt et des title ( fichier html et JS ).
+; Je pourrais aussi créer une doc pour le projet véville.

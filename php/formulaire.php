@@ -14,12 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $objet = htmlentities($_POST['objet']);
     $message = htmlentities($_POST['message']);
 
-    //* Les variables concerant l'e-mail.
+    //* Les variables concernant l'e-mail.
 
     $destinataire = 'yoann.bezard@yoann-bezard.fr'; //= Mon adresse e-mail.
     $contenu = '<html><head><title> '.$objet . ' </title></head><body>';
     $contenu .= '<p>Tua as un nouveau message !</p>';
-    $contenu .= '<p><stong>Prénom</stong> : ' .$prenom. '</p>';
+    $contenu .= '<p><strong>Prénom</strong> : ' .$prenom. '</p>';
     $contenu .= '<p><strong>Nom</strong> : ' .$nom. '</p>';
     $contenu .= '<p><strong>E-mail</strong> : ' .$mail. '</p>';
     $contenu .= '<p><strong>Téléphone</strong> : ' .$telephone. '</p>';
