@@ -93,13 +93,22 @@ titreAPropos.addEventListener( 'mouseover', function showPropos() {
 */
 
 //§ La fonction qui va permettre d'afficher ou de cacher les textes sous les sous-sections de la section "Mes passions".
-function hideAndShowPassions( titreSousSection, texteSousSection ) {
-    //= Au click sur le titre du paragraphe de la sous-section.
-    titreSousSection.addEventListener( 'click', function hideAndShow() {
+function hideAndShowPassions( cartePassion, texteSousSection ) {
+
+    //= Au survol de l'une des cartes passions j'affiche son paragraphe d'exemple.
+    cartePassion.addEventListener( 'mouseover', function Show() {
         for ( let i=0; i < texteSousSection.length; i++ ) {
             texteSousSection[i].classList.toggle('hide');
         }
     })
+
+    //= Quand l'utilisateur quitte la carte je cache le paragraphe d'exemple.
+    cartePassion.addEventListener( 'mouseout', function hide() {
+        for ( let i=0; i < texteSousSection.length; i++ ) {
+            texteSousSection[i].classList.toggle('hide');
+        }
+    })
+
 }
 
 /*
@@ -148,7 +157,7 @@ if (FR) {
 const imageSectionLecture = document.getElementById( 'imageSectionLecture' );
 
 //. --------------------Le titre du texte de la sous-section "Lecture".--------------------
-const titreTexteSousSectionLecture = document.getElementById( 'titreTexteSousSectionLecture' );
+const cartePassionLecture = document.getElementById( 'cartePassionLecture' );
 
 //. --------------------Le texte de la sous-section "Lecture".--------------------
 const texteSousSectionLecture = document.getElementsByClassName( 'texteSousSectionLecture' );
@@ -198,7 +207,7 @@ imageSectionLecture.addEventListener( 'mouseout', function retourLecture() {
 });
 
 //§ La boucle qui affiche ou cache le texte sous la sous-section "Lecture".
-hideAndShowPassions( titreTexteSousSectionLecture, texteSousSectionLecture );
+hideAndShowPassions( cartePassionLecture, texteSousSectionLecture );
 
 /*
 . --------------------------------------------------------------------------------
@@ -209,13 +218,13 @@ hideAndShowPassions( titreTexteSousSectionLecture, texteSousSectionLecture );
 //$ ------------------------------Les constantes.------------------------------
 
 //. --------------------Le titre du texte de la sous-section "Musique".--------------------
-const titreTexteSousSectionMusique = document.getElementById( 'titreTexteSousSectionMusique' );
+const cartePassionMusique = document.getElementById( 'cartePassionMusique' );
 
 //. --------------------Le texte de la sous-section "Musique".--------------------
 const texteSousSectionMusique = document.getElementsByClassName( 'texteSousSectionMusique' );
 
 //§ La boucle qui affiche ou cache le texte sous la sous-section "Musique".
-hideAndShowPassions( titreTexteSousSectionMusique, texteSousSectionMusique );
+hideAndShowPassions( cartePassionMusique, texteSousSectionMusique );
 
 /*
 . --------------------------------------------------------------------------------
@@ -229,7 +238,7 @@ hideAndShowPassions( titreTexteSousSectionMusique, texteSousSectionMusique );
 const imageSectionJeuxVideo = document.getElementById( 'imageSectionJeuxVideo' );
 
 //. --------------------Le titre du texte de la sous-section "Jeux vidéo".--------------------
-const titreTexteSousSectionJeuxVideo = document.getElementById( 'titreTexteSousSectionJeuxVideo' );
+const cartePassionJeuxVideo = document.getElementById( 'cartePassionJeuxVideo' );
 
 //. --------------------Le texte de la sous-section "Jeux vidéo".--------------------
 const texteSousSectionJeuxVideo = document.getElementsByClassName( 'texteSousSectionJeuxVideo' );
@@ -325,7 +334,7 @@ imageSectionJeuxVideo.addEventListener( 'click', function cliqueSwitchImage(){
 });
 
 //§ La boucle qui affiche ou cache le texte sous la sous-section "Jeux vidéo".
-hideAndShowPassions( titreTexteSousSectionJeuxVideo, texteSousSectionJeuxVideo );
+hideAndShowPassions( cartePassionJeuxVideo, texteSousSectionJeuxVideo );
 
 /*
 . --------------------------------------------------------------------------------
@@ -348,7 +357,7 @@ const monImage = document.getElementById( 'imageSectionSFF' );
 const timer = window.setInterval( "changeImageSFF()", 5000 );
 
 //. --------------------Le titre du texte de la sous-section "science-fiction et fantastique".--------------------
-const titreTexteSousSectionSFF = document.getElementById( 'titreTexteSousSectionSFF' );
+const cartePassionSFF = document.getElementById( 'cartePassionSFF' );
 
 //. --------------------Le texte de la sous-section "science-fiction et fantastique".--------------------
 const texteSousSectionSFF = document.getElementsByClassName( 'texteSousSectionSFF' );
@@ -370,7 +379,7 @@ function changeImageSFF() {
 }
 
 //§ La boucle qui affiche ou cache le texte sous la sous-section "science-fiction et fantastique".
-hideAndShowPassions(titreTexteSousSectionSFF, texteSousSectionSFF);
+hideAndShowPassions(cartePassionSFF, texteSousSectionSFF);
 
 /*
 : ************************************************************************************************************

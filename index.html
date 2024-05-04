@@ -71,7 +71,9 @@
 <body onload="includeHTML()">
 
     <!--+ Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVW4RFG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVW4RFG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!--+ End Google Tag Manager (noscript) -->
 
     <header>
@@ -92,100 +94,120 @@
 
             <!--: Le menu principal. -->
             <ul id="topNavUl">
-    
+
                 <!--: Les liens vers les sections du site en mode ordinateur. -->
-    
+
                 <li class="topNavUlLi">
                     <a class="topNavUlLiA" href="index.html#accueil">Accueil</a>
                 </li>
-    
+
                 <li class="topNavUlLi">
                     <a class="topNavUlLiA" href="index.html#propos">À propos</a>
                 </li>
-    
+
                 <li class="topNavUlLi">
                     <a class="topNavUlLiA" href="index.html#passions">Mes passions</a>
                 </li>
-    
+
                 <li class="topNavUlLi">
                     <a class="topNavUlLiA" href="index.html#competences">Mes compétences</a>
                 </li>
-    
+
                 <li class="topNavUlLi">
                     <a class="topNavUlLiA" href="cv.html">Mon cv</a>
                 </li>
-    
+
                 <li class="topNavUlLi">
                     <a class="topNavUlLiA" href="index.html#portfolio">Mon portfolio</a>
                 </li>
-    
+
                 <li class="topNavUlLi">
                     <a class="topNavUlLiA" href="index.html#contact">Contact</a>
                 </li>
-    
+
+                <li class="topNavUlLi">
+
+                    <a id="survolDrapeau" class="topNavUlLiA" href="index.html">
+                        <img  class="drapeaux" src="img/drapeaux/france.png" title="Le drapeau français." alt="Le drapeau français, un drapeau tricolore (bleu, blanc, rouge)">
+                        Fr - Français
+                    </a>
+
+                </li>
+
             </ul>
-    
+
+            <!-- <ul id="topNavUl">
+                <li class="topNavUlLi">
+
+                    <a class="topNavUlLiA" href="">
+                        <img class="drapeaux" src="img/drapeaux/france.png" title="Le drapeau français." alt="Le drapeau français, un drapeau tricolore (arborant les couleurs bleu, blanche et rouge)."> 
+                        Fr - Français
+                    </a>
+
+                </li>
+            </ul> -->
+
             <!--
             . --------------------------------------------------------------------------------
                                     £ La barre de navigation pour les mobiles et tablette.
             . --------------------------------------------------------------------------------
             -->
-    
+
             <!--: Le bouton du menu burger. -->
             <button id="ham" aria-label="Ouvrir la barre de navigation pour les mobiles.">
                 <em class="fas fa-bars fa-2x"></em>
             </button>
-    
+
             <!--: Le titre de la barre de navigation en mode mobile et tablette. -->
             <h2>Yoann Bezard | Développeur web</h2>
-    
+
         </nav>
-    
+
         <!--: La navigation verticale qui apparaît lors du clic. -->
         <nav class="sideNav hideMenuVertical" id="cacherElementMenuVertical" aria-label="La navigation latérale pour les mobiles.">
-    
+
             <!--: Mon bouton X qui permet de fermer la sidenav. -->
             <button class="menuX" id="menuX" aria-label="Fermer la navigation latérale.">
                 <em class="fas fa-times fa-2x"></em>
             </button>
-    
+
             <!--: Le side menu principal. -->
             <ul id="sideMenu1" class="sideNavUl showSousMenu">
-    
+
                 <!--: Les liens vers les sections du site en mode mobile et tablette. -->
-    
+
                 <li class="sideNavUlLi">
                     <a class="sideNavUlLiA menuLink" href="index.html#accueil">Accueil</a>
                 </li>
-    
+
                 <li class="sideNavUlLi">
                     <a class="sideNavUlLiA menuLink" href="index.html#propos">À propos</a>
                 </li>
-    
+
                 <li class="sideNavUlLi">
                     <a class="sideNavUlLiA menuLink" href="index.html#passions">Mes passions</a>
                 </li>
-    
+
                 <li class="sideNavUlLi">
                     <a class="sideNavUlLiA menuLink" href="index.html#competences">Mes compétences</a>
                 </li>
-    
+
                 <li class="sideNavUlLi">
                     <a class="sideNavUlLiA menuLink" href="cv.html">Mon cv</a>
                 </li>
-    
+
                 <li class="sideNavUlLi">
                     <a class="sideNavUlLiA menuLink" href="index.html#portfolio">Mon portfolio</a>
                 </li>
-    
+
                 <li class="sideNavUlLi">
                     <a class="sideNavUlLiA menuLink" href="index.html#contact">Contact</a>
                 </li>
-    
+
             </ul>
-    
+
         </nav>
-    
+
     </header>
 
     <!--
@@ -291,11 +313,11 @@
 
             <!--
             . --------------------------------------------------------------------------------
-                                                        £ La lecture.
+                                            £ La lecture.
             . --------------------------------------------------------------------------------
             -->
 
-            <article class="col pb-2">
+            <article class="col pb-2" id="cartePassionLecture">
                 <div class="card h-100 border-dark">
 
                     <!--& L'image de la carte lecture. -->
@@ -394,14 +416,14 @@
 
             <!--
             . --------------------------------------------------------------------------------
-                                                        £ La musique.
+                                            £ La musique.
             . --------------------------------------------------------------------------------
             -->
 
-            <article class="col pb-2">
-
-                <!--& Le carousel d'images de la carte musique. -->
+            <article class="col pb-2" id="cartePassionMusique">
                 <div class="card h-100 border-dark">
+
+                    <!--& Le carousel d'images de la carte musique. -->
                     <div id="moncarrousel" class="carousel slide card-img-top pt-1 px-1" data-bs-ride="carousel">
                         <div class="carousel-indicators">
 
@@ -481,7 +503,7 @@
 
                             <!--? Les groupes de métal. -->
                             <p class="list-group list-group-flush hide texteSousSectionMusique"> 
-                                Quelques groupes de métal : 
+                                Quelques groupes de métal :
                             </p>
 
                             <ul class="list-group list-group-flush hide texteSousSectionMusique">
@@ -558,130 +580,7 @@
                                 </li>
 
                             </ul>
-
                         </div>
-                    </div>
-                </div>
-            </article>
-
-            <!--
-            . --------------------------------------------------------------------------------
-                                                        £ Les jeux vidéo.
-            . --------------------------------------------------------------------------------
-            -->
-
-            <article class="col pb-2">
-                <div class="card h-100 border-dark">
-
-                    <!--& L'image de la carte jeux vidéo. -->
-                    <img id="imageSectionJeuxVideo" loading="lazy" class="card-img-top pt-1 px-1"
-                    src="img/passions/jv/switch.jpg"
-                    title="La switch, une console de salon utilisable en console portable, du pur génie nippon."
-                    alt="Une console Nintendo switch, elle est représenté en mode portable, avec un joy-con bleu à gauche et un rouge à droite. Elle est éteinte.">
-
-                    <!--& Le corps de la carte jeux vidéo. -->
-                    <div class="card-body">
-
-                        <!--& Le titre de la carte jeux vidéo. -->
-                        <h3 class="card-title">Les jeux vidéo.</h3>
-
-                        <!--& Le texte de la carte jeux vidéo. -->
-                        <p class="card-text">
-                            J'adore jouer aux jeux vidéo depuis que je suis petit, et il y a une fonction qui est leur est commune à tous : il faut toujours <strong>cliquer</strong> pour pouvoir continuer de jouer. 
-                            <br />
-                            J'affectionne tout particulièrement les J-RPG : ils sont la fusion merveilleuse des caractéristiques des rpg et du génie japonais. C'est d'ailleurs grâce à eux que j'ai eu envie de m'investir en anglais : afin de pouvoir jouer à ces jeux que l'on qualifie de "jeux de niche" et qui étaient assez rarement traduit chez nous .
-                        </p>
-
-                        <!--? Le titre du texte de présentation de mes styles de jeux vidéo favoris. -->
-                        <p class="py-2 pointeur" id="titreTexteSousSectionJeuxVideo">
-                            <em>Une liste de mes styles de jeux préférés :</em>
-                        </p>
-
-                        <p class="card-text hide texteSousSectionJeuxVideo"> 
-
-                            <!--? Les FPS. -->
-                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                Les FPS :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                <li class="list-group-item">
-                                    La saga Metro,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Star wars - Battlefront 2 ( le vrai, pas la purge de EA ),
-                                </li>
-
-                                <li class="list-group-item">
-                                    Doom Eternal.
-                                </li>
-
-                            </ul>
-
-                            <!--? Les jeux de stratégie. -->
-                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                Les jeux de stratégie :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                <li class="list-group-item">
-                                    X-com 2 : War of the chosen,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Star wars - Galactic battlegrounds,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Fire emblem.
-                                </li>
-
-                            </ul>
-
-                            <!--? Les RPG. -->
-                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                Les RPG :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                <li class="list-group-item">
-                                    The elder scrolls V : Skyrim,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Divinity : original sin 2,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Mass effect.
-                                </li>
-
-                            </ul>
-
-                            <!--? Les J-RPG. -->
-                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                Les J-RPG :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                <li class="list-group-item">
-                                    Xenoblade chronicles 2,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Final Fantasy VII,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Disgaea.
-                                </li>
-
-                            </ul>
 
                     </div>
                 </div>
@@ -689,11 +588,11 @@
 
             <!--
             . --------------------------------------------------------------------------------
-                                                £ La science-fiction et le fantastique.
+                                    £ La science-fiction et le fantastique.
             . --------------------------------------------------------------------------------
             -->
 
-            <article class="col pb-2">
+            <article class="col pb-2" id="cartePassionSFF">
                 <div class="card h-100 border-dark">
 
                     <!--& L'image de la carte SFF. -->
@@ -766,6 +665,130 @@
                     </div>
                 </div>
             </article>
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                            £ Les jeux vidéo.
+            . --------------------------------------------------------------------------------
+            -->
+
+            <article class="col pb-2" id="cartePassionJeuxVideo">
+                <div class="card h-100 border-dark">
+
+                    <!--& L'image de la carte jeux vidéo. -->
+                    <img id="imageSectionJeuxVideo" loading="lazy" class="card-img-top pt-1 px-1"
+                    src="img/passions/jv/switch.jpg"
+                    title="La switch, une console de salon utilisable en console portable, du pur génie nippon."
+                    alt="Une console Nintendo switch, elle est représenté en mode portable, avec un joy-con bleu à gauche et un rouge à droite. Elle est éteinte.">
+
+                    <!--& Le corps de la carte jeux vidéo. -->
+                    <div class="card-body">
+
+                        <!--& Le titre de la carte jeux vidéo. -->
+                        <h3 class="card-title">Les jeux vidéo.</h3>
+
+                        <!--& Le texte de la carte jeux vidéo. -->
+                        <p class="card-text">
+                            J'adore jouer aux jeux vidéo depuis que je suis petit, et il y a une fonction qui est leur est commune à tous : il faut toujours <strong>cliquer</strong> pour pouvoir continuer de jouer. 
+                            <br />
+                            J'affectionne tout particulièrement les J-RPG : ils sont la fusion merveilleuse des caractéristiques des rpg et du génie japonais. C'est d'ailleurs grâce à eux que j'ai eu envie de m'investir en anglais : jouer à ces jeux que l'on qualifie de "jeux de niche" et qui sont assez rarement traduit par chez nous.
+                        </p>
+
+                        <!--? Le titre du texte de présentation de mes styles de jeux vidéo favoris. -->
+                        <p class="py-2 pointeur" id="titreTexteSousSectionJeuxVideo">
+                            <em>Une liste de mes styles de jeux préférés :</em>
+                        </p>
+
+                        <p class="card-text hide texteSousSectionJeuxVideo"> 
+
+                            <!--? Les FPS. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                Les FPS :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    La saga Metro,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Star wars - Battlefront 2 ( le vrai, pas la purge de EA ),
+                                </li>
+
+                                <li class="list-group-item">
+                                    Doom Eternal.
+                                </li>
+
+                            </ul>
+
+                            <!--? Les jeux de stratégie. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                Les jeux de stratégie :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    X-com 2 : Long war of the chosen Mod Jam,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Star wars - Galactic battlegrounds,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Fire emblem.
+                                </li>
+
+                            </ul>
+
+                            <!--? Les RPG. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                Les RPG :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    The elder scrolls V : Skyrim,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Divinity : original sin 2,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Mass effect.
+                                </li>
+
+                            </ul>
+
+                            <!--? Les J-RPG. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                Les J-RPG :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    Xenoblade chronicles 2,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Final Fantasy VII,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Disgaea.
+                                </li>
+
+                            </ul>
+
+                    </div>
+                </div>
+            </article>
+
         </div>
     </div>
 
@@ -1241,7 +1264,9 @@
             <!--§ Le titre. -->
             <h3 class="titreCarte">Le projet recette
                 <!--§ Le lien vers le projet sur GitHub. -->
-                <em class="fab fa-github-square gitHubPortfolio inactif" title="Nous tenons à garder l'api de ce projet privé."></em>
+                <a href="https://github.com/RasdaCorentin/Projet-Recette" target="_blank"> 
+                    <em class="fab fa-github-square gitHubPortfolio" title="Le lien vers le projet sur GitHub."></em>
+                </a>
             </h3>
 
             <!--§ Le lien vers le projet. -->

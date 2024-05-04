@@ -71,7 +71,9 @@
 <body onload="includeHTML()">
 
     <!--+ Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVW4RFG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVW4RFG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!--+ End Google Tag Manager (noscript) -->
 
     <header>
@@ -291,11 +293,11 @@
 
             <!--
             . --------------------------------------------------------------------------------
-                                                        £ Reading.
+                                            £ Reading.
             . --------------------------------------------------------------------------------
             -->
 
-            <article class="col pb-2">
+            <article class="col pb-2" id="cartePassionLecture">
                 <div class="card h-100 border-dark">
 
                     <!--& L'image de la carte lecture. -->
@@ -394,11 +396,11 @@
 
             <!--
             . --------------------------------------------------------------------------------
-                                                        £ Music.
+                                            £ Music.
             . --------------------------------------------------------------------------------
             -->
 
-            <article class="col pb-2">
+            <article class="col pb-2" id="cartePassionMusique">
 
                 <!--& Le carousel d'images de la carte musique. -->
                 <div class="card h-100 border-dark">
@@ -566,134 +568,11 @@
 
             <!--
             . --------------------------------------------------------------------------------
-                                                        £ Video games.
+                                    £ Science fiction and fantasy.
             . --------------------------------------------------------------------------------
             -->
 
-            <article class="col pb-2">
-                <div class="card h-100 border-dark">
-
-                    <!--& L'image de la carte jeux vidéo. -->
-                    <img id="imageSectionJeuxVideo" loading="lazy" class="card-img-top pt-1 px-1"
-                    src="../img/passions/jv/switch.jpg"
-                    title="The Switch, a home console that can be used as a portable console, pure Japanese genius."
-                    alt="A Nintendo switch console, she is represented in portable mode, with a blue joy-con on the left and a red one on the right. She is turned off.">
-
-                    <!--& Le corps de la carte jeux vidéo. -->
-                    <div class="card-body">
-
-                        <!--& Le titre de la carte jeux vidéo. -->
-                        <h3 class="card-title">Video games.</h3>
-
-                        <!--& Le texte de la carte jeux vidéo. -->
-                        <p class="card-text">
-                            I've loved playing video games since I was a kid, and there's one feature they all have in common: you always have to <strong>click</strong> to keep playing.
-                            <br />
-                            I am particularly fond of J-RPGs : they are a wonderful fusion of rpg characteristics and Japanese genius. It's thanks to them that I wanted to invest myself in English: in order to play these games that are qualified as "niche games" and that were rarely translated here.
-                        </p>
-
-                        <!--? Le titre du texte de présentation de mes styles de jeux vidéo favoris. -->
-                        <p class="py-2 pointeur" id="titreTexteSousSectionJeuxVideo">
-                            <em>A list of my favorite game styles :</em>
-                        </p>
-
-                        <p class="card-text hide texteSousSectionJeuxVideo"> 
-
-                            <!--? Les FPS. -->
-                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                The FPS :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                <li class="list-group-item">
-                                    The Metro saga,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Star wars - Battlefront 2 ( the true one, not the EA shit ),
-                                </li>
-
-                                <li class="list-group-item">
-                                    Doom Eternal.
-                                </li>
-
-                            </ul>
-
-                            <!--? Les jeux de stratégie. -->
-                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                Strategy games :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                <li class="list-group-item">
-                                    X-com 2 : War of the chosen,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Star wars - Galactic battlegrounds,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Fire emblem.
-                                </li>
-
-                            </ul>
-
-                            <!--? Les RPG. -->
-                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                The RPG :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                <li class="list-group-item">
-                                    The elder scrolls V : Skyrim,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Divinity : original sin 2,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Mass effect.
-                                </li>
-
-                            </ul>
-
-                            <!--? Les J-RPG. -->
-                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-                                The J-RPG :
-                            </p>
-
-                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
-
-                                <li class="list-group-item">
-                                    Xenoblade chronicles 2,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Final Fantasy VII,
-                                </li>
-
-                                <li class="list-group-item">
-                                    Disgaea.
-                                </li>
-
-                            </ul>
-
-                    </div>
-                </div>
-            </article>
-
-            <!--
-            . --------------------------------------------------------------------------------
-                                                £ Science fiction and fantasy.
-            . --------------------------------------------------------------------------------
-            -->
-
-            <article class="col pb-2">
+            <article class="col pb-2" id="cartePassionSFF">
                 <div class="card h-100 border-dark">
 
                     <!--& L'image de la carte SFF. -->
@@ -766,6 +645,130 @@
                     </div>
                 </div>
             </article>
+
+            <!--
+            . --------------------------------------------------------------------------------
+                                            £ Video games.
+            . --------------------------------------------------------------------------------
+            -->
+
+            <article class="col pb-2" id="cartePassionJeuxVideo">
+                <div class="card h-100 border-dark">
+
+                    <!--& L'image de la carte jeux vidéo. -->
+                    <img id="imageSectionJeuxVideo" loading="lazy" class="card-img-top pt-1 px-1"
+                    src="../img/passions/jv/switch.jpg"
+                    title="The Switch, a home console that can be used as a portable console, pure Japanese genius."
+                    alt="A Nintendo switch console, she is represented in portable mode, with a blue joy-con on the left and a red one on the right. She is turned off.">
+
+                    <!--& Le corps de la carte jeux vidéo. -->
+                    <div class="card-body">
+
+                        <!--& Le titre de la carte jeux vidéo. -->
+                        <h3 class="card-title">Video games.</h3>
+
+                        <!--& Le texte de la carte jeux vidéo. -->
+                        <p class="card-text">
+                            I've loved playing video games since I was a kid, and there's one feature they all have in common: you always have to <strong>click</strong> to keep playing.
+                            <br />
+                            I am particularly love the J-RPGs : they are a wonderful fusion of rpg characteristics and Japanese genius. It's thanks to them that I wanted to invest myself in English: in order to play these games that are qualified as "niche games" and that were rarely translated in France.
+                        </p>
+
+                        <!--? Le titre du texte de présentation de mes styles de jeux vidéo favoris. -->
+                        <p class="py-2 pointeur" id="titreTexteSousSectionJeuxVideo">
+                            <em>A list of my favorite game styles :</em>
+                        </p>
+
+                        <p class="card-text hide texteSousSectionJeuxVideo"> 
+
+                            <!--? Les FPS. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                The FPS :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    The Metro saga,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Star wars - Battlefront 2 ( the true one, not the EA shit ),
+                                </li>
+
+                                <li class="list-group-item">
+                                    Doom Eternal.
+                                </li>
+
+                            </ul>
+
+                            <!--? Les jeux de stratégie. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                Strategy games :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    X-com 2 : Long war of the chosen Mod Jam,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Star wars - Galactic battlegrounds,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Fire emblem.
+                                </li>
+
+                            </ul>
+
+                            <!--? Les RPG. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                The RPG :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    The elder scrolls V : Skyrim,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Divinity : original sin 2,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Mass effect.
+                                </li>
+
+                            </ul>
+
+                            <!--? Les J-RPG. -->
+                            <p class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+                                The J-RPG :
+                            </p>
+
+                            <ul class="list-group list-group-flush hide texteSousSectionJeuxVideo">
+
+                                <li class="list-group-item">
+                                    Xenoblade chronicles 2,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Final Fantasy VII,
+                                </li>
+
+                                <li class="list-group-item">
+                                    Disgaea.
+                                </li>
+
+                            </ul>
+
+                    </div>
+                </div>
+            </article>
+
         </div>
     </div>
 
@@ -820,11 +823,11 @@
             </p>
 
             <p>
-                You can have a look at <a href="resume.html"> my resume</a>, or check its <a href="../pdf/cv_yoann_bezard.pdf" target="_blank">pdf version</a> to learn more about my skills and my professional background.
+                You can have a look at <a href="resume.html"> my resume</a>, or check its <a href="pdf-eng/resume_yoann_bezard.pdf" target="_blank">pdf version</a> to learn more about my skills and my professional background.
             </p>
 
             <p>
-                You can also take a look at <a href="../pdf/Lettre_de_motivation_yoann_bezard.pdf" target="_blank">my cover letter</a>.
+                You can also take a look at <a href="pdf-eng/cover_letter_yoann_bezard.pdf" target="_blank">my cover letter</a>.
             </p>
 
         </div>
@@ -1118,7 +1121,7 @@
             <a href="resume.html" target="_blank">
                 <!--§ Un screen de l'accueil du site. -->
                 <img class="imageCarte" loading="lazy"
-                src="../img/portfolio/cv.png"
+                src="img-eng/portfolio/cv-eng.png"
                 title="My resume, i made him with my HTML5/CSS3 and Bootstrap5 skills."
                 alt="A screenshot of my resume. You can see its header which includes my name, my job and icons to access my social networks. There is also the 'about' section which is visible just under the header of the page.">
             </a>
@@ -1239,9 +1242,10 @@
         <article class="cartePortfolio animationPf html bootstrap javaScript java mySql">
 
             <!--§ Le titre. -->
-            <h3 class="titreCarte">Le projet recette
-                <!--§ Le lien vers le projet sur GitHub. -->
-                <em class="fab fa-github-square gitHubPortfolio inactif" title="Nous tenons à garder l'api de ce projet privé."></em>
+            <h3 class="titreCarte">The recipe project ( Le projet recette )
+                <a href="https://github.com/RasdaCorentin/Projet-Recette" target="_blank">
+                    <em class="fab fa-github-square gitHubPortfolio" title="The link to the project on GitHub."></em>
+                </a>
             </h3>
 
             <!--§ Le lien vers le projet. -->

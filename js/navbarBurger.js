@@ -11,16 +11,16 @@
 */
 
 //. --------------------Le bouton du menu hamburger.--------------------
-var boutonMenuHamburger = document.getElementById('ham');
+let boutonMenuHamburger = document.getElementById('ham');
 
 //. --------------------Le bouton du menu hamburger.--------------------
-var boutonX = document.getElementById('menuX');
+let boutonX = document.getElementById('menuX');
 
 //. --------------------Les éléments cachés.--------------------
-var cacherElementMenuVertical = document.getElementById('cacherElementMenuVertical');
+let cacherElementMenuVertical = document.getElementById('cacherElementMenuVertical');
 
 //. --------------------Les liens du menus verticals.--------------------
-var menuLink = document.getElementsByClassName('menuLink');
+let menuLink = document.getElementsByClassName('menuLink');
 
 /*
 . --------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ boutonX.addEventListener('click', function hideMenuVertical(){
 . --------------------------------------------------------------------------------
 */
 
-for (var i=0; i < menuLink.length; i++) {
+for ( let i=0; i < menuLink.length; i++ ) {
     menuLink[i].addEventListener('click', function hideMenuVertical() {
         cacherElementMenuVertical.classList.replace('showMenuVertical', 'hideMenuVertical');
     })

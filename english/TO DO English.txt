@@ -1,45 +1,9 @@
-* La navbar.
+* La navbar :
 
 - Ajouter un lien vers le site dans d'autres langages.
 ; Un menu déroulant ?
-; Un drapeau devant le langage en question ? 
+; Un drapeau devant le langage en question ?
 ; Fr - Français.
 ; En - English.
 
-* Les fichiers à "angliser" :
-
-- La photo de la page d'accueil du CV pour la partie "portfolio" sera à modifier quand j'aurais traduit mon cv en anglais.
-
-- Créer une version pdf anglaise de mon cv et de ma lettre de motivation.
-; Optionel : Regarder des fichiers d'américains pour voir s'ils font les choses différemment.
-; https://www.letudiant.fr/jobsstages/cv-lettre-de-motivation-en-anglais-7-erreurs-a-eviter.html
-; Pour le BAC+2 ==> BTEC Higher National Diploma.
-
-* Les liens :
-
-- Les liens disponible en anglais.
-
-OpenClassrooms. https://openclassrooms.com/en/
-Kompass - La poste de Montgeron. https://fr.kompass.com/en/c/la-poste/fr9174676/
-Societe - Beauleux. https://fr.kompass.com/en/c/beauleux-sarl/fr0253615/
-
-- Chercher des docs en anglais.
-
-Onisep. $Indisponible.
-Agent de tri. $Indisponible.
-
-- Doc anglaise trouvé.
-
-Hello work - Préparateur de commande + agent de tri. $Indisponible. https://resources.workable.com/order-picker-job-description
-cidj - Conducteur routier. $Indisponible. https://resources.workable.com/truck-driver-job-description
-
-- La zone poubelle ( site indisponible en anglais et équivalant introuvable / innutile ).
-
-Doranco. $Indisponible.
-Lycée Geoffroy-Saint-Hilaire. $Indisponible.
-STI2D. $Indisponible.
-Le Roussay. $Indisponible.
-Brevet des collèges. $Indisponible.
-Formaposte. $Indisponible.
-La poste. $Indisponible.
-Recyclerie livre. $Indisponible.
+Ajouter du padding-right à l'image.
